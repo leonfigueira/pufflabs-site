@@ -41,6 +41,12 @@
     box-shadow:0 6px 22px rgba(18,73,46,.12);background:#dfe6df;aspect-ratio:16/10}
   .mapcard iframe{width:100%;height:100%;border:0;display:block}
 
+  .maprow{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:12px}
+  .maplbl{font-size:11.5px;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:.06em}
+  .mapbtn{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;
+    padding:8px 13px;border-radius:10px;text-decoration:none;background:#fff;border:1px solid var(--line);color:var(--forest)}
+  .mapbtn svg{width:14px;height:14px;opacity:.85}
+
   .chips{display:flex;flex-wrap:wrap;gap:8px;margin:16px 0 4px}
   .chip{font-size:13px;font-weight:600;padding:7px 12px;border-radius:999px;background:#fff;border:1px solid var(--line)}
   .chip.good{color:var(--forest);border-color:rgba(47,169,104,.4);background:rgba(47,169,104,.09)}
@@ -98,6 +104,7 @@
     <h1 id="siteName">A land check</h1>
     <div class="mapcard"><iframe id="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map of the shared location"></iframe></div>
     <div class="loc" id="loc"></div>
+    <div class="maprow" id="maprow"></div>
     <div class="chips" id="chips"></div>
   </div>
 
@@ -163,11 +170,22 @@ function render(){
   const hasLL = !Number.isNaN(la) && !Number.isNaN(lo);
   const locEl = document.getElementById('loc');
   const mapcard = document.querySelector('.mapcard');
+  const maprow = document.getElementById('maprow');
   if(hasLL){
-    const maps = `https://maps.apple.com/?ll=${la},${lo}&q=${encodeURIComponent(d.n||'Location')}`;
+    const q = encodeURIComponent(d.n||'Location');
+    const apple = `https://maps.apple.com/?ll=${la},${lo}&q=${q}`;
+    const google = `https://www.google.com/maps/search/?api=1&query=${la},${lo}`;
+    const waze = `https://waze.com/ul?ll=${la},${lo}&navigate=yes`;
+    const osm = `https://www.openstreetmap.org/?mlat=${la}&mlon=${lo}#map=15/${la}/${lo}`;
     locEl.style.display = '';
-    locEl.innerHTML =
-      `${la.toFixed(5)}, ${lo.toFixed(5)}${d.g?` &middot; OS grid <b>${d.g}</b>`:''} &middot; <a href="${maps}" target="_blank" rel="noopener">View on map &#8599;</a>`;
+    locEl.innerHTML = `${la.toFixed(5)}, ${lo.toFixed(5)}${d.g?` &middot; OS grid <b>${d.g}</b>`:''}`;
+    maprow.style.display = '';
+    maprow.innerHTML =
+      `<span class="maplbl">Open in</span>`+
+      `<a class="mapbtn" href="${apple}" target="_blank" rel="noopener">Apple Maps &#8599;</a>`+
+      `<a class="mapbtn" href="${google}" target="_blank" rel="noopener">Google Maps &#8599;</a>`+
+      `<a class="mapbtn" href="${waze}" target="_blank" rel="noopener">Waze &#8599;</a>`+
+      `<a class="mapbtn" href="${osm}" target="_blank" rel="noopener">OpenStreetMap &#8599;</a>`;
     const dx=0.012, dy=0.008;
     const bbox=[lo-dx, la-dy, lo+dx, la+dy].join(',');
     mapcard.style.display = '';
@@ -175,6 +193,7 @@ function render(){
       `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${la},${lo}`;
   } else {
     mapcard.style.display = 'none';
+    maprow.style.display = 'none';
     if(d.g){ locEl.style.display=''; locEl.innerHTML = `OS grid <b>${d.g}</b>`; }
     else { locEl.style.display='none'; }
   }
