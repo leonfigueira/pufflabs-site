@@ -160,15 +160,24 @@ function render(){
   const d = decode();
   document.getElementById('siteName').textContent = d.n || 'A land check';
   const la = +d.la, lo = +d.lo;
-  const maps = `https://maps.apple.com/?ll=${la},${lo}&q=${encodeURIComponent(d.n||'Location')}`;
-  document.getElementById('loc').innerHTML =
-    `${la.toFixed(5)}, ${lo.toFixed(5)}${d.g?` &middot; OS grid <b>${d.g}</b>`:''} &middot; <a href="${maps}" target="_blank" rel="noopener">View on map &#8599;</a>`;
-  if(!Number.isNaN(la) && !Number.isNaN(lo)){
+  const hasLL = !Number.isNaN(la) && !Number.isNaN(lo);
+  const locEl = document.getElementById('loc');
+  const mapcard = document.querySelector('.mapcard');
+  if(hasLL){
+    const maps = `https://maps.apple.com/?ll=${la},${lo}&q=${encodeURIComponent(d.n||'Location')}`;
+    locEl.style.display = '';
+    locEl.innerHTML =
+      `${la.toFixed(5)}, ${lo.toFixed(5)}${d.g?` &middot; OS grid <b>${d.g}</b>`:''} &middot; <a href="${maps}" target="_blank" rel="noopener">View on map &#8599;</a>`;
     const dx=0.012, dy=0.008;
     const bbox=[lo-dx, la-dy, lo+dx, la+dy].join(',');
+    mapcard.style.display = '';
     document.getElementById('map').src =
       `https://www.openstreetmap.org/export/embed.html?bbox=${bbox}&layer=mapnik&marker=${la},${lo}`;
-  } else { document.querySelector('.mapcard').style.display='none'; }
+  } else {
+    mapcard.style.display = 'none';
+    if(d.g){ locEl.style.display=''; locEl.innerHTML = `OS grid <b>${d.g}</b>`; }
+    else { locEl.style.display='none'; }
+  }
 
   const chips = document.getElementById('chips');
   chips.innerHTML = '';
