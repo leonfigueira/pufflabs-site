@@ -1,0 +1,51 @@
+{
+"runlow": {
+  "name":"Runlow: AI Usage Meter","short":"Runlow","price":"£0.99","store":"6790868681",
+  "tagline":"Every AI limit you are paying for, on one screen.",
+  "devices":"iPhone · iPad · Mac · Apple Watch · Apple Vision Pro",
+  "keywords":"AI usage tracker, Claude usage monitor, ChatGPT Codex limits, Gemini CLI quota, Cursor plan usage, GitHub Copilot requests, OpenRouter credits, token tracker, rate limit monitor, menu bar app",
+  "intro":"Every AI subscription has a limit, and not one of them makes it easy to see. Runlow puts Claude, Codex, Gemini, Cursor, GitHub Copilot and OpenRouter side by side as clean colour coded meters that shade from green to red as they fill, so you know where you stand before you hit a wall in the middle of something.",
+  "sections":[
+   {"h":"Six services, one glance","p":"Connect any of them, or all of them. Nothing is Claude first and nothing is hidden behind a tier.","ul":[
+     "Claude: your 5 hour session, weekly caps, per model lanes and credit spend, across multiple accounts",
+     "Codex (ChatGPT): 5 hour session and weekly limits, read from the Codex CLI",
+     "Gemini CLI: remaining quota per model, picked up automatically as Google adds or retires models",
+     "Cursor: plan usage and on demand spend",
+     "GitHub Copilot: premium request allowance remaining",
+     "OpenRouter: credit balance plus what you have spent today, this week and this month"]},
+   {"h":"On your Lock Screen, your wrist and your menu bar","p":"Pin the meter you care about to the Lock Screen or the Dynamic Island as a Live Activity and see what is left without opening anything. On the Mac the number lives in the menu bar next to the clock. On Apple Watch it is on your wrist. Home Screen and Lock Screen widgets keep it in view everywhere else.","ul":[]},
+   {"h":"Warned before you hit the wall","p":"Optional notifications at 80 and 95 per cent, and again the moment a limit resets, so a long session does not end in a surprise. A history graph shows every limit over time and exports as CSV if you want to dig further.","ul":[]},
+   {"h":"Make it yours","p":"Choose which meter leads. Pick an icon or use your own image. Show a percentage, a countdown, a bar or just the number. Set your own colours or let each bar shade by usage. Hide the meters you do not care about. Light, dark or match the system.","ul":[]},
+   {"h":"Nothing leaves your device","p":"No account to create, no server of ours, no analytics, no tracking. Runlow reads your usage on your own machine and keeps it there. Your credentials live in the Keychain and sync only through your own iCloud if you choose.","ul":[]}
+  ]},
+"reprompt": {
+  "name":"Reprompt: Teleprompter","short":"Reprompt","price":"£14.99","store":"6800161736",
+  "tagline":"A teleprompter that does not lose your take.",
+  "devices":"iPhone · iPad · Mac · Apple TV · Apple Watch",
+  "keywords":"teleprompter app, Mac teleprompter, script scrolling, video recording, YouTube creator tools, presentation prompter, webcam teleprompter, remote control prompter",
+  "intro":"Reprompt is a teleprompter for people who film themselves. On the Mac it is a real Mac app with a real menu bar, not an iPad app dropped into a window. It scrolls your script at your reading pace, records while it scrolls, and it does not lose your take.",
+  "sections":[
+   {"h":"A real Mac app","p":"Space bar rolls and pauses. Arrow keys change speed. Command N starts a new script, Command I imports one, Escape closes the prompter. Resize the window and the text reflows. It is a desk prompter built for a webcam shoot, not a phone app in a bigger box.","ul":[]},
+   {"h":"It never loses your take","p":"Your video is committed to disk in short fragments while you record, rather than written in one go at the end. If the app is interrupted or the machine goes to sleep, the take is still there when you come back, and Reprompt tells you it survived.","ul":[]},
+   {"h":"Nothing is a paid extra","p":"One purchase covers iPhone, iPad, Mac, Apple TV and Apple Watch. No account, no sign up, no trial that quietly becomes a monthly bill, and no feature you already paid for moving behind a new tier later.","ul":[
+     "No watermark on your video, not on the first take and not ever",
+     "Mirroring for glass and beam splitter rigs",
+     "Every future update included"]}
+  ]},
+"recast": {
+  "name":"Recast: File Converter","short":"Recast","price":"£1.99","store":"6795738751",
+  "tagline":"Convert almost anything, without uploading a single byte.",
+  "devices":"iPhone · iPad",
+  "keywords":"file converter iPhone, video converter, photo converter, HEIC to JPEG, PDF to image, GIF to MP4, offline converter, compress video to size, no upload converter",
+  "intro":"Pick a photo, video, PDF, audio file, GIF or Live Photo, choose what you want out of it, and Recast does the rest. Every conversion happens on your device. There is no account, no upload, and no waiting on someone else's server.",
+  "sections":[
+   {"h":"Name your file size","p":"Most converters give you a quality slider and leave you guessing. Recast lets you say what the file needs to weigh, then works backwards to get there. Under 10 MB for email, under 25 MB, or a number you pick yourself.","ul":[]},
+   {"h":"Honest when it cannot get there","p":"Sometimes a target simply cannot be reached at full resolution. Recast tells you plainly instead of quietly missing, and offers to shrink the video itself to get closer.","ul":[]},
+   {"h":"What it handles","p":"","ul":[
+     "Photos: JPEG, PNG, HEIC, TIFF, BMP, and into PDF",
+     "PDFs: to JPEG or PNG page by page, or compressed as PDF",
+     "Video: MP4, MOV and more, with a size target",
+     "Audio and GIFs, including Live Photos"]},
+   {"h":"Private because it never leaves","p":"Everything runs on the device, so it works on a plane and it works with files you would rather not hand to a website. No account, no tracking, no subscription.","ul":[]}
+  ]}
+}
