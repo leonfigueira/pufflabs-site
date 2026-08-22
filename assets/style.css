@@ -134,3 +134,23 @@ footer a:hover{color:var(--ink)}
 .closer{padding:56px 0 12px;border-top:1px solid var(--line-soft);text-align:center}
 .closer h2{font-family:var(--serif);font-weight:360;font-size:clamp(1.7rem,3.4vw,2.4rem)}
 .closer p{color:var(--muted);margin:12px auto 26px;max-width:34em}
+
+/* ---------- updates: single article page with app-chip advert ---------- */
+.post-layout{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:44px;align-items:start;padding:24px 0 0}
+.post-layout .entry{padding:8px 0 24px;max-width:none}
+.post-layout .entry h1{font-family:var(--serif);font-weight:340;font-size:clamp(2rem,4.4vw,2.9rem);
+  letter-spacing:-.015em;line-height:1.08;margin:12px 0 0}
+.post-layout .entry p{color:var(--muted);margin:16px 0;font-size:1.05rem}
+.post-layout .entry strong{color:var(--ink)}
+.app-chip{position:sticky;top:88px;border:1px solid var(--line-soft);border-radius:18px;
+  background:linear-gradient(180deg,var(--panel),var(--panel-2));padding:24px 22px;text-align:center}
+.app-chip .kicker{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);
+  display:block;margin-bottom:16px}
+.app-chip img{width:76px;height:76px;border-radius:18px;margin:0 auto 14px}
+.app-chip h3{font-size:1.08rem;font-weight:650;letter-spacing:-.01em}
+.app-chip .chip-tag{color:var(--muted);font-size:.92rem;margin:8px 0 16px;line-height:1.5}
+.app-chip .buy{margin-top:0;width:100%;justify-content:center;padding:12px 18px}
+.app-chip .chip-devices{color:var(--muted);font-size:.76rem;margin-top:16px;line-height:1.7;
+  border-top:1px solid var(--line-soft);padding-top:14px}
+@media(max-width:760px){.post-layout{grid-template-columns:1fr;gap:24px}
+  .app-chip{position:static;max-width:360px;margin:0 auto}}

@@ -14,5 +14,12 @@ on it at runtime.
 
 ## Adding an update
 
-Add an `<article class="entry" id="…">` to `updates.html`, newest first, and add a matching
-`<a class="post">` teaser to the Updates section of `index.html`.
+Each update is its own page under `updates/<slug>.html` (own URL, two-column: article on the
+left, an app-chip advert `<aside class="app-chip">` on the right). To add one:
+
+1. Copy an existing page in `updates/` (e.g. `reprompt-6-99.html`) to `updates/<slug>.html`,
+   rewrite the article body, and point the app chip at the relevant app (icon, tagline, price,
+   App Store id, devices — all in `_src/apps-live.json`). Use absolute `/assets/...` paths.
+2. Add a matching `<a class="post">` teaser to the top of the `.posts` list in `updates.html`
+   (newest first) — the `.post` border-bottom draws the divider line between entries.
+3. Add the same teaser to the Updates section of `index.html` so the homepage shows the latest.
