@@ -1,93 +1,188 @@
 {
-"merestone": {
-  "name":"Merestone: SSSI & Habitat Map","short":"Merestone","price":null,"store":null,
-  "tagline":"Every UK statutory designation on one map, in the field, with no signal.",
-  "devices":"iPhone · iPad · Mac · Apple Watch",
-  "keywords":"SSSI map, protected sites UK, ancient woodland, priority habitat inventory, SAC SPA Ramsar, ecology desk study, preliminary ecological appraisal, PEA, biodiversity net gain, planning constraints, AONB, offline GIS",
-  "intro":"Merestone puts the UK's statutory environmental designations on one map, on your phone, in the field, with or without a signal. Official layers drawn straight from Natural England, NatureScot, Natural Resources Wales, Historic England and the Forestry Commission.",
-  "sections":[
-   {"h":"A desk study in seconds","p":"Drop a pin, choose a radius, and every designation inside it comes back sorted by distance, with anything on site flagged. Distances and bearings are measured, not eyeballed off a screen.","ul":[]},
-   {"h":"The report, already written","p":"Export a dated PDF or text extract with a site plan, every record with its distance, direction and source, and just as importantly the layers that were checked and found nothing in. Choose which sections to include before you export.","ul":[]},
-   {"h":"What is on the map","p":"","ul":[
-     "SSSI and SSSI Units, SAC, SPA and Ramsar sites",
-     "National and Local Nature Reserves, National Parks and AONB",
-     "Ancient woodland, the Priority Habitat Inventory, wood pasture and traditional orchards",
-     "Open access land, listed buildings and scheduled monuments",
-     "England, Scotland and Wales, with the same map, searches and report throughout"]},
-   {"h":"Works with no signal","p":"Download any layer, or the whole country, and it keeps working out of signal. Merestone uses live data when you have a connection and falls back to your download when you do not, and it says which it used, on screen and in the report.","ul":[]},
-   {"h":"Built for the way the work happens","p":"","ul":[
-     "OS grid references everywhere, and a search that accepts them",
-     "Presets for desk study, woodland, wetland, coastal and species work, or save your own",
-     "Favourites with notes, synced through your own iCloud with no account and no server",
-     "An Apple Watch app for what is around you right now",
-     "One purchase covers iPhone, iPad, Mac and Watch"]}
-  ]},
-"gainscout": {
-  "name":"GainScout: BNG Land Finder","short":"GainScout","price":null,"store":null,
-  "tagline":"Check any field in England for Biodiversity Net Gain potential, in one tap.",
-  "devices":"iPhone · iPad · Mac",
-  "keywords":"biodiversity net gain, BNG, land check England, habitat bank, off site units, land agent, planning consultant, farmland, SSSI, agricultural land classification, flood risk, green belt",
-  "intro":"GainScout is the fastest way to take a first look at whether a piece of land in England could be a candidate for Biodiversity Net Gain, the planning rule that has developers paying landowners to make land better for nature.",
-  "sections":[
-   {"h":"One button, official data","p":"Point the map at a field and press one button. GainScout reads that exact spot against official public government datasets and gives you a plain English answer in seconds, with every finding's source and the date it was checked. Nothing is estimated and nothing is invented.","ul":[]},
-   {"h":"What every check reads","p":"","ul":[
-     "Statutory designations: SSSI, SAC, SPA, Ramsar, national and local nature reserves",
-     "Ancient woodland and priority habitats",
-     "Agricultural land grade, with the best and most versatile farmland flagged",
-     "Flood risk zones",
-     "Green Belt, National Landscapes and conservation areas",
-     "The Local Nature Recovery Strategy for the area",
-     "Registered biodiversity gain sites nearby, the off site market you would price against"]},
-   {"h":"Built for the job","p":"","ul":[
-     "Save sites and track them from watching to in talks",
-     "Add a walkover checklist, notes and timestamped evidence photos",
-     "Create a dated report with findings, sources, your photos and an OS grid reference, ready to hand to an agent, ecologist or buyer, and export it as a PDF",
-     "Area Scan to rank the most promising spots across an area",
-     "Draw your parcel to trace a boundary for instant acreage and a spot by spot check",
-     "Sites, reports and photos synced through your own iCloud"]}
-  ]},
-"refast": {
-  "name":"Refast: 16:8 Fasting Timer","short":"Refast","price":null,"store":null,
-  "tagline":"How long is left. That is the whole idea.",
-  "devices":"iPhone · Mac",
-  "keywords":"intermittent fasting timer, 16:8 fasting, fasting tracker, eating window, fasting streak, no subscription fasting app",
-  "intro":"A fasting timer that shows you the one thing you actually want to know, and does not try to be a food diary, a coach or a subscription while it is at it.",
-  "sections":[
-   {"h":"A ring and a number","p":"Start your fast and Refast counts down your eating window on a single clear ring. Glance at it and you know. That is the app.","ul":[]},
-   {"h":"Your history, honestly kept","p":"Every fast is recorded so you can see your streak and your trend over weeks rather than guessing. Trends are laid out to be read at a glance on the Mac as well as the phone.","ul":[]},
-   {"h":"Pay once","p":"No subscription, no account, no daily nudge to buy something. It keeps your data on your device.","ul":[]}
-  ]},
-"recomp": {
-  "name":"Recomp: File Compressor","short":"Recomp","price":null,"store":null,
-  "tagline":"Pick a file, see its size, choose how small.",
-  "devices":"iPhone · iPad · Mac · Apple Vision Pro",
-  "keywords":"compress video iPhone, reduce file size, shrink video for Discord, WhatsApp file size limit, email attachment too large, PDF compressor, photo compressor, zip files iPhone",
-  "intro":"Recomp makes files smaller, and that is the whole job. Pick any file and it shows you two numbers: how big it is now, and how big it will be. Choose a target, under 10 MB for Discord, 16 MB for WhatsApp, 25 MB for email, or any size you like, and press one button.",
-  "sections":[
-   {"h":"What it shrinks properly","p":"","ul":[
-     "Videos with hardware accelerated re encoding aimed at your exact target size, plus a force it smaller mode when every megabyte counts",
-     "Photos, JPEG and HEIC, compressed to a size you choose",
-     "PDFs, with text kept sharp where possible",
-     "GIFs converted to tiny MP4s that still autoplay everywhere",
-     "Audio as AAC at the size you need"]},
-   {"h":"And everything else","p":"Any other file, documents, spreadsheets, project files, gets zipped. Pick several at once and they become one tidy archive.","ul":[]},
-   {"h":"Honest by design","p":"Recomp tells you before it starts if a format has to change, such as PNG to JPEG, and tells you afterwards exactly how much you saved. If something could not hit your target it says so, with no invented numbers.","ul":[]},
-   {"h":"Private by design","p":"Everything happens on your device. No uploads, no account, no tracking and no subscription. Files you compress never leave your phone.","ul":[]}
-  ]},
-"gridsong": {
-  "name":"Gridsong: Music Maker","short":"Gridsong","price":null,"store":null,
-  "tagline":"Tap a grid. Nothing you play can sound wrong.",
-  "devices":"iPhone · Mac",
-  "keywords":"music maker app, beat maker, loop sequencer, make music no skill, pentatonic grid, lofi, ambient, drum machine, songwriting app",
-  "intro":"Gridsong turns a glowing grid into an instrument anyone can play. Tap a square and it plays a note. Tap a few more and you have a melody, because the whole grid is locked to a musical scale, so nothing you tap can sound wrong.",
-  "sections":[
-   {"h":"No lessons, no theory, no wrong notes","p":"Drag across the grid to paint a run of notes, press play, and it loops. Start from a template or a blank grid.","ul":[]},
-   {"h":"What you get to play with","p":"","ul":[
-     "Ten built in instruments including Bell, Pluck, Glass, Voice and Bass",
-     "Drums, with tempo you control",
-     "Record your own sounds and play them across the grid",
-     "Loop, duplicate and layer patterns into a full song",
-     "Record a video of your loop and share it anywhere",
-     "Patterns synced across iPhone and Mac with iCloud"]}
-  ]}
+  "merestone": {
+    "name": "Merestone: SSSI & Habitat Map",
+    "short": "Merestone",
+    "price": null,
+    "store": null,
+    "tagline": "Every statutory designation on one map, in the field, with no signal.",
+    "devices": "iPhone · iPad · Mac · Apple Watch",
+    "keywords": "SSSI map, protected sites UK, ancient woodland, priority habitat inventory, SAC SPA Ramsar, ecology desk study, preliminary ecological appraisal, PEA, biodiversity net gain, planning constraints, AONB, offline GIS",
+    "intro": "Merestone puts statutory environmental designations on one map, on your phone, in the field, with or without a signal. The United Kingdom, Ireland, Spain and Portugal, with every layer drawn straight from the agency that publishes it.",
+    "sections": [
+      {
+        "h": "A desk study in seconds",
+        "p": "Drop a pin, choose a radius, and every designation inside it comes back sorted by distance, with anything on site flagged. Distances and bearings are measured, not eyeballed off a screen.",
+        "ul": []
+      },
+      {
+        "h": "The report, already written",
+        "p": "Export a dated PDF or text extract with a site plan, every record with its distance, direction and source, and just as importantly the layers that were checked and found nothing in. Choose which sections to include before you export.",
+        "ul": []
+      },
+      {
+        "h": "What is on the map",
+        "p": "",
+        "ul": [
+          "SSSI and SSSI Units, SAC, SPA and Ramsar sites",
+          "National and Local Nature Reserves, National Parks and AONB",
+          "Ancient woodland, the Priority Habitat Inventory, wood pasture and traditional orchards",
+          "Open access land, listed buildings and scheduled monuments",
+          "Protected areas, geological heritage and walking routes in Ireland, Spain and Portugal",
+          "England, Scotland, Wales, Northern Ireland, Ireland, Spain and Portugal, with the same map, searches and report throughout"
+        ]
+      },
+      {
+        "h": "Works with no signal",
+        "p": "Download any layer, or the whole country, and it keeps working out of signal. Merestone uses live data when you have a connection and falls back to your download when you do not, and it says which it used, on screen and in the report.",
+        "ul": []
+      },
+      {
+        "h": "Built for the way the work happens",
+        "p": "",
+        "ul": [
+          "Grid references in the system each country actually uses, and a search that accepts them",
+          "Presets for desk study, woodland, wetland, coastal and species work, or save your own",
+          "Favourites with notes, synced through your own iCloud with no account and no server",
+          "An Apple Watch app for what is around you right now",
+          "One purchase per country, covering iPhone, iPad, Mac and Watch"
+        ]
+      }
+    ]
+  },
+  "gainscout": {
+    "name": "GainScout: BNG Land Finder",
+    "short": "GainScout",
+    "price": null,
+    "store": null,
+    "tagline": "Check any field in England for Biodiversity Net Gain potential, in one tap.",
+    "devices": "iPhone · iPad · Mac",
+    "keywords": "biodiversity net gain, BNG, land check England, habitat bank, off site units, land agent, planning consultant, farmland, SSSI, agricultural land classification, flood risk, green belt",
+    "intro": "GainScout is the fastest way to take a first look at whether a piece of land in England could be a candidate for Biodiversity Net Gain, the planning rule that has developers paying landowners to make land better for nature.",
+    "sections": [
+      {
+        "h": "One button, official data",
+        "p": "Point the map at a field and press one button. GainScout reads that exact spot against official public government datasets and gives you a plain English answer in seconds, with every finding's source and the date it was checked. Nothing is estimated and nothing is invented.",
+        "ul": []
+      },
+      {
+        "h": "What every check reads",
+        "p": "",
+        "ul": [
+          "Statutory designations: SSSI, SAC, SPA, Ramsar, national and local nature reserves",
+          "Ancient woodland and priority habitats",
+          "Agricultural land grade, with the best and most versatile farmland flagged",
+          "Flood risk zones",
+          "Green Belt, National Landscapes and conservation areas",
+          "The Local Nature Recovery Strategy for the area",
+          "Registered biodiversity gain sites nearby, the off site market you would price against"
+        ]
+      },
+      {
+        "h": "Built for the job",
+        "p": "",
+        "ul": [
+          "Save sites and track them from watching to in talks",
+          "Add a walkover checklist, notes and timestamped evidence photos",
+          "Create a dated report with findings, sources, your photos and an OS grid reference, ready to hand to an agent, ecologist or buyer, and export it as a PDF",
+          "Area Scan to rank the most promising spots across an area",
+          "Draw your parcel to trace a boundary for instant acreage and a spot by spot check",
+          "Sites, reports and photos synced through your own iCloud"
+        ]
+      }
+    ]
+  },
+  "refast": {
+    "name": "Refast: 16:8 Fasting Timer",
+    "short": "Refast",
+    "price": null,
+    "store": null,
+    "tagline": "How long is left. That is the whole idea.",
+    "devices": "iPhone · Mac",
+    "keywords": "intermittent fasting timer, 16:8 fasting, fasting tracker, eating window, fasting streak, no subscription fasting app",
+    "intro": "A fasting timer that shows you the one thing you actually want to know, and does not try to be a food diary, a coach or a subscription while it is at it.",
+    "sections": [
+      {
+        "h": "A ring and a number",
+        "p": "Start your fast and Refast counts down your eating window on a single clear ring. Glance at it and you know. That is the app.",
+        "ul": []
+      },
+      {
+        "h": "Your history, honestly kept",
+        "p": "Every fast is recorded so you can see your streak and your trend over weeks rather than guessing. Trends are laid out to be read at a glance on the Mac as well as the phone.",
+        "ul": []
+      },
+      {
+        "h": "Pay once",
+        "p": "No subscription, no account, no daily nudge to buy something. It keeps your data on your device.",
+        "ul": []
+      }
+    ]
+  },
+  "recomp": {
+    "name": "Recomp: File Compressor",
+    "short": "Recomp",
+    "price": null,
+    "store": null,
+    "tagline": "Pick a file, see its size, choose how small.",
+    "devices": "iPhone · iPad · Mac · Apple Vision Pro",
+    "keywords": "compress video iPhone, reduce file size, shrink video for Discord, WhatsApp file size limit, email attachment too large, PDF compressor, photo compressor, zip files iPhone",
+    "intro": "Recomp makes files smaller, and that is the whole job. Pick any file and it shows you two numbers: how big it is now, and how big it will be. Choose a target, under 10 MB for Discord, 16 MB for WhatsApp, 25 MB for email, or any size you like, and press one button.",
+    "sections": [
+      {
+        "h": "What it shrinks properly",
+        "p": "",
+        "ul": [
+          "Videos with hardware accelerated re encoding aimed at your exact target size, plus a force it smaller mode when every megabyte counts",
+          "Photos, JPEG and HEIC, compressed to a size you choose",
+          "PDFs, with text kept sharp where possible",
+          "GIFs converted to tiny MP4s that still autoplay everywhere",
+          "Audio as AAC at the size you need"
+        ]
+      },
+      {
+        "h": "And everything else",
+        "p": "Any other file, documents, spreadsheets, project files, gets zipped. Pick several at once and they become one tidy archive.",
+        "ul": []
+      },
+      {
+        "h": "Honest by design",
+        "p": "Recomp tells you before it starts if a format has to change, such as PNG to JPEG, and tells you afterwards exactly how much you saved. If something could not hit your target it says so, with no invented numbers.",
+        "ul": []
+      },
+      {
+        "h": "Private by design",
+        "p": "Everything happens on your device. No uploads, no account, no tracking and no subscription. Files you compress never leave your phone.",
+        "ul": []
+      }
+    ]
+  },
+  "gridsong": {
+    "name": "Gridsong: Music Maker",
+    "short": "Gridsong",
+    "price": null,
+    "store": null,
+    "tagline": "Tap a grid. Nothing you play can sound wrong.",
+    "devices": "iPhone · Mac",
+    "keywords": "music maker app, beat maker, loop sequencer, make music no skill, pentatonic grid, lofi, ambient, drum machine, songwriting app",
+    "intro": "Gridsong turns a glowing grid into an instrument anyone can play. Tap a square and it plays a note. Tap a few more and you have a melody, because the whole grid is locked to a musical scale, so nothing you tap can sound wrong.",
+    "sections": [
+      {
+        "h": "No lessons, no theory, no wrong notes",
+        "p": "Drag across the grid to paint a run of notes, press play, and it loops. Start from a template or a blank grid.",
+        "ul": []
+      },
+      {
+        "h": "What you get to play with",
+        "p": "",
+        "ul": [
+          "Ten built in instruments including Bell, Pluck, Glass, Voice and Bass",
+          "Drums, with tempo you control",
+          "Record your own sounds and play them across the grid",
+          "Loop, duplicate and layer patterns into a full song",
+          "Record a video of your loop and share it anywhere",
+          "Patterns synced across iPhone and Mac with iCloud"
+        ]
+      }
+    ]
+  }
 }
