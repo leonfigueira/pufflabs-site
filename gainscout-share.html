@@ -27,8 +27,7 @@
     background:linear-gradient(180deg,rgba(247,244,236,.96),rgba(247,244,236,.86));
     backdrop-filter:saturate(1.1) blur(6px);border-bottom:1px solid var(--line)}
   .brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.02em}
-  .brand .dot{width:26px;height:26px;border-radius:8px;background:var(--forest);
-    display:grid;place-items:center;color:#fff;font-family:"Playfair Display",serif;font-size:16px}
+  .brand .dot{width:28px;height:28px;border-radius:8px;object-fit:cover;display:block;box-shadow:0 1px 5px rgba(18,73,46,.25)}
   .brand small{display:block;font-weight:500;color:var(--muted);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
   .get{white-space:nowrap;background:var(--forest-deep);color:#fff;text-decoration:none;
     font-weight:600;font-size:14px;padding:9px 15px;border-radius:999px;box-shadow:0 2px 10px rgba(18,73,46,.22)}
@@ -71,6 +70,17 @@
   .cta svg{width:19px;height:19px}
   .cta small{display:block;font-size:11px;font-weight:500;color:var(--muted);line-height:1.1;margin-top:2px}
 
+  .also{margin-top:30px;font-size:11.5px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--muted);margin-bottom:10px}
+  .related{display:flex;align-items:center;gap:14px;background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:14px 16px;text-decoration:none;color:var(--ink);box-shadow:0 4px 16px rgba(18,73,46,.08)}
+  .related img{width:52px;height:52px;border-radius:12px;object-fit:cover;flex:none;box-shadow:0 1px 6px rgba(18,73,46,.22)}
+  .rel-top{display:flex;align-items:center;gap:9px}
+  .rel-name{font-weight:700;font-size:16px;font-family:"Playfair Display",serif}
+  .rel-badge{font-size:11px;font-weight:600;color:var(--amber);background:rgba(199,122,34,.1);
+    border:1px solid rgba(199,122,34,.3);padding:2px 8px;border-radius:999px;white-space:nowrap}
+  .rel-sub{color:var(--muted);font-size:12px;font-weight:600;letter-spacing:.02em;margin-top:2px}
+  .rel-desc{color:#33413a;font-size:13.5px;margin-top:5px;line-height:1.4}
+
   footer{margin-top:26px;color:var(--muted);font-size:12px;line-height:1.55;border-top:1px solid var(--line);padding-top:16px}
   footer b{color:#3b4a42}
   footer a{color:var(--forest);text-decoration:none;font-weight:600}
@@ -79,7 +89,7 @@
 <body>
 <div class="wrap">
   <div class="bar">
-    <div class="brand"><span class="dot">G</span><div>GainScout<small>BNG Land Finder</small></div></div>
+    <div class="brand"><img class="dot" src="https://pufflabs.work/assets/apps/gainscout.png" alt="GainScout app icon"><div>GainScout<small>BNG Land Finder</small></div></div>
     <a class="get" href="#get">Get the app</a>
   </div>
 
@@ -101,6 +111,16 @@
       <svg viewBox="0 0 24 24" fill="currentColor"><path d="M16.5 1.5c.1 1-.3 2-1 2.8-.7.8-1.8 1.4-2.8 1.3-.1-1 .4-2 1-2.7.7-.8 1.9-1.4 2.8-1.4zM20 17.3c-.5 1.2-.8 1.7-1.5 2.8-1 1.5-2.3 3.3-4 3.3-1.5 0-1.9-1-3.9-1-2 0-2.5 1-3.9 1-1.7 0-3-1.7-3.9-3.1C-2 16.4-2.4 9 1 6.3c1.3-1 2.7-1.7 4.2-1.7 1.7 0 2.8 1 4 1 1.1 0 2.4-1.2 4.1-1 .7 0 2.7.3 4 2.2-3.5 2-3 6.4.7 8z"/></svg>
       <span>Get GainScout<small>iPhone, iPad and Mac</small></span></a>
   </div>
+
+  <div class="also">Also from Puff Labs</div>
+  <a class="related" href="https://pufflabs.work/merestone.html">
+    <img src="https://pufflabs.work/assets/apps/merestone.png" alt="Merestone app icon">
+    <div>
+      <div class="rel-top"><span class="rel-name">Merestone</span><span class="rel-badge">Coming soon</span></div>
+      <div class="rel-sub">SSSI &amp; Habitat Map</div>
+      <div class="rel-desc">Every UK statutory designation on one map, in the field, with no signal.</div>
+    </div>
+  </a>
 
   <footer id="footer">
     <b>About this page.</b> These findings are desk checks against official open data, shared from the GainScout app. "No records found" does not prove nothing is present, and a desk check is not an ecological survey. This is guidance for your own research, not ecological certification, a statutory biodiversity metric calculation, or legal, planning, valuation or investment advice. GainScout is not affiliated with or endorsed by any government body. Made by <a href="https://pufflabs.work">Puff Labs</a>.
