@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>A place shared from Merestone · Puff Labs</title>
+<meta name="description" content="A designated site shared from Merestone. Open the exact spot in the app, with the right layer switched on.">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="canonical" href="https://pufflabs.work/merestone-share.html">
+<meta property="og:title" content="A place shared from Merestone">
+<meta property="og:description" content="Open this exact spot in Merestone, with the right layer switched on.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://pufflabs.work/assets/apps/merestone.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+  .shared{margin-top:clamp(24px,4vw,44px)}
+  .shared .kicker{font-size:.78rem;font-weight:700;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--lime)}
+  .shared h1{font-family:var(--serif);font-weight:500;line-height:1.1;
+    font-size:clamp(2rem,5vw,3rem);margin:.35em 0 .2em}
+  .shared .where{color:var(--muted);font-size:.98rem}
+  .shared .where b{color:var(--ink);font-weight:600}
+  .mapcard{margin-top:22px;border-radius:18px;overflow:hidden;
+    border:1px solid var(--line-soft);background:#0d1a12;aspect-ratio:16/10;
+    box-shadow:0 18px 50px rgba(0,0,0,.45)}
+  .mapcard iframe{width:100%;height:100%;border:0;display:block}
+  .openrow{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-top:24px}
+  .openbtn{display:inline-block;background:var(--lime);color:#0a130a;text-decoration:none;
+    font-weight:700;font-size:1rem;padding:13px 26px;border-radius:999px}
+  .openbtn:hover{background:var(--lime-deep)}
+  .opennote{color:var(--muted);font-size:.88rem;max-width:34ch}
+  .nolink{margin-top:20px;color:var(--muted)}
+  .maps{margin-top:26px;padding-top:20px;border-top:1px solid var(--line-soft)}
+  .maps h2{font-size:.78rem;font-weight:700;letter-spacing:.09em;
+    text-transform:uppercase;color:var(--muted);margin-bottom:12px}
+  .maps .pills{display:flex;flex-wrap:wrap;gap:10px}
+  .maps a,.maps button{display:inline-block;font:inherit;font-size:.92rem;font-weight:600;
+    color:var(--ink);text-decoration:none;background:transparent;cursor:pointer;
+    border:1px solid var(--line-soft);border-radius:999px;padding:9px 18px}
+  .maps a:hover,.maps button:hover{border-color:var(--lime);color:var(--lime)}
+  .maps .said{color:var(--lime);font-size:.85rem;margin-top:10px;min-height:1.2em}
+</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="/"><span class="dot"></span> Puff Labs</a>
+    <div class="nav-links">
+      <a href="/#apps">Apps</a>
+      <a href="updates.html">Updates</a>
+      <a href="/#about">About</a>
+    </div>
+  </nav>
+</header>
+
+<main class="wrap">
+
+  <section class="shared" id="shared" hidden>
+    <p class="kicker">Shared with you</p>
+    <h1 id="sharedName">A place in Merestone</h1>
+    <p class="where" id="sharedWhere"></p>
+    <div class="mapcard" id="mapcard"><iframe id="map" loading="lazy"
+      referrerpolicy="no-referrer" title="Map of the shared place"></iframe></div>
+    <div class="openrow">
+      <a class="openbtn" id="openBtn" href="#">Open in Merestone</a>
+      <span class="opennote" id="openNote">Nothing happening? That button needs the app.
+        Merestone is built and with Apple for review.</span>
+    </div>
+
+    <div class="maps">
+      <h2>Or open this spot in</h2>
+      <div class="pills">
+        <a id="mApple" href="#" target="_blank" rel="noopener">Apple Maps</a>
+        <a id="mGoogle" href="#" target="_blank" rel="noopener">Google Maps</a>
+        <a id="mOSM" href="#" target="_blank" rel="noopener">OpenStreetMap</a>
+        <a id="mGeo" href="#">Another map app</a>
+        <button id="mCopy" type="button">Copy the coordinates</button>
+      </div>
+      <p class="said" id="copied" role="status"></p>
+    </div>
+  </section>
+
+  <section class="shared" id="noPlace">
+    <p class="kicker">Shared from Merestone</p>
+    <h1>This link is missing its place</h1>
+    <p class="where">A Merestone share link carries the spot it was shared from. This one arrived
+      without one, so there is nothing to open. Ask whoever sent it to share it again from the app.</p>
+    <p class="nolink"><a class="openbtn" href="merestone.html">See what Merestone does</a></p>
+  </section>
+
+  <section class="feature">
+    <h2>What Merestone is</h2>
+    <p>Merestone puts statutory environmental designations on one map, on your phone, in the
+      field, with or without a signal. The United Kingdom, Ireland, Spain and Portugal, with every
+      layer drawn straight from the agency that publishes it.</p>
+    <ul>
+      <li>Drop a pin, choose a radius, and every designation inside it comes back sorted by
+        distance, with anything on site flagged</li>
+      <li>Export a dated PDF with a site plan, every record with its distance, direction and
+        source, and the layers that were checked and found nothing in</li>
+      <li>Download a whole country and keep working with no signal</li>
+    </ul>
+    <p style="margin-top:18px"><a class="openbtn" href="merestone.html">More about Merestone</a></p>
+  </section>
+
+  <a class="backlink" href="/#apps">← All Puff Labs apps</a>
+</main>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>© 2026 Puff Labs</span>
+    <a href="mailto:leonfigueira@gmail.com">leonfigueira@gmail.com</a>
+    <span class="spacer"></span>
+    <a href="https://leonfigueira.github.io/runlow-site/privacy.html">Privacy</a>
+    <a href="https://leonfigueira.github.io/runlow-site/support.html">Support</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  // Accept the query string, and also a hash of the same shape, so a link that
+  // keeps its place out of the server log still works.
+  var p = new URLSearchParams(location.search);
+  if (!p.get("lat") && location.hash.length > 1) {
+    p = new URLSearchParams(location.hash.slice(1));
+  }
+  var lat = parseFloat(p.get("lat"));
+  var lon = parseFloat(p.get("lon"));
+  if (!isFinite(lat) || !isFinite(lon) ||
+      lat < -90 || lat > 90 || lon < -180 || lon > 180) return;
+
+  var layer = (p.get("layer") || "").replace(/[^a-zA-Z0-9_]/g, "").slice(0, 40);
+  var name  = (p.get("name")  || "").slice(0, 120);
+  var grid  = (p.get("grid")  || "").slice(0, 40);
+
+  document.getElementById("noPlace").hidden = true;
+  document.getElementById("shared").hidden = false;
+
+  if (name) document.getElementById("sharedName").textContent = name;
+
+  var where = document.getElementById("sharedWhere");
+  var bits = [];
+  if (grid) bits.push("<b>" + grid.replace(/[<>&]/g, "") + "</b>");
+  bits.push(lat.toFixed(5) + ", " + lon.toFixed(5));
+  where.innerHTML = bits.join(" &middot; ");
+
+  document.getElementById("openBtn").setAttribute("href",
+    "merestone://site?lat=" + lat + "&lon=" + lon + (layer ? "&layer=" + layer : ""));
+
+  var dx = 0.012, dy = 0.008;
+  document.getElementById("map").src =
+    "https://www.openstreetmap.org/export/embed.html?bbox=" +
+    [lon - dx, lat - dy, lon + dx, lat + dy].join(",") +
+    "&layer=mapnik&marker=" + lat + "," + lon;
+
+  // Whatever map the reader actually uses. The named three cover almost
+  // everyone; geo: hands the spot to Android's own chooser, so any installed
+  // map app can take it; and the coordinates copy for anything else.
+  var ll = lat + "," + lon;
+  var q = encodeURIComponent(name || ll);
+  function href(id, url) { document.getElementById(id).setAttribute("href", url); }
+  href("mApple",  "https://maps.apple.com/?ll=" + ll + "&q=" + q);
+  href("mGoogle", "https://www.google.com/maps/search/?api=1&query=" + ll);
+  href("mOSM",    "https://www.openstreetmap.org/?mlat=" + lat + "&mlon=" + lon +
+                  "#map=15/" + lat + "/" + lon);
+  href("mGeo",    "geo:" + ll + "?q=" + ll + "(" + q + ")");
+
+  var said = document.getElementById("copied");
+  document.getElementById("mCopy").addEventListener("click", function () {
+    var done = function () { said.textContent = "Copied " + ll; };
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(ll).then(done, function () {
+        said.textContent = ll;
+      });
+    } else {
+      said.textContent = ll;
+    }
+  });
+})();
+</script>
+</body>
+</html>
