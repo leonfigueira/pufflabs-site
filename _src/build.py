@@ -80,7 +80,7 @@ for slug, a in apps.items():
         "operatingSystem":"iOS, macOS","applicationCategory":"MobileApplication",
         "description":a["tagline"],
         "author":{"@type":"Organization","name":"Puff Labs"},
-        **({"offers":{"@type":"Offer","price":a["price"].replace("£",""),"priceCurrency":"GBP"}} if live else {})
+        **({"offers":{"@type":"Offer","price":("0.00" if a["price"]=="Free" else a["price"].replace("£","")),"priceCurrency":"GBP"}} if live else {})
     })
     devices_html = "".join(f"<span>{d.strip()}</span>" for d in a["devices"].split("·"))
     html_out = HEAD.format(slug=slug, cta=cta, schema=schema, devices_html=devices_html,

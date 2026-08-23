@@ -47,5 +47,6 @@
      "Video: MP4, MOV and more, with a size target",
      "Audio and GIFs, including Live Photos"]},
    {"h":"Private because it never leaves","p":"Everything runs on the device, so it works on a plane and it works with files you would rather not hand to a website. No account, no tracking, no subscription.","ul":[]}
-  ]}
+  ]},
+"refast": {"name": "Refast: 16:8 Fasting Timer", "short": "Refast", "price": "Free", "store": "6800549217", "tagline": "How long is left. That is the whole idea.", "devices": "iPhone · Mac", "keywords": "intermittent fasting timer, 16:8 fasting, fasting tracker, eating window, fasting streak, no subscription fasting app", "intro": "A fasting timer that shows you the one thing you actually want to know, and does not try to be a food diary, a coach or a subscription while it is at it.", "sections": [{"h": "A ring and a number", "p": "Start your fast and Refast counts down your eating window on a single clear ring. Glance at it and you know. That is the app.", "ul": []}, {"h": "Your history, honestly kept", "p": "Every fast is recorded so you can see your streak and your trend over weeks rather than guessing. Trends are laid out to be read at a glance on the Mac as well as the phone.", "ul": []}, {"h": "Pay once", "p": "No subscription, no account, no daily nudge to buy something. It keeps your data on your device.", "ul": []}]}
 }
