@@ -103,8 +103,9 @@ for slug, a in apps.items():
         html_out += "  </section>\n"
 
     closer_h = f"Get {a['short']}" if live else f"{a['short']} is coming"
-    closer_p = (f"One purchase covers {a['devices']}. No subscription, no account, no tracking."
-                if live else "It is built and with Apple for review. It will appear here the day it lands.")
+    closer_p = a.get("closer") or (
+        f"One purchase covers {a['devices']}. No subscription, no account, no tracking."
+        if live else "It is built and with Apple for review. It will appear here the day it lands.")
     html_out += FOOT.format(cta=cta, closer_h=closer_h, closer_p=closer_p)
     open(os.path.join(ROOT, f"{slug}.html"), "w").write(html_out)
     print(f"  {slug}.html  {len(shots)} shots, {len(a['sections'])} sections")
