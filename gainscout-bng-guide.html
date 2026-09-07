@@ -1,0 +1,1673 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Biodiversity Net Gain, explained for people who are not ecologists · GainScout</title>
+<meta name="description" content="A free step by step guide to buying land in England to sell Biodiversity Net Gain units. What a unit is, what it is worth, what it costs, what you are signing up to for 30 years, and every risk, with a calculator and official sources.">
+<meta name="keywords" content="biodiversity net gain guide, BNG for landowners, sell biodiversity units, habitat bank, buy land BNG, BNG risks, biodiversity unit price, conservation covenant, section 106, statutory biodiversity metric">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="canonical" href="https://pufflabs.work/gainscout-bng-guide.html">
+<meta property="og:title" content="Biodiversity Net Gain, explained for people who are not ecologists">
+<meta property="og:description" content="Buying land to sell BNG units. What it pays, what it costs, and what can go wrong. Free, sourced, no sign up.">
+<meta property="og:type" content="article">
+<meta property="og:image" content="https://pufflabs.work/assets/apps/gainscout.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..600;1,9..144,300..600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/style.css">
+<style>
+/* ---- Guide deck. Shares the Puff Labs palette from style.css. ---- */
+:root{ --ok:#7fd88a; --warn:#f2c14e; --bad:#ef7f6b; }
+body{overflow-x:clip}
+.g-shell{max-width:1060px;margin:0 auto;padding:0 20px}
+
+.g-top{position:sticky;top:56px;z-index:15;background:rgba(4,8,6,.9);
+  backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line-soft)}
+.g-top-in{max-width:1060px;margin:0 auto;padding:9px 20px;display:flex;align-items:center;gap:14px}
+.g-chapter{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--lime);
+  white-space:nowrap;overflow:hidden;text-overflow:ellipsis;flex:1;min-width:0}
+.g-count{font-size:.78rem;color:var(--muted);font-variant-numeric:tabular-nums;white-space:nowrap}
+.g-menu-btn{background:none;border:1px solid var(--line-soft);color:var(--muted);border-radius:8px;
+  padding:5px 11px;font:inherit;font-size:.8rem;cursor:pointer}
+.g-menu-btn:hover{color:var(--ink);border-color:var(--line)}
+.g-bar{height:2px;background:rgba(255,255,255,.06)}
+.g-bar i{display:block;height:100%;background:var(--lime);width:0;transition:width .28s ease}
+
+.slide{display:none;padding:44px 0 24px;animation:gin .28s ease}
+.slide.on{display:block}
+@keyframes gin{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media(prefers-reduced-motion:reduce){.slide.on{animation:none}}
+.slide h2{margin:0 0 8px}
+.slide h3{font-family:var(--serif);font-weight:400;font-size:1.22rem;margin:26px 0 10px;letter-spacing:-.01em}
+.slide p{color:var(--muted);margin:14px 0;max-width:44em;font-size:1.02rem}
+.slide p strong,.slide li strong{color:var(--ink);font-weight:600}
+.slide ul,.slide ol{color:var(--muted);margin:14px 0 14px 20px;max-width:44em}
+.slide li{margin:9px 0}
+.kicker{font-size:.76rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);margin-bottom:14px;display:block}
+.slide .big{font-family:var(--serif);font-weight:340;font-size:clamp(2rem,5vw,3.1rem);line-height:1.06;
+  letter-spacing:-.015em;color:var(--ink);margin:8px 0 18px;max-width:20em}
+
+.card{border:1px solid var(--line-soft);border-radius:14px;padding:20px 22px;
+  background:linear-gradient(180deg,var(--panel),var(--panel-2));margin:20px 0}
+.card h4{font-size:.98rem;font-weight:650;margin-bottom:8px;color:var(--ink)}
+.card p:first-of-type{margin-top:0}
+.card p:last-child{margin-bottom:0}
+.card.good{border-color:rgba(127,216,138,.28)}
+.card.good h4{color:var(--ok)}
+.card.warn{border-color:rgba(242,193,78,.3)}
+.card.warn h4{color:var(--warn)}
+.card.bad{border-color:rgba(239,127,107,.32)}
+.card.bad h4{color:var(--bad)}
+
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px;margin:20px 0}
+.grid2 .card{margin:0}
+
+.stat-row{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:14px;margin:22px 0}
+.stat{border:1px solid var(--line-soft);border-radius:12px;padding:16px;background:rgba(255,255,255,.02)}
+.stat b{display:block;font-family:var(--serif);font-weight:380;font-size:2rem;color:var(--lime);
+  line-height:1.05;letter-spacing:-.02em}
+.stat span{display:block;color:var(--muted);font-size:.85rem;margin-top:6px}
+
+.tbl{width:100%;border-collapse:collapse;margin:18px 0;font-size:.92rem}
+.tbl th,.tbl td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line-soft);vertical-align:top}
+.tbl th{color:var(--ink);font-weight:600;font-size:.82rem;letter-spacing:.05em;text-transform:uppercase}
+.tbl td{color:var(--muted)}
+.tbl td:first-child{color:var(--ink)}
+.tbl tr:last-child td{border-bottom:none}
+.tbl .num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+.scroller{overflow-x:auto;-webkit-overflow-scrolling:touch}
+
+.formula{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.88rem;line-height:1.9;
+  color:var(--ink);background:rgba(201,242,78,.06);border:1px solid var(--line);
+  border-radius:12px;padding:16px 18px;margin:18px 0;overflow-x:auto}
+.formula em{color:var(--lime);font-style:normal}
+
+.note{font-size:.92rem;color:var(--muted);opacity:.92;max-width:48em;margin:14px 0}
+.src{font-size:.84rem;color:var(--muted);opacity:.9;margin-top:16px}
+.src a{color:var(--lime);text-decoration:none;border-bottom:1px solid rgba(201,242,78,.3)}
+.src a:hover{border-bottom-color:var(--lime)}
+.slide a{color:var(--lime)}
+
+.checks{list-style:none;margin-left:0}
+.checks li{position:relative;padding-left:30px;margin:12px 0}
+.checks li::before{content:"";position:absolute;left:4px;top:.55em;width:9px;height:9px;
+  border-radius:2px;border:1.5px solid var(--lime)}
+.checks.x li::before{border-color:var(--bad);border-radius:50%}
+
+.g-nav{display:flex;gap:12px;align-items:center;padding:26px 0 76px;border-top:1px solid var(--line-soft);margin-top:32px}
+.g-btn{font:inherit;font-size:.94rem;padding:11px 20px;border-radius:99px;cursor:pointer;
+  border:1px solid var(--line-soft);background:rgba(255,255,255,.03);color:var(--ink);
+  text-decoration:none;display:inline-flex;align-items:center;gap:8px;transition:.15s}
+.g-btn:hover{border-color:var(--line)}
+.g-btn.primary{background:var(--lime);color:#08150c;border-color:var(--lime);font-weight:650}
+.g-btn.primary:hover{background:var(--lime-deep)}
+.g-btn[disabled]{opacity:.32;cursor:default}
+.g-nav .sp{flex:1}
+
+.g-menu{position:fixed;inset:0;z-index:40;background:rgba(3,6,4,.9);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow-y:auto;padding:22px 20px 60px}
+.g-menu h3{font-family:var(--serif);font-weight:380;font-size:1.5rem;margin-bottom:4px}
+.g-menu-in{max-width:640px;margin:0 auto}
+.g-menu ol{list-style:none;margin:18px 0 0}
+.g-menu .ch{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--lime);
+  margin:22px 0 6px;padding-top:14px;border-top:1px solid var(--line-soft)}
+.g-menu li a{display:block;padding:9px 0;color:var(--muted);text-decoration:none;font-size:.97rem}
+.g-menu li a:hover,.g-menu li a.cur{color:var(--ink)}
+.g-menu li a.cur::before{content:"› ";color:var(--lime)}
+.g-close{position:fixed;top:14px;right:16px;z-index:2;background:rgba(3,6,4,.92);background:none;border:1px solid var(--line-soft);
+  color:var(--muted);border-radius:8px;padding:6px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+
+/* ---- calculator ---- */
+.calc{border:1px solid var(--line);border-radius:16px;padding:20px;margin:22px 0;
+  background:linear-gradient(180deg,rgba(201,242,78,.05),rgba(12,26,18,.6))}
+.calc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px 18px}
+.f{display:flex;flex-direction:column;gap:6px}
+.f label{font-size:.8rem;color:var(--muted);letter-spacing:.03em}
+.f select,.f input{font:inherit;font-size:.95rem;padding:9px 11px;border-radius:9px;
+  border:1px solid var(--line-soft);background:#0a150e;color:var(--ink);width:100%}
+.f select:focus,.f input:focus{outline:none;border-color:var(--lime)}
+.f .hint{font-size:.79rem;color:var(--muted);opacity:.9;line-height:1.45}
+.calc-out{margin-top:22px;padding-top:20px;border-top:1px solid var(--line-soft)}
+.out-row{display:flex;justify-content:space-between;gap:16px;padding:9px 0;
+  border-bottom:1px solid rgba(255,255,255,.05);font-size:.95rem;color:var(--muted)}
+.out-row:last-of-type{border-bottom:none}
+.out-row b{color:var(--ink);font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+.out-row.total{margin-top:8px;padding-top:16px;border-top:1px solid var(--line);border-bottom:none;font-size:1.05rem}
+.out-row.total b{font-family:var(--serif);font-weight:380;font-size:1.7rem;color:var(--lime);letter-spacing:-.02em}
+.out-row.total b.neg{color:var(--bad)}
+.calc-verdict{margin-top:16px;font-size:.92rem;color:var(--muted);border-left:2px solid var(--lime);padding-left:14px}
+details.work{margin-top:16px}
+details.work summary{cursor:pointer;font-size:.9rem;color:var(--muted);list-style:none}
+details.work summary::-webkit-details-marker{display:none}
+details.work summary::before{content:"▸ ";color:var(--lime)}
+details.work[open] summary::before{content:"▾ "}
+details.work .formula{margin-top:12px;font-size:.8rem;line-height:1.8}
+
+.hero-guide{padding:56px 0 8px}
+.hero-guide h1{font-size:clamp(2.1rem,5.4vw,3.5rem);margin-top:18px;max-width:15em}
+.hero-guide .lede{font-size:1.1rem}
+.pill-row{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 0}
+.pill{font-size:.76rem;color:var(--muted);border:1px solid var(--line-soft);border-radius:99px;padding:5px 12px}
+
+a:focus-visible,button:focus-visible,summary:focus-visible,
+.f select:focus-visible,.f input:focus-visible{
+  outline:2px solid var(--lime);outline-offset:3px;border-radius:6px}
+
+@media(max-width:640px){
+  .g-top{top:52px}
+  .slide{padding:30px 0 16px}
+  .stat b{font-size:1.6rem}
+  .g-nav{padding-bottom:60px}
+  .g-btn{padding:10px 16px;font-size:.9rem}
+}
+@media print{
+  header,.g-top,.g-nav,.g-menu,footer{display:none!important}
+  #gCover{display:block!important;page-break-after:always}
+  #gDeck{display:block!important}
+  .slide{display:block!important;page-break-after:always;padding:0 0 20px}
+  body{background:#fff;color:#111}
+  .slide p,.slide li,.stat span,.tbl td{color:#333}
+}
+</style>
+</head>
+<body>
+<header>
+  <nav class="nav">
+    <a class="brand" href="/"><span class="dot"></span> Puff Labs</a>
+    <div class="nav-links">
+      <a href="gainscout.html">GainScout</a>
+      <a href="/#apps">Apps</a>
+      <a href="updates.html">Updates</a>
+    </div>
+  </nav>
+</header>
+
+<div class="g-top" id="gTop" hidden>
+  <div class="g-top-in">
+    <span class="g-chapter" id="gChapter">Start here</span>
+    <span class="g-count" id="gCount">1 / 32</span>
+    <button class="g-menu-btn" id="gPrint" title="Print or save the whole guide as a PDF">Print</button>
+    <button class="g-menu-btn" id="gMenuBtn" aria-haspopup="dialog">Contents</button>
+  </div>
+  <div class="g-bar"><i id="gBar"></i></div>
+</div>
+
+<main class="g-shell">
+
+<!-- ============ COVER ============ -->
+<section class="hero-guide" id="gCover">
+  <span class="eyebrow">Free guide · England only</span>
+  <h1>Biodiversity Net Gain, explained for people who are <em>not</em> ecologists</h1>
+  <p class="lede">Developers in England now have to leave nature measurably better off. When they cannot manage that on their own site, they pay somebody else to do it on theirs. That somebody could be you. This guide walks through <strong>what the money really looks like, what it costs, what you sign up to for 30 years, and everything that can go wrong</strong>.</p>
+  <div class="pill-row">
+    <span class="pill" id="gStepPill">Step by step</span>
+    <span class="pill">Every figure sourced and dated</span>
+    <span class="pill">Includes a working calculator</span>
+    <span class="pill">Free, and no sign up</span>
+  </div>
+  <div class="card warn" style="max-width:44em">
+    <h4>Read everything here against this</h4>
+    <p>In August 2026 the government took Biodiversity Net Gain off developments of 0.2 hectares or less, and off temporary permissions. Defra's own estimate is that the 0.2 hectare change alone removes the requirement from <strong>about half of all residential planning permissions</strong>. A further exemption for brownfield housing was consulted on during 2026. <strong>The demand side of this market is shrinking, and the commitment you would be making runs for 30 years with no exit.</strong></p>
+  </div>
+  <p class="note" style="max-width:44em"><strong>A note on units of measurement.</strong> Government measures land in hectares, so this guide does too. One hectare is about 2.5 acres. Ten hectares is about 25 acres. Sixty acres is about 24 hectares.</p>
+  <div class="g-nav" style="border-top:none;margin-top:28px;padding-bottom:20px">
+    <button class="g-btn primary" id="gStart">Start the guide →</button>
+    <a class="g-btn" href="#/slide/12">Jump to the calculator</a>
+  </div>
+  <div class="card" style="max-width:44em">
+    <h4>Short of time? Read these six.</h4>
+    <p>The whole thing is worth an hour if you are seriously considering this. If you are not going to read it all, these six will stop most of the expensive mistakes.</p>
+    <ol id="gShort" style="margin:12px 0 0 20px"></ol>
+  </div>
+  <p class="note" style="max-width:44em">Written for landowners, farmers, first time land buyers and anyone who has been pitched a Biodiversity Net Gain deal and wants to understand it before signing. It is information, not professional advice. Every number here is dated and linked to its source so you can check it yourself.</p>
+</section>
+
+<div id="gDeck">
+
+<!-- ================= CHAPTER 1 ================= -->
+<section class="slide" data-ch="What this actually is">
+  <span class="kicker">The rule</span>
+  <h2>One sentence, then the detail</h2>
+  <p class="big">Most larger new development in England must leave the site at least 10% better for wildlife than it found it, and keep it that way for 30 years.</p>
+  <p>That is Biodiversity Net Gain, or BNG. It became a legal condition of planning permission for major development on <strong>12 February 2024</strong>, and for small sites on <strong>2 April 2024</strong>. It comes from the Environment Act 2021. Since August 2026 the smallest sites are exempt, and Defra thinks that alone takes out about half of residential planning permissions, which matters a great deal to anyone planning to sell units.</p>
+  <p>Wildlife value is not judged by eye. It is counted, in <strong>biodiversity units</strong>, using a government spreadsheet called the statutory biodiversity metric. A developer measures the units on the land before, works out the units after, and has to end up 10% ahead.</p>
+  <div class="card">
+    <h4>Why anybody would pay you for this</h4>
+    <p>A housing estate that covers its whole site in houses and roads cannot create enough habitat on that site to get 10% ahead. It has a shortfall. The law lets it make that shortfall up somewhere else, on somebody else's land, by buying units from them.</p>
+  </div>
+  <p class="src">Source: <a href="https://www.gov.uk/guidance/understanding-biodiversity-net-gain" target="_blank" rel="noopener">GOV.UK, Understanding biodiversity net gain</a>. Checked 7 September 2026.</p>
+</section>
+
+<section class="slide" data-ch="What this actually is">
+  <span class="kicker">Where the money comes from</span>
+  <h2>The developer has three options, in order</h2>
+  <p>The law makes a developer work down a hierarchy. Understanding it tells you exactly where your land sits in the queue.</p>
+  <div class="grid2">
+    <div class="card good">
+      <h4>1. Do it on site</h4>
+      <p>Create or improve habitat inside the red line of their own development. Cheapest for them. Always tried first on major schemes.</p>
+    </div>
+    <div class="card warn">
+      <h4>2. Buy off site units</h4>
+      <p>Pay a landowner who has registered a biodiversity gain site. <strong>This is you.</strong> This is the entire private market.</p>
+    </div>
+    <div class="card bad">
+      <h4>3. Buy statutory credits</h4>
+      <p>Buy from the government as a last resort. Deliberately expensive so it does not undercut the private market.</p>
+    </div>
+  </div>
+  <p>Those government credits matter to you even though you will never sell one, because <strong>they set a rough ceiling on what anyone will pay you</strong>. But read the ceiling correctly, because this is the single easiest number to get wrong.</p>
+  <div class="card warn">
+    <h4>A statutory credit is worth half a unit</h4>
+    <p>GOV.UK: "One credit is worth 0.5 units." A developer must buy <strong>two credits for every one unit</strong> they are short. So the ceiling on a low or medium distinctiveness unit is not £42,000, it is <strong>£84,000</strong>.</p>
+    <p>Credit prices run from £42,000 for low and most medium distinctiveness habitat, through £48,000 and £66,000, to £125,000 for high distinctiveness ponds, coastal habitat and most woodland, and £650,000 for high distinctiveness lakes. Hedgerows are £44,000 and watercourses £230,000. All of those are <strong>per credit</strong>, so double them for the per unit ceiling.</p>
+    <p>One quirk worth knowing: <strong>traditional orchards sit in the cheapest tier</strong> despite being high distinctiveness.</p>
+  </div>
+  <p>GOV.UK is unusually blunt about why the prices are set where they are: they include "a mark-up to prevent statutory credit prices undercutting the off-site market" and are set high so they do "not compete with the development of the private market". It also says plainly that <strong>"Statutory credit prices are not guideline prices for off-site biodiversity units."</strong> They are a ceiling, not a valuation.</p>
+  <p class="src">Sources: <a href="https://www.gov.uk/guidance/statutory-biodiversity-credit-prices" target="_blank" rel="noopener">GOV.UK, Statutory biodiversity credit prices</a> and <a href="https://www.gov.uk/guidance/statutory-biodiversity-credits" target="_blank" rel="noopener">Statutory biodiversity credits</a>. Checked 7 September 2026.</p>
+</section>
+
+<section class="slide" data-ch="What this actually is">
+  <span class="kicker">The shape of the deal</span>
+  <h2>What a landowner is actually selling</h2>
+  <p>You are not selling land. You are not selling a crop. You are selling a <strong>promise, backed by a legal agreement, that a piece of your land will become and stay better for wildlife for at least 30 years</strong>, and a share of the units that promise generates.</p>
+  <p>The buyer needs those units to get planning permission. Once they are allocated to their development on the public register, they are used up. They cannot be sold twice.</p>
+  <div class="card">
+    <h4>The two ways it is done</h4>
+    <p><strong>Habitat banking.</strong> You create the habitat first and look for buyers afterwards. You carry all the risk, and there is a real mechanical reason you keep more of the value. The metric has a <strong>"habitat created in advance" function</strong>: every year the habitat has been growing before the units are sold gives back a year of the time discount. Create five years early and you get five years of that penalty back. This is the strongest argument for habitat banking and almost nobody explains it. The mirror image also exists, a delay function that penalises you year by year if you register and then stall.</p>
+    <p><strong>Bespoke creation.</strong> A specific developer agrees to buy first, and you create the habitat to suit them. Much less risk, usually less money, and you need a developer to find you.</p>
+  </div>
+  <p class="src">Source: <a href="https://defralanduse.blog.gov.uk/wp-content/uploads/sites/276/2023/11/BNG-flowcharts-for-landowners.pdf" target="_blank" rel="noopener">Defra, BNG flowcharts for landowners (PDF)</a>.</p>
+</section>
+
+<!-- ================= CHAPTER 2 ================= -->
+<section class="slide" data-ch="The honest picture">
+  <span class="kicker">The pitch</span>
+  <h2>The version you will hear first</h2>
+  <p>It usually goes something like this. Buy a field for £70,000. Get it registered as a biodiversity gain site. A developer pays you enough on completion to cover what you paid for the land, and after that the units keep selling. Maybe a £300,000 lump sum. Or take it spread over 30 years instead.</p>
+  <p><strong>None of that is impossible.</strong> Deals in that shape exist. The arithmetic on a good site in the right place genuinely can look like that, and the next few pages show you exactly how the numbers are built so you can test any pitch against them.</p>
+  <div class="card warn">
+    <h4>What the pitch leaves out</h4>
+    <p>It is a <strong>private market with no guaranteed buyer</strong>. GOV.UK's own guidance for land managers says it plainly: "Off-site BNG is a private market and there is no guarantee you will find a buyer."</p>
+    <p>It is <strong>unregulated</strong>. There is no ombudsman, no compensation scheme, and no licensing of the brokers and agents selling these deals.</p>
+  </div>
+  <h3>And the money rarely arrives as one cheque</h3>
+  <p>Payment structures are negotiable and they vary a lot. In practice you will be offered one of:</p>
+  <ul>
+    <li><strong>A lump sum</strong> when units are allocated to a development. Cleanest, rarest, and usually the lowest total.</li>
+    <li><strong>Staged payments</strong> released as the habitat hits agreed milestones. Common, and it means the money arrives across years while your costs start immediately.</li>
+    <li><strong>Results based payments</strong> that only land if the habitat reaches its target condition.</li>
+    <li><strong>Annual payments</strong> across the term, which is what most habitat bank operators offer.</li>
+  </ul>
+  <p>Whichever it is, the units only sell when a developer near you needs them. The next step shows how often that has actually happened.</p>
+  <p class="src">Source: <a href="https://www.gov.uk/guidance/sell-biodiversity-units-as-a-land-manager" target="_blank" rel="noopener">GOV.UK, Sell biodiversity units as a land manager</a>. Checked 7 September 2026.</p>
+</section>
+
+<section class="slide" data-key="reality" data-ch="The honest picture">
+  <span class="kicker">The reality check</span>
+  <h2>What the public register actually shows</h2>
+  <p>Every off site biodiversity gain site in England is on one public register run by Natural England, and so is every sale. Anyone can read it. The register had grown to 367 sites by 7 September 2026. Every figure and percentage below comes from a complete download of the register on <strong>21 August 2026</strong>, when it held 350 sites, and the proportions were unchanged when we re-checked a sample on 7 September.</p>
+  <div class="stat-row" id="regStats">
+    <div class="stat"><b>350</b><span>registered gain sites in England</span></div>
+    <div class="stat"><b>10,671</b><span>hectares committed</span></div>
+    <div class="stat"><b>2,710</b><span>allocations to developments, all time</span></div>
+    <div class="stat"><b>3,062</b><span>area units allocated, all time</span></div>
+  </div>
+  <p>Now the two numbers that matter most, and that no brochure will show you.</p>
+  <div class="grid2">
+    <div class="card bad">
+      <h4>The median site has sold 0.83 units</h4>
+      <p>Half of all registered sites in England have sold less than one unit in total. At a typical £25,000 a unit that is under £21,000 of gross revenue. Against that sits £15,000 or more of setup before a blade of grass is planted, and then 30 years of management and monitoring that on a five hectare site runs past £80,000. The median site is not marginally short. It is six figures down across the term.</p>
+    </div>
+    <div class="card bad">
+      <h4>39% have sold nothing at all</h4>
+      <p>137 of the 350 sites had no units allocated to any development. Some of those registered recently and have simply not had time. Many did not.</p>
+    </div>
+  </div>
+  <p>Meanwhile the best performing single site had sold 183 units. This is <strong>a market with a few large winners and a very long tail of sites that have sold almost nothing</strong>. Averages hide that. The average site had sold 8.7 units, ten times the median, because a handful of large sites pull the average up.</p>
+  <p>The concentration is stark. <strong>The 25 best selling sites, out of 350, took half of every unit ever sold.</strong> The top 10 took nearly a third.</p>
+  <p>78% of individual sales were for less than one unit. The typical transaction is a small builder buying a fraction of a unit, not a developer buying your whole field.</p>
+  <p>The demand itself is spread widely. Developments in 307 different local planning authorities have bought units. So the problem is not that nobody is buying. It is that <strong>most sites are not where, or not what, the buying is</strong>, and that each authority absorbs very little. <strong>The median local planning authority has taken just 3.9 units in total since the register opened.</strong> Only 7 authorities out of 307 have ever absorbed more than 57 units.</p>
+  <div class="card warn">
+    <h4>Two things the register does not do</h4>
+    <p>It records <strong>allocations to developments, not sales</strong>, and it <strong>publishes no prices at all</strong>. There is no public record of what anybody has actually paid for a biodiversity unit in England. Every price you will read anywhere, including in this guide, is an asking price or a survey of asking prices.</p>
+  </div>
+  <p class="note">Running the registered habitats through Defra's own multipliers gives a rough sense of scale on the supply side: something over 26,000 net units registered against about 3,000 allocated, so <strong>well under one registered unit in five has found a buyer</strong>. Treat that as an estimate. It assumes the lowest strategic significance for every site and some habitat rows could not be matched, both of which push the true share lower rather than higher.</p>
+  <p class="src">Source: <a href="https://environment.data.gov.uk/biodiversity-net-gain/search" target="_blank" rel="noopener">Biodiversity gain sites register, Natural England</a>, complete download analysed 21 August 2026. Open Government Licence v3.0, © Crown copyright. "Area units" are the units that come from habitat measured by area, as opposed to hedgerows and watercourses, which are counted separately.</p>
+</section>
+
+<section class="slide" data-key="local" data-ch="The honest picture">
+  <span class="kicker">Why so many sites sell nothing</span>
+  <h2>Supply is national. Demand is local.</h2>
+  <p>This is the single most important idea in the guide, and it is the one that catches people out.</p>
+  <p>A developer cannot just buy the cheapest units in England. The metric applies a <strong>spatial risk multiplier</strong>, which is a discount for distance. If the compensation land is inside the same local planning authority or National Character Area as their development, the units count at full value. In a neighbouring one, they count at 0.75. Anywhere else in England, 0.5.</p>
+  <div class="card">
+    <h4>Two terms you will meet constantly</h4>
+    <p><strong>Local planning authority, or LPA.</strong> The council that grants planning permission where you are. District, borough, unitary or a national park.</p>
+    <p><strong>National Character Area, or NCA.</strong> One of the 159 landscape areas Natural England divides England into, such as The Fens or the Shropshire Hills. Your land sits in exactly one, and you can look it up free on the government's MAGIC map.</p>
+  </div>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Where your land is, relative to the development</th><th class="num">Units count at</th></tr>
+    <tr><td>Same local planning authority or National Character Area</td><td class="num">1.0</td></tr>
+    <tr><td>Neighbouring local planning authority or National Character Area</td><td class="num">0.75</td></tr>
+    <tr><td>Anywhere else in England</td><td class="num">0.5</td></tr>
+  </table></div>
+  <p>A developer buying from far away has to buy twice as many units for the same result. So they buy local, almost always. Which means <strong>your land competes only with the other registered sites near it, for only the development happening near it</strong>.</p>
+  <p>On top of that there are <strong>trading rules</strong>. Losses of medium distinctiveness habitat must be replaced either with a habitat in the same broad type, or with anything more distinctive. High distinctiveness must be replaced like for like, and very high needs bespoke compensation agreed with the authority.</p>
+  <div class="card good">
+    <h4>One piece of good news buried in the rules</h4>
+    <p>The trading rules only bite <strong>up to the point of no net loss</strong>. Defra's guide: "Once trading rules have been met, biodiversity net gain requirements can be met by the creation and enhancement of any habitat, provided it is within the relevant module."</p>
+    <p>So a developer losing grassland must find grassland or better to cover the loss, and can then buy <strong>your scrub or your woodland for the 10% gain on top</strong>. Your market is wider than a strict like for like reading suggests.</p>
+    <p>What you cannot do is cross between modules. Area units, hedgerow units and watercourse units are counted separately and cannot be summed or converted. Hedgerow units only ever compensate hedgerow losses. And note that ponds are area habitats, not watercourse habitats.</p>
+  </div>
+  <div class="card warn">
+    <h4>The question that decides everything</h4>
+    <p>Not "is this good land for nature". It is: <strong>how much development is coming in this local planning authority over the next few years, how many registered gain sites are already competing for it, and will my habitat type match what those developers are losing?</strong></p>
+  </div>
+  <p class="src">Source: <a href="https://assets.publishing.service.gov.uk/media/6a1d98e9c7335e2ca6daadd5/The_Statutory_Biodiversity_Metric_-_User_Guide_-_June_2026.pdf" target="_blank" rel="noopener">The Statutory Biodiversity Metric User Guide, Defra, June 2026</a>, tables 3 and 9.</p>
+</section>
+
+<!-- ================= CHAPTER 3 ================= -->
+<section class="slide" data-ch="What a unit is">
+  <span class="kicker">The formula</span>
+  <h2>How a biodiversity unit is counted</h2>
+  <p>Ignore the mystique. It is one multiplication, done by a Defra spreadsheet, and you can follow it.</p>
+  <div class="formula">
+    <em>Units</em> = size in hectares<br>
+    &nbsp; × <em>distinctiveness</em> &nbsp;(how special the habitat type is)<br>
+    &nbsp; × <em>condition</em> &nbsp;(what state it is in)<br>
+    &nbsp; × <em>strategic significance</em> &nbsp;(is it in the right place for local nature plans)
+  </div>
+  <p>That gives you the units your land holds <strong>today</strong>. It is your baseline, and it is the number you want to be <em>low</em>.</p>
+  <p>Then for the habitat you are going to create, the same multiplication runs again, with three discounts applied on top:</p>
+  <div class="formula">
+    <em>New units</em> = hectares × distinctiveness × condition × strategic significance<br>
+    &nbsp; × <em>difficulty</em> &nbsp;(how hard this habitat is to create)<br>
+    &nbsp; × <em>time</em> &nbsp;(how many years until it reaches target condition)
+  </div>
+  <p><strong>Your saleable units are the new number minus the baseline number.</strong> That difference is the only thing anybody is buying.</p>
+  <p>This is why intensively farmed land is the raw material of this market. An arable field scores almost nothing today, so almost everything you create is uplift. A flower rich meadow already scores highly, so there is very little headroom left to sell.</p>
+</section>
+
+<section class="slide" data-ch="What a unit is">
+  <span class="kicker">Distinctiveness</span>
+  <h2>The government's scoring of habitat types</h2>
+  <p>Every habitat type in England has a fixed score in the metric. You cannot argue with it.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Band</th><th class="num">Score</th><th>Examples</th></tr>
+    <tr><td>Very high</td><td class="num">8</td><td>Lowland meadows, lowland dry acid grassland, upland hay meadows</td></tr>
+    <tr><td>High</td><td class="num">6</td><td>Lowland mixed deciduous woodland, lowland heathland, traditional orchards, priority ponds</td></tr>
+    <tr><td>Medium</td><td class="num">4</td><td>Other neutral grassland, mixed scrub, other broadleaved woodland, non priority ponds</td></tr>
+    <tr><td>Low</td><td class="num">2</td><td>Arable crops, modified (improved) grassland, bracken</td></tr>
+    <tr><td>Very low</td><td class="num">0</td><td>Sealed surfaces, buildings</td></tr>
+  </table></div>
+  <p>And condition, assessed against Defra's published criteria by an ecologist:</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Condition</th><th class="num">Score</th></tr>
+    <tr><td>Good</td><td class="num">3</td></tr>
+    <tr><td>Fairly good</td><td class="num">2.5</td></tr>
+    <tr><td>Moderate</td><td class="num">2</td></tr>
+    <tr><td>Fairly poor</td><td class="num">1.5</td></tr>
+    <tr><td>Poor, or not assessed (arable)</td><td class="num">1</td></tr>
+  </table></div>
+  <p class="note">In practice Defra's published condition assessment sheets return only <strong>Good, Moderate or Poor</strong> for grassland, scrub, woodland, heathland, wetland, ponds and orchards. Fairly good and fairly poor exist, but only as a one step adjustment an ecologist can justify for site specific features the standard assessment misses. Do not plan around them.</p>
+  <p class="note">So a hectare of cereal crops scores 1 × 2 × 1 × 1.0 = <strong>2 units</strong>. That is your starting point, and it is a good one.</p>
+  <p class="src">Source: Statutory Biodiversity Metric User Guide, June 2026, tables 5 and 6, and the metric calculation tool v1.0.4 sheet "G-1 All Habitats".</p>
+</section>
+
+<section class="slide" data-ch="What a unit is">
+  <span class="kicker">Strategic significance</span>
+  <h2>The 15% you get for being in the right place</h2>
+  <p>Strategic significance rewards habitat created where the local nature plan actually wants it. It is a small multiplier with a big effect on the maths, and it is one of the few things you can influence by choosing the right field.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Category</th><th class="num">Multiplier</th></tr>
+    <tr><td>High, formally identified in the local strategy</td><td class="num">1.15</td></tr>
+    <tr><td>Medium, ecologically desirable but not in the strategy</td><td class="num">1.10</td></tr>
+    <tr><td>Low, or no local strategy</td><td class="num">1.00</td></tr>
+  </table></div>
+  <p>Every area of England is covered by a <strong>Local Nature Recovery Strategy</strong>, or LNRS. These are being published area by area, and each one comes with a Local Habitat Map showing where specific measures are wanted.</p>
+  <div class="card good">
+    <h4>Two rules that catch people out</h4>
+    <p><strong>Once your area's LNRS is published, the medium band disappears.</strong> You either match the map and get 1.15, or you get 1.0. There is no middle.</p>
+    <p><strong>Once it is published, your existing habitat is always given the 1.0 multiplier</strong>, never 1.15. That quietly helps you, because it keeps the baseline number you subtract small. Note this is the strategic significance multiplier, nothing to do with the Low distinctiveness band on the previous step.</p>
+    <p>To claim 1.15 your parcel must be mapped in the Local Habitat Map as somewhere a measure is proposed, <em>and</em> what you create must be consistent with that mapped measure. Creating woodland where the map asks for grassland gets you nothing extra.</p>
+  </div>
+  <p class="src">Source: Statutory Biodiversity Metric User Guide, June 2026, tables 7 and 8.</p>
+</section>
+
+<section class="slide" data-ch="What a unit is">
+  <span class="kicker">The three discounts</span>
+  <h2>Why the headline number shrinks</h2>
+  <p>These are the multipliers that turn an exciting number into a realistic one.</p>
+  <h3>Difficulty</h3>
+  <p>Set automatically by the metric per habitat. Easy things to create keep their full value. Hard things lose most of it.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Difficulty</th><th class="num">Multiplier</th><th>Examples of creation</th></tr>
+    <tr><td>Low</td><td class="num">1.0</td><td>Other neutral grassland, mixed scrub, other broadleaved woodland, traditional orchard</td></tr>
+    <tr><td>Medium</td><td class="num">0.67</td><td>Priority ponds, upland heathland, hazel and willow scrub</td></tr>
+    <tr><td>High</td><td class="num">0.33</td><td>Lowland meadows, lowland heathland, lowland mixed deciduous woodland, floodplain wetland mosaic</td></tr>
+    <tr><td>Very high</td><td class="num">0.1</td><td>Coastal sand dunes, limestone pavement</td></tr>
+  </table></div>
+  <h3>Time</h3>
+  <p>Habitat that will not be ready for 20 years is worth less than habitat ready in 5. The metric knocks <strong>3.5% off per year</strong> until target condition is reached, using the years Defra has fixed for each habitat and condition.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Years to target condition</th><th class="num">5</th><th class="num">10</th><th class="num">15</th><th class="num">20</th><th class="num">25</th><th class="num">30</th><th class="num">30+</th></tr>
+    <tr><td>Value retained</td><td class="num">84%</td><td class="num">70%</td><td class="num">59%</td><td class="num">49%</td><td class="num">41%</td><td class="num">34%</td><td class="num">32%</td></tr>
+  </table></div>
+  <p class="note">The metric caps the discount at "30 plus" years, worth 32%. Several habitats sit at that cap: lowland mixed deciduous woodland at anything above poor condition, lowland heathland in good condition, other broadleaved woodland in good condition.</p>
+  <h3>Distance</h3>
+  <p>The spatial multiplier from the step on why sites do not sell. Applied by the buyer, not by you, but it decides whether they buy from you at all.</p>
+  <div class="card warn">
+    <h4>The counter intuitive result</h4>
+    <p>High distinctiveness habitat sounds like the money maker. It is often not. <strong>Lowland mixed deciduous woodland</strong> scores 6, but it is high difficulty (0.33) and takes 30 or more years to reach good condition (0.34). Multiply those together and you keep about 11% of what the headline suggests. <strong>Other neutral grassland</strong> scores only 4, but it is low difficulty (1.0) and reaches moderate condition in 5 years (0.84). You keep 84%.</p>
+    <p>That is exactly why the register is dominated by other neutral grassland and mixed scrub, not by ancient style woodland.</p>
+  </div>
+  <p class="src">Source: metric calculation tool v1.0.4, sheets "G-3 Multipliers" and "G-4 Temporal multipliers".</p>
+</section>
+
+<section class="slide" data-ch="What a unit is">
+  <span class="kicker">Worked example</span>
+  <h2>Ten hectares of arable, done two ways</h2>
+  <p>Same field. Same 10 hectares. Two different habitats. Watch what the discounts do.</p>
+  <div class="grid2">
+    <div class="card good">
+      <h4>Other neutral grassland, moderate condition</h4>
+      <p class="note" style="margin-top:0">Baseline: 10 ha × 2 × 1 × 1.0 = <strong>20 units</strong></p>
+      <p class="note">After: 10 × 4 × 2 × 1.15 × 1.0 × 0.84 = <strong>77.0 units</strong></p>
+      <p><strong>Net uplift: 57 units.</strong> At £25,000 a unit that is around £1.43m gross over the agreement, from 10 hectares, if it all sells.</p>
+    </div>
+    <div class="card warn">
+      <h4>Lowland mixed deciduous woodland, moderate condition</h4>
+      <p class="note" style="margin-top:0">Baseline: 10 ha × 2 × 1 × 1.0 = <strong>20 units</strong></p>
+      <p class="note">After: 10 × 6 × 2 × 1.15 × 0.33 × 0.34 = <strong>15.5 units</strong></p>
+      <p><strong>Net uplift: negative.</strong> On the metric, planting that woodland scores fewer units than the arable field it replaced, for 30 years, at a much higher cost.</p>
+    </div>
+  </div>
+  <p>Both are good things to do for nature. Only one of them is a business. This is the gap between what feels valuable and what the metric pays for, and it is where most first time enthusiasm goes wrong.</p>
+  <div class="card bad">
+    <h4>Now the part that matters more than the £1.43m</h4>
+    <p><strong>57 units is an enormous quantity to sell into one local planning authority.</strong> The median authority in England has absorbed 3.9 units in total since the register opened. Only 7 of 307 have ever taken more than 57. On most authorities that £1.43m is not a payday, it is a sales programme measured in decades, and the costs start in year one either way.</p>
+    <p>Before you use a number like this, look up your authority on the register and ask how many units a year it has actually absorbed. Then divide.</p>
+  </div>
+  <p class="note">One qualification on the woodland card. Woodland loses here because arable already scores 2 and the discounts are severe. It can still work where the baseline is lower, where a developer losing woodland must replace it like for like and pays the premium those trading rules create, or where woodland creation grants and carbon units are stacked alongside the biodiversity units. It will not work on this arithmetic alone. And on many holdings, <strong>improving habitat you already have</strong> beats creating it from scratch. On the metric's own tables, enhancing existing grassland up to a lowland meadow carries a difficulty multiplier of 0.67 where creating one from arable carries 0.33, so the enhancement route scores about twice as much. Ask your ecologist to model both.</p>
+  <p class="note">The grassland figure assumes you qualify for the 1.15 strategic significance multiplier. Without it the uplift falls to about 47 units. Every assumption matters.</p>
+</section>
+
+<!-- ================= CHAPTER 4 ================= -->
+<section class="slide" data-key="calc" data-ch="Run your own numbers">
+  <span class="kicker">Calculator</span>
+  <h2>Run your own numbers</h2>
+  <p>This uses the real Defra formula with the real published multipliers from the statutory metric tool v1.0.4. Change anything you like. It is an indication for thinking with, <strong>not a metric assessment</strong>. Only a competent ecologist running the official tool produces a number anyone will buy from.</p>
+
+  <div class="calc">
+    <div class="calc-grid">
+      <div class="f">
+        <label for="cArea">Size of the parcel (hectares)</label>
+        <input type="number" id="cArea" value="10" min="0.1" step="0.1">
+        <span class="hint">1 hectare is about 2.47 acres</span>
+      </div>
+      <div class="f">
+        <label for="cBase">What is on the land now</label>
+        <select id="cBase"></select>
+        <span class="hint">Lower is better. This is subtracted.</span>
+      </div>
+      <div class="f">
+        <label for="cBaseCond">Its condition now</label>
+        <select id="cBaseCond"></select>
+      </div>
+      <div class="f">
+        <label for="cNew">Habitat you would create</label>
+        <select id="cNew"></select>
+      </div>
+      <div class="f">
+        <label for="cNewCond">Target condition</label>
+        <select id="cNewCond"></select>
+        <span class="hint" id="cYears"></span>
+      </div>
+      <div class="f">
+        <label for="cSS">In your Local Nature Recovery Strategy map?</label>
+        <select id="cSS">
+          <option value="1.15">Yes, published, and my habitat matches the map (1.15)</option>
+          <option value="1.1">Not published yet, and my ecologist can justify medium (1.10)</option>
+          <option value="1" selected>No, or not sure (1.0)</option>
+        </select>
+      </div>
+      <div class="f">
+        <label for="cPrice">Price per unit you expect (£)</label>
+        <input type="number" id="cPrice" value="25000" min="0" step="1000">
+        <span class="hint" id="cPriceHint"></span>
+      </div>
+      <div class="f">
+        <label for="cComm">Agent or broker commission (%)</label>
+        <input type="number" id="cComm" value="7" min="0" max="100" step="0.5">
+        <span class="hint">Selling through an independent agent, expect to keep 90% to 95%. Through an operator, far less.</span>
+      </div>
+      <div class="f">
+        <label for="cSold">How much of it you actually sell</label>
+        <select id="cSold">
+          <option value="0.015" selected>About what the median registered site has managed</option>
+          <option value="0.1">10%</option>
+          <option value="0.3">30%</option>
+          <option value="0.6">60%, the top end of the market, not typical</option>
+          <option value="1">100%, which has not happened for most sites</option>
+        </select>
+        <span class="hint">Four in ten registered sites have sold nothing at all.</span>
+      </div>
+      <div class="f">
+        <label for="cRoute">How you secure the land</label>
+        <select id="cRoute">
+          <option value="s106" selected>Section 106 with the council</option>
+          <option value="cov">Conservation covenant with a responsible body</option>
+        </select>
+      </div>
+      <div class="f">
+        <label for="cCreate">Habitat creation works (£ per hectare, one off)</label>
+        <input type="number" id="cCreate" value="1800" min="0" step="100">
+        <span class="hint">Grassland and scrub £800 to £3,000. Woodland and orchard £5,000 to £12,000 with protection. Ponds and wetland far more, because that is earthworks.</span>
+      </div>
+      <div class="f">
+        <label for="cMgmt">Management (£ per hectare per year, 30 years)</label>
+        <input type="number" id="cMgmt" value="400" min="0" step="50">
+        <span class="hint">Grassland £200 to £600. Woodland £400 to £1,200.</span>
+      </div>
+      <div class="f">
+        <label for="cMon">Ecologist monitoring visit (£ each)</label>
+        <input type="number" id="cMon" value="2000" min="0" step="250">
+        <span class="hint">Typically £1,000 to £5,000 a visit.</span>
+      </div>
+      <div class="f">
+        <label for="cVisits">Number of monitoring reports</label>
+        <input type="number" id="cVisits" value="7" min="0" max="30" step="1">
+        <span class="hint">Often years 2, 5, 10, 15, 20, 25 and 30. Agreed in your plan.</span>
+      </div>
+    </div>
+
+    <div class="calc-out">
+      <div class="out-row"><span>Units on the land today (baseline)</span><b id="oBase">0</b></div>
+      <div class="out-row"><span>Units after creation</span><b id="oAfter">0</b></div>
+      <div class="out-row"><span><strong>Net saleable units</strong></span><b id="oNet">0</b></div>
+      <div class="out-row"><span>Gross revenue if every unit sold</span><b id="oGrossAll">£0</b></div>
+      <div class="out-row"><span>Revenue at that level of sales, after commission</span><b id="oGross">£0</b></div>
+      <div class="out-row"><span>Setup: survey, plan, legal, register</span><b id="oSetup">£0</b></div>
+      <div class="out-row"><span>Creation works</span><b id="oCreate">£0</b></div>
+      <div class="out-row"><span>30 years of management</span><b id="oMgmt">£0</b></div>
+      <div class="out-row"><span>Monitoring visits</span><b id="oMonVisits">£0</b></div>
+      <div class="out-row"><span id="oMonFeeLabel">Council monitoring fee</span><b id="oMonFee">£0</b></div>
+      <div class="out-row"><span>Total cost over 30 years</span><b id="oCost">£0</b></div>
+      <div class="out-row total"><span id="oNetLabel">Left over, before tax, over 30 years</span><b id="oNetCash">£0</b></div>
+      <div class="calc-verdict" id="oVerdict"></div>
+      <p class="note" id="oAnchor" style="margin-top:14px"></p>
+      <details class="work">
+        <summary>Show the working</summary>
+        <div class="formula" id="oWork"></div>
+      </details>
+    </div>
+  </div>
+
+  <p class="note">What this deliberately does not do: apply the buyer's spatial multiplier (that is their calculation, not yours), model inflation or the time value of money, include VAT, include your own time, or include the price of the land. It also assumes your habitat reaches its target condition. It does now handle <strong>enhancement</strong> as well as creation: where your new habitat is in the same broad group as what is already there, improved pasture to species rich grassland or scrub to heathland, the metric scores it from different tables and the calculator follows them. Sometimes that is worse, because grassland to grassland takes ten years to moderate condition rather than five. Often it is much better, because for lowland meadow, floodplain wetland mosaic and lowland heathland the enhancement difficulty multiplier is 0.67 against 0.33 for creation, so enhancement is worth roughly twice as much. Ask your ecologist to model both. Roughly a third of your cost lands in the first two years while the revenue arrives over decades, so cash flow is a separate and harder question.</p>
+  <div class="card bad">
+    <h4>Before you write this number down anywhere</h4>
+    <p><strong>It ignores tax completely.</strong> On HMRC's May 2026 position the revenue is normally taxable trading income at up to 47% including National Insurance, and the timing rarely matches: the money can be taxed in year one while the costs are deducted across 30 years.</p>
+    <p><strong>It is not discounted.</strong> Money arriving in year 25 is not worth what it is worth today. Treat any large total here as roughly 40% to 45% of its face value in today's money.</p>
+    <p><strong>It excludes the land, inflation and VAT.</strong> Enter costs net of VAT if you will be registered, since you recover it. Management costs rise every year and this multiplies them flat.</p>
+    <p>It is an illustration for thinking with. Not a forecast, not a valuation, not a metric assessment.</p>
+  </div>
+  <p class="src">Multipliers and years to target condition from the statutory biodiversity metric calculation tool v1.0.4 (Defra, June 2026). Default prices are indicative asking prices from published habitat bank marketing in 2026, not achieved sale prices. <strong>The public register does not record what anyone actually paid.</strong> Cost defaults sourced in the costs chapter.</p>
+</section>
+
+<!-- ================= CHAPTER 5 ================= -->
+<section class="slide" data-ch="Choosing land">
+  <span class="kicker">Green flags</span>
+  <h2>What good land for this looks like</h2>
+  <ul class="checks">
+    <li><strong>A low baseline.</strong> Arable, improved grassland, temporary leys. Boring for nature today is the whole point. It means nearly everything you create counts as uplift.</li>
+    <li><strong>Inside a local planning authority with real development pressure.</strong> Your buyers are the schemes getting permission within that boundary or National Character Area. No development nearby means no buyers nearby.</li>
+    <li><strong>Few registered gain sites already competing.</strong> One 2026 market analysis put registered habitat banks in only about a third of England's local planning authorities. Being the only supplier in a busy authority is worth more than perfect ecology in a quiet one. Check the register for yourself rather than taking anyone's word for it.</li>
+    <li><strong>Mapped in the published Local Nature Recovery Strategy</strong> for a measure you can actually deliver. That is your 1.15.</li>
+    <li><strong>Cheap land, but the right kind of cheap.</strong> Awkward corners and land you cannot farm hard are good: low baseline, little income given up. Do not assume Grade 4 and 5 is the answer though. Wet, acid, shallow or steep ground pushes you toward habitats with worse difficulty and time multipliers than the neutral grassland the market actually wants, and makes target condition harder to reach. The sweet spot is usually flat, workable, nutrient depleted arable or improved pasture on moderate soils. Boring for nature, easy to convert, quick to reach moderate condition.</li>
+    <li><strong>Something you can create quickly and cheaply.</strong> Grassland and scrub keep their value. Long dated, high difficulty habitats do not.</li>
+    <li><strong>Water on or near it, with your eyes open.</strong> Watercourse and pond units carry high headline prices because supply is scarce. Demand is scarcer still. Only a developer actually affecting a watercourse can buy watercourse units, and only within a tight catchment. Delivery needs the right ownership and consents, and a pond yields very few units for a great deal of excavation. Treat water as a possible bonus on a site that already works on grassland, never as the reason to buy.</li>
+    <li><strong>Clean title, no tenant, no lender to persuade.</strong> Every extra consent is months of delay and a possible veto.</li>
+  </ul>
+  <p class="src">Registered site distribution from the biodiversity gain sites register, 2026.</p>
+</section>
+
+<section class="slide" data-ch="Choosing land">
+  <span class="kicker">Red flags</span>
+  <h2>Land that will waste your money</h2>
+  <ul class="checks x">
+    <li><strong>Irreplaceable habitat you would have to damage.</strong> Ancient woodland, ancient and veteran trees, blanket bog, limestone pavement, coastal sand dunes, lowland fen and two saltmarsh types are taken out of the metric baseline and cannot be traded. That does <em>not</em> disqualify a site that happens to contain some. Leave it alone and enhancing it can still count towards your units, while the rest of the holding works normally. What kills a deal is needing to clear or drain it to make your numbers work.</li>
+    <li><strong>Recently cleared or degraded ground.</strong> Two separate rules bite. For a <em>development</em> site, Schedule 7A of the Town and Country Planning Act 1990 fixes the baseline at what was there before any degrading activity carried out since <strong>30 January 2020</strong> without planning permission, and where the date is disputed it defaults to that day. For a <em>gain site</em> like yours the metric guide is the control: if habitat has been cleared, destroyed or degraded you must use the pre degradation habitat as your baseline, evidence it from imagery and old records, and, this is the sting, assign a <strong>higher</strong> condition score in the absence of evidence to the contrary. Buying a field that has just been flailed or ploughed can hand you a baseline you cannot beat, judged against you on the precautionary side.</li>
+    <li><strong>Already committed elsewhere.</strong> You cannot sell units for something you are already required or already paid to do. Land under an obligation for tree restocking, marine licensing or environmental damage remediation is out. Overlapping agri-environment options need untangling before they count.</li>
+    <li><strong>Uncultivated or semi natural land.</strong> Improving it may need an EIA screening decision from Natural England <em>before</em> any work starts. Registering for BNG is not a substitute, and doing the work first can be an offence.</li>
+    <li><strong>Inside a protected site.</strong> SSSI, SAC, SPA and Ramsar land needs Natural England's consent before works, and protected species need licences.</li>
+    <li><strong>Already high scoring.</strong> A flower rich meadow is wonderful and nearly worthless here, because the headroom above your baseline is what sells.</li>
+    <li><strong>Bought at a BNG premium.</strong> If you pay over bare agricultural value because the seller knows the BNG story, the deal has to clear that premium before you earn anything. Sellers read the same articles you do.</li>
+    <li><strong>Land with development hope value.</strong> If the parcel has any realistic prospect of getting planning permission one day, that hope is worth far more than biodiversity units, and a 30 year obligation destroys it. Never put land with hope value into this, and if you are buying, check you are not paying for hope you are about to extinguish.</li>
+    <li><strong>Too small to carry the fixed costs.</strong> Setup runs to £15,000 or more whatever the size of the parcel, and most operators want somewhere in the region of 8 to 20 hectares before they will look at you. On a three hectare field the fixed costs alone eat a large share of everything you might earn.</li>
+  </ul>
+  <p class="src">Sources: <a href="https://www.gov.uk/guidance/sell-biodiversity-units-as-a-land-manager" target="_blank" rel="noopener">GOV.UK, Sell biodiversity units as a land manager</a>; <a href="https://www.gov.uk/guidance/eia-agriculture-regulations-apply-to-make-changes-to-rural-land" target="_blank" rel="noopener">GOV.UK, EIA (Agriculture) regulations</a>; Statutory Biodiversity Metric User Guide, June 2026.</p>
+</section>
+
+<section class="slide" data-ch="Choosing land">
+  <span class="kicker">Checking a specific field</span>
+  <h2>What to look up before you make an offer</h2>
+  <p>All of it is public, free, and worth an evening of your time before you spend anything. For any parcel you are considering, find out:</p>
+  <ol>
+    <li>Whether it carries a <strong>statutory designation</strong>. These are the legal protections that come with strings attached: a Site of Special Scientific Interest (SSSI), a Special Area of Conservation (SAC), a Special Protection Area for birds (SPA), a Ramsar wetland, or a national or local nature reserve. Any of them means you need consent before you touch anything.</li>
+    <li>Whether there is <strong>ancient woodland or priority habitat</strong> on or beside it.</li>
+    <li>Its <strong>agricultural land classification grade</strong>, which tells you both the farming value you would give up and how a planner will view it.</li>
+    <li>Its <strong>flood zone</strong>, which shapes what habitat is realistic and what a buyer will believe.</li>
+    <li>Whether it sits in <strong>Green Belt, a National Landscape or a conservation area</strong>.</li>
+    <li>Which <strong>Local Nature Recovery Strategy</strong> covers it, whether it is published, and what the Local Habitat Map asks for there.</li>
+    <li>Which <strong>local planning authority and National Character Area</strong> it falls in, because that is your catchment of buyers.</li>
+    <li><strong>Which registered gain sites are already nearby</strong>, and what habitat they are selling. That is your competition, and it is on the public register.</li>
+  </ol>
+  <div class="card good">
+    <h4>The £300 test that de risks the whole thing</h4>
+    <p>Everything in this guide assumes your habitat reaches its target condition. For species rich grassland created on ex arable, the single best predictor of whether it will is <strong>residual soil phosphorus</strong>. Years of fertiliser leave P levels that let vigorous grasses smother the wildflowers, and no amount of good seed fixes it quickly.</p>
+    <p>A soil test costs a small fraction of one day of anybody's professional fees. Do it <strong>before you exchange</strong>, not after.</p>
+  </div>
+  <h3>And the title checks, which no map will show you</h3>
+  <p>Get these from the seller's solicitor <strong>before you make an offer</strong>. Any one of them can kill the scheme.</p>
+  <ul class="checks x">
+    <li><strong>Mines and minerals reserved to somebody else</strong>, with rights to enter and work them. Common on former estate land. Someone else can lawfully dig up your habitat.</li>
+    <li><strong>Sporting rights reserved to a third party.</strong> The holder can enter, drive across it and release birds, and you cannot stop them.</li>
+    <li><strong>Existing restrictive covenants.</strong> A covenant not to use the land otherwise than for agriculture, or against planting, is breached the day you take the field out of production. Whoever holds the benefit enforces it, not the council.</li>
+    <li><strong>Rights of way, permissive paths and open access land</strong>, which affect what condition the habitat can reach.</li>
+    <li><strong>Easements, wayleaves and pipeline or cable deeds</strong> with rights of entry.</li>
+    <li><strong>An existing overage or clawback deed.</strong> Entering a BNG agreement can trip a badly drafted trigger and hand a share of your income to the previous owner.</li>
+    <li><strong>An option or promotion agreement in favour of a developer</strong>, usually shown as a restriction on the title. They can veto your agreement and they will.</li>
+  </ul>
+  <div class="card">
+    <h4>The shortcut for the map based checks</h4>
+    <p>Every one of those checks is a separate government map or dataset. <a href="gainscout.html">GainScout</a> is the app we built to do all of them against a single point on a map in one press, and to show you the source and date for every finding. It is free to download and free to check land with, and you can save a site, add photos and produce a dated report to hand to an agent or ecologist. It is a first look, not a substitute for a survey.</p>
+  </div>
+</section>
+
+<!-- ================= CHAPTER 6 ================= -->
+<section class="slide" data-ch="The process">
+  <span class="kicker">The official route</span>
+  <h2>The eight steps, in order</h2>
+  <p>This is Defra's own sequence for a land manager selling units.</p>
+  <ol>
+    <li><strong>Work out your units.</strong> Engage an ecologist for a baseline habitat survey, then use the statutory metric to model what enhancement would produce. Check the local nature recovery strategy while you are at it.</li>
+    <li><strong>Price them.</strong> Your price has to cover creation, 30 years of management, monitoring, professional fees, insurance, machinery and inflation. Price from your costs, not from a headline per unit figure.</li>
+    <li><strong>Secure the land legally.</strong> Either a planning obligation (section 106) with the local planning authority, or a conservation covenant with a designated responsible body. Minimum 30 years, and for a covenant make sure a <strong>maximum</strong> is written in too. Everyone with an interest must be a party or they are not bound: you, your lender, any tenant, any option holder, anyone with reserved rights. The council is not obliged to enter one, so confirm they will before you spend anything. At the same time, agree a habitat management and monitoring plan.</li>
+    <li><strong>Find a buyer.</strong> Marketplaces, land agents, direct developer relationships, the council's own signposting, or a habitat bank operator. There is no guaranteed buyer.</li>
+    <li><strong>Do the deal.</strong> Number and type of units, commitment to allocate, price structure (lump sum, staged, or results based) and payment timing.</li>
+    <li><strong>Register the gain site</strong> with Natural England. £639 per site, payable within 28 days. You need proof of ownership, a boundary map, the signed legal agreement, the completed metric calculation, the habitat management and monitoring plan, and a local land charge search certificate dated within the last two months. They tell you within six weeks whether it is accepted, rejected, or needs more from you. Once decided you cannot withdraw and the fee is not refunded.</li>
+    <li><strong>Record the allocation</strong> of specific units to a specific development on the register. This matters more than it sounds. The biodiversity gain condition is attached to the planning permission, and the developer <strong>cannot lawfully begin the development</strong> until the council approves their biodiversity gain plan, which needs your allocation in place. That is your leverage on payment timing. Get paid on allocation, not afterwards.</li>
+    <li><strong>Manage it for 30 years</strong> from completion of the works, reporting to the council or responsible body. If work has not started when you allocate, you must begin within 12 months. Note that the 30 years runs from <strong>completion of the creation works</strong>, not from the day you buy. Counting from exchange, the real commitment is closer to 32 or 35 years.</li>
+  </ol>
+  <p class="note">Steps 3, 6 and 7 can happen before, during or after finding a buyer. That flexibility is what makes both habitat banking and bespoke creation possible.</p>
+  <p class="src">Source: <a href="https://www.gov.uk/guidance/sell-biodiversity-units-as-a-land-manager" target="_blank" rel="noopener">GOV.UK, Sell biodiversity units as a land manager</a>. Checked 7 September 2026.</p>
+</section>
+
+<section class="slide" data-ch="The process">
+  <span class="kicker">Timing</span>
+  <h2>How long it really takes</h2>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Stage</th><th>Typical time</th></tr>
+    <tr><td>Baseline habitat survey</td><td>1 to 2 months, and only in season</td></tr>
+    <tr><td>Habitat management and monitoring plan</td><td>2 to 3 months</td></tr>
+    <tr><td>Legal agreement (section 106 or covenant)</td><td>2 to 3 months</td></tr>
+    <tr><td>Registration with Natural England</td><td>1 to 2 months, six week target</td></tr>
+    <tr><td>Land assessment through to first unit sale</td><td>12 to 24 months</td></tr>
+  </table></div>
+  <div class="card warn">
+    <h4>The survey window is a hard deadline, not a preference</h4>
+    <p>Botanical surveys have to be done when the sward is identifiable. April to September is the outer envelope, and for the grassland condition assessment your baseline actually turns on it is realistically <strong>May to August</strong>. A hay cut or hard grazing inside that window can spoil it too.</p>
+    <p>An out of season survey is not automatically void, since Defra asks for the optimum time of year and a precautionary approach where evidence is thin. But it weakens your baseline, and <strong>Natural England at registration, or the council approving your management plan, can send you back for another season</strong>.</p>
+    <p>Practically: if you complete on a purchase in October, your baseline survey is waiting until spring. That is roughly six months of holding costs before the clock even starts. Buy in the winter and budget for it.</p>
+  </div>
+  <div class="card warn">
+    <h4>The other survey seasons, and the consents nobody costs</h4>
+    <p>If protected species are on the land, their survey windows are narrower than the botanical one and missing them costs a year. Great crested newt eDNA runs mid April to the end of June. Bat activity surveys May to September. Breeding birds March to July. Reptiles April to October. You may also need a licence for the <strong>habitat works themselves</strong>, not just for development: scrub clearance, pond creation and re profiling can all need one.</p>
+    <p>Two more that catch people out. Planting woodland above the threshold needs a separate <strong>Forestry Commission EIA screening</strong>, and felling later needs a licence carrying restocking conditions. Pond, wetland and floodplain works commonly need a <strong>flood risk activity permit, land drainage consent or an abstraction licence</strong> from the Environment Agency.</p>
+  </div>
+  <p>Then add the part nobody schedules: <strong>waiting for a buyer</strong>. That is not a stage with a duration. It is a market, and for four in ten registered sites it has not happened yet.</p>
+  <p class="src">Sources: habitat bank setup timelines, 2025 to 2026 industry guidance; <a href="https://cieem.net/wp-content/uploads/2024/06/BNG-Technical-Guide-2024.pdf" target="_blank" rel="noopener">CIEEM BNG technical guide</a> on survey seasonality.</p>
+</section>
+
+<!-- ================= CHAPTER 7 ================= -->
+<section class="slide" data-key="cash" data-ch="The costs">
+  <span class="kicker">Cash, and when</span>
+  <h2>What you need in the bank, and when you need it</h2>
+  <p>The single question most people arrive with, and the one no brochure assembles. Here it is for a five hectare site, about twelve and a half acres, doing it independently.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>When</th><th>What you spend</th><th class="num">How much</th></tr>
+    <tr><td>Before you own it</td><td>The land itself, stamp duty, your purchase legals, lender consent</td><td class="num">The land price, plus £3,500 to £6,000</td></tr>
+    <tr><td>First 12 months</td><td>Baseline survey, management plan, legal agreement, the council's legal and ecology fees, registration</td><td class="num">£14,600 to £19,600, plus VAT</td></tr>
+    <tr><td>First 2 years</td><td>Habitat creation works, at £800 to £3,000 a hectare for grassland</td><td class="num">£4,000 to £15,000</td></tr>
+    <tr><td>Every year, for 30</td><td>Management at £200 to £600 a hectare</td><td class="num">£1,000 to £3,000 a year, rising with inflation</td></tr>
+    <tr><td>Eight times across 30 years</td><td>Monitoring reports, plus the council or responsible body's monitoring fee</td><td class="num">£1,000 to £5,000 each</td></tr>
+  </table></div>
+  <div class="card bad">
+    <h4>The number that matters</h4>
+    <p>You need roughly <strong>£20,000 to £40,000 in the first two years</strong>, on top of whatever the land cost, before a single unit has sold. Then £1,000 to £3,000 every year for three decades.</p>
+    <p>Income, if it comes, starts somewhere between one and three years in and arrives in fragments. Lenders do not readily lend against unsold biodiversity units, so this is a working capital problem before it is a return problem.</p>
+    <p><strong>If losing that first two years of money would genuinely hurt you, do not do this on your own.</strong> Use an operator, who carries it, or do not do it.</p>
+  </div>
+  <p class="note">If you are VAT registered you recover the VAT, so the plus VAT amounts are timing rather than cost. If you are not, add up to 20%.</p>
+</section>
+
+<section class="slide" data-ch="The costs">
+  <span class="kicker">Setting up</span>
+  <h2>What it costs before you earn anything</h2>
+  <p>Published figures for a landowner selling independently, on a 5 hectare site.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>One off cost</th><th class="num">Typical</th></tr>
+    <tr><td>Baseline habitat survey and management plan</td><td class="num">£4,500 to £7,500 + VAT</td></tr>
+    <tr><td>Your legal fees, section 106</td><td class="num">£5,000 + VAT</td></tr>
+    <tr><td>Your legal fees, conservation covenant instead</td><td class="num">£9,000 to £12,000 + VAT</td></tr>
+    <tr><td>The council's legal fees, which you pay</td><td class="num">£3,000 to £5,000 + VAT</td></tr>
+    <tr><td>A responsible body's legal fees instead</td><td class="num">£7,000 to £10,000</td></tr>
+    <tr><td>Their ecologist reviewing your plan</td><td class="num">£1,500 + VAT</td></tr>
+    <tr><td>Registration with Natural England</td><td class="num">£639</td></tr>
+    <tr><td><strong>Subtotal, 5 ha with a section 106</strong></td><td class="num"><strong>£14,639 to £19,639 + VAT</strong></td></tr>
+  </table></div>
+  <p>That table is the part most guides stop at. Here is what it leaves out.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Also budget for</th><th class="num">Typical</th></tr>
+    <tr><td>Stamp duty and your legal fees on buying the land</td><td class="num">Varies, budget from £2,000</td></tr>
+    <tr><td>Lender consent, their solicitor and a valuation</td><td class="num">£1,500 to £4,000</td></tr>
+    <tr><td>A bond, escrow or sinking fund the council or responsible body requires</td><td class="num">£0 to £50,000, held for the term</td></tr>
+    <tr><td>Public liability and habitat delivery insurance</td><td class="num">£500 to £2,500 a year</td></tr>
+    <tr><td>Agent or broker commission when you sell units</td><td class="num">A share of everything you sell, see the routes step</td></tr>
+  </table></div>
+  <p class="note">On VAT: if you are VAT registered the "plus VAT" above is a cash flow item you recover, not a real cost. If you are not registered, it is real, and it adds up to 20%.</p>
+  <p>None of that is refundable, and none of it depends on you ever selling a unit. It is also before any habitat creation work: grassland creation runs roughly <strong>£800 to £3,000 per hectare</strong> including ground preparation and seed.</p>
+  <p class="src">Source: <a href="https://stockfreefarming.org/enterprise-budget/biodiversity-net-gain-opportunities-for-farmers/" target="_blank" rel="noopener">Biodiversity Net Gain opportunities for farmers, enterprise budget</a>; <a href="https://www.plantlife.org.uk/learning-resource/how-much-does-a-meadow-cost/" target="_blank" rel="noopener">Plantlife, meadow creation costs</a>.</p>
+</section>
+
+<section class="slide" data-ch="The costs">
+  <span class="kicker">Thirty years of it</span>
+  <h2>The bill that keeps arriving</h2>
+  <p>The 30 year liability is the part people underestimate most, because it is the part that has not happened yet.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Ongoing cost</th><th class="num">Typical</th></tr>
+    <tr><td>Species rich grassland, creation and management</td><td class="num">£200 to £600 per ha per year</td></tr>
+    <tr><td>Lowland mixed deciduous woodland</td><td class="num">£400 to £1,200 per ha per year</td></tr>
+    <tr><td>Lowland fen restoration</td><td class="num">£700 to £2,000 per ha per year</td></tr>
+    <tr><td>Ecologist monitoring visit</td><td class="num">£1,000 to £5,000 each</td></tr>
+    <tr><td>Number of reports</td><td class="num">Set in your plan, proportionate to the site</td></tr>
+    <tr><td>Monitoring reports, typical schedule</td><td class="num">Years 2, 5, 10, 15, 20, 25, 30</td></tr>
+    <tr><td>Council monitoring fee</td><td class="num">£5,000 to £7,000 + VAT</td></tr>
+    <tr><td>Responsible body monitoring across 30 years</td><td class="num">£40,000 to £60,000</td></tr>
+  </table></div>
+  <p>Put the other way round, 30 years of management and monitoring costs roughly <strong>£1,500 to £4,500 per biodiversity unit in today's money</strong>, depending on habitat. Any price you are quoted per unit should be read against that. A £25,000 unit that costs you £4,500 to service is a very different proposition from one that costs £1,500.</p>
+  <div class="card warn">
+    <h4>And that is before inflation</h4>
+    <p>Those are today's costs. The bill arrives every year for 30 years while your unit price was fixed on day one. At 2.5% inflation, £400 per hectare this year is about £840 per hectare in year 30, and the cash you actually have to find across the term is roughly <strong>45% more</strong> than a flat multiplication suggests. If your costs are going to be index linked, your income needs to be too. Ask for that in the contract.</p>
+  </div>
+  <div class="card bad">
+    <h4>And if the habitat does not get there</h4>
+    <p>If monitoring shows the habitat is not reaching its target condition, <strong>you</strong> take the corrective action set out in your plan. Reseeding, replanting, changed grazing, drainage work. That cost is yours, and the units are already sold.</p>
+  </div>
+  <p class="src">Source: <a href="https://bngcalculator.co.uk/30-year-management-cost" target="_blank" rel="noopener">30 year habitat management cost, per hectare per year liability, 2026</a>; enterprise budget as above.</p>
+</section>
+
+<section class="slide" data-ch="The costs">
+  <span class="kicker">Three ways in</span>
+  <h2>Do it yourself, or let somebody else</h2>
+  <p>You do not have to run this alone, and for most first time buyers running it alone is the wrong call. The trade is simple: <strong>the less risk you carry, the less you keep</strong>.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>Route</th><th>You pay</th><th>You get</th></tr>
+    <tr>
+      <td><strong>Sell independently</strong></td>
+      <td>£15,000 to £20,000 + VAT setup, plus creation, plus 30 years of management and monitoring, plus £25,000 or more of monitoring across the term</td>
+      <td>All of the unit revenue if it sells, and all of the risk if it does not. About £143,000 per hectare of <strong>gross</strong> revenue on the neutral grassland example, at 5.7 units per hectare and £25,000 a unit, spread across the agreement and only if every unit sells. Take off commission, 30 years of management and monitoring and tax and, on a full sell through, you keep roughly £60,000 to £80,000 per hectare across 30 years. At the register's median sell through you keep nothing and pay to manage the land</td>
+    </tr>
+    <tr>
+      <td><strong>Habitat bank operator</strong></td>
+      <td>Nothing to about £5,000 + VAT, often refunded when units sell. You lease the land to them</td>
+      <td>Published examples: around £240 per ha per year lease plus up to £660 per ha per year management, index linked, a welcome payment up to £10,000 and a 50:50 share of upside. Another operator quotes £222 to £297 per ha per year guaranteed rent plus creation, management and contingency paid at cost, plus 50:50 on surplus</td>
+    </tr>
+    <tr>
+      <td><strong>Group or partnership</strong></td>
+      <td>Shared setup with neighbours or a conservation body</td>
+      <td>A bigger, more saleable block than any of you has alone. You need a written agreement on who does what and who is paid what</td>
+    </tr>
+  </table></div>
+  <div class="card bad">
+    <h4>Compare net against net, never gross against net</h4>
+    <p>The independent figure above is <strong>gross revenue</strong>. The operator figures are <strong>income</strong>. They are not comparable as written, and the difference flatters the risky route. One operator's number bundles reimbursement of costs you then spend, the other does not.</p>
+    <p>Ask any operator for <strong>the number that lands in your account after everything you are responsible for, per hectare, per year, index linked, in writing</strong>, and work out the same figure for yourself before you choose.</p>
+  </div>
+  <div class="card warn">
+    <h4>What share of the money does an operator keep?</h4>
+    <p>A great deal, and it is rarely stated as a percentage. One chartered surveyor's analysis of a lease based operator deal put the landowner's share of gross sale proceeds at <strong>4.3%</strong>, against 90% to 95% for a landowner selling their own units through an independent agent and paying professional fees.</p>
+    <p>That is not automatically a bad deal. The operator is funding the creation, carrying 30 years of cost and taking the risk that nothing sells, which on the register evidence is a real risk with real money behind it. But you should know the split before you sign, not after. <strong>Ask what percentage of gross unit revenue you receive, and ask to see it worked through on your own acreage.</strong></p>
+  </div>
+  <p class="note">The operator terms above are figures those businesses published in 2025 and 2026. We have not verified them, they are not offers, and terms change.</p>
+  <p class="src">Source: <a href="https://stockfreefarming.org/enterprise-budget/biodiversity-net-gain-opportunities-for-farmers/" target="_blank" rel="noopener">Biodiversity Net Gain opportunities for farmers, enterprise budget</a>, comparing published operator terms; <a href="https://www.gov.uk/guidance/sell-biodiversity-units-as-a-land-manager" target="_blank" rel="noopener">GOV.UK</a> on the three operating models.</p>
+</section>
+
+<!-- ================= CHAPTER 8 ================= -->
+<section class="slide" data-ch="The 30 year commitment">
+  <span class="kicker">What you sign</span>
+  <h2>Section 106 or conservation covenant</h2>
+  <p>You must legally secure the habitat for at least 30 years before you can register. There are two instruments and they are not equivalent.</p>
+  <div class="grid2">
+    <div class="card">
+      <h4>Planning obligation, section 106</h4>
+      <p>Made with the local planning authority <strong>where your land sits</strong>, not the developer's. Familiar to every rural solicitor, cheaper to draft, and the council enforces it.</p>
+      <p>Check it is actually available before you spend anything. A council is <strong>not obliged</strong> to enter one, and some decline agreements for a gain site with no development attached, or charge heavily for them.</p>
+    </div>
+    <div class="card">
+      <h4>Conservation covenant</h4>
+      <p>Made with a <strong>designated responsible body</strong>. Only the Secretary of State is one automatically. Every other body, councils included, has to apply to Defra and be designated. As at May 2026 there were 48, and roughly 20 of those are private companies rather than charities or public bodies. Check which kind you are dealing with.</p>
+      <p>More flexible and often faster to agree, but legal costs are higher. If a designated body later loses its designation, section 132 of the Environment Act 2021 moves its covenants to the Secretary of State, so the agreement does not simply lapse.</p>
+    </div>
+  </div>
+  <div class="card bad">
+    <h4>The trap in a conservation covenant: it lasts for ever by default</h4>
+    <p>Section 121 of the Environment Act 2021 sets the default period for freehold land as <strong>"a period of indefinite duration"</strong>, unless the covenant provides for a shorter one. Biodiversity Net Gain only needs 30 years.</p>
+    <p>So if the deed is silent on when it ends, you have <strong>encumbered your freehold permanently in exchange for a 30 year payment</strong>. Make sure a defined term is written in, and that the land is released at the end of it. A section 106 is normally drafted with an express term, which is one real advantage of that route.</p>
+  </div>
+  <p>Alongside either, you agree a <strong>habitat management and monitoring plan</strong>. That document, not the sales brochure, is what you are committing to do every year for three decades.</p>
+  <div class="card warn">
+    <h4>It is a local land charge, not a note on your deeds</h4>
+    <p>Both instruments bind whoever buys or inherits the land, but only if registered in the <strong>local land charges register</strong> before they acquire it. A buyer finds it through a local search, not through a Land Registry search. That is why Natural England asks for a local land charge search certificate dated within the last two months when you register.</p>
+  </div>
+  <p class="src">Sources: <a href="https://www.legislation.gov.uk/ukpga/2021/30/section/121" target="_blank" rel="noopener">Environment Act 2021 s.121</a> and <a href="https://www.legislation.gov.uk/ukpga/2021/30/section/122" target="_blank" rel="noopener">s.122</a>; <a href="https://www.legislation.gov.uk/ukpga/1990/8/section/106" target="_blank" rel="noopener">TCPA 1990 s.106</a>; <a href="https://www.gov.uk/government/publications/conservation-covenant-agreements-designated-responsible-bodies/conservation-covenants-list-of-designated-responsible-bodies" target="_blank" rel="noopener">designated responsible bodies</a>.</p>
+</section>
+
+<section class="slide" data-ch="The 30 year commitment">
+  <span class="kicker">Getting out</span>
+  <h2>Can you ever end it?</h2>
+  <p>Short answer: assume not, and price it that way. The detail differs by instrument and it is worth knowing before you choose.</p>
+  <div class="grid2">
+    <div class="card">
+      <h4>Section 106</h4>
+      <p>You can apply to the council to modify or discharge it, but not for five years (section 106A, Town and Country Planning Act 1990), with an appeal to the Secretary of State if refused.</p>
+      <p>That route is largely shut for this purpose. Since February 2024 a council <strong>may not</strong> discharge or modify an obligation where doing so would prevent a development meeting its biodiversity gain objective, or create a significant risk of that. Once your units are allocated, the door closes.</p>
+    </div>
+    <div class="card">
+      <h4>Conservation covenant</h4>
+      <p>You can only vary or end it <strong>by agreement with the responsible body</strong> (sections 127 to 129, Environment Act 2021). If they say no, your only route is an application to the Upper Tribunal, Lands Chamber, under section 130.</p>
+      <p>Section 84 of the Law of Property Act 1925, the familiar route for lifting an old restrictive covenant, is expressly disapplied.</p>
+    </div>
+  </div>
+  <div class="card good">
+    <h4>What does release you, and what does not</h4>
+    <p><strong>Selling the land.</strong> For a conservation covenant, section 122 of the Environment Act 2021 releases you from future performance once you stop holding the estate. You stay liable for breaches that happened on your watch. For a section 106, section 106(4) allows the deed to release you on the same basis, <strong>but only if that clause is actually in it</strong>. Ask your solicitor to confirm which release you have before you sign.</p>
+    <p><strong>What does not release you:</strong> changing your mind, the market falling, the developer failing, or the habitat proving harder than expected.</p>
+  </div>
+  <p class="src">Sources: <a href="https://www.legislation.gov.uk/ukpga/1990/8/section/106A" target="_blank" rel="noopener">TCPA 1990 s.106A</a>; <a href="https://www.legislation.gov.uk/ukpga/2021/30/part/7" target="_blank" rel="noopener">Environment Act 2021 Part 7</a>.</p>
+</section>
+
+<section class="slide" data-ch="The 30 year commitment">
+  <span class="kicker">Who else has to agree</span>
+  <h2>Lenders, tenants and the people after you</h2>
+  <div class="card bad">
+    <h4>Your mortgage lender, and the priority problem</h4>
+    <p>If the land is charged you need written consent, for <strong>either</strong> instrument, and you need more than consent. The lender should be <strong>joined as a party</strong> and postpone its charge.</p>
+    <p>Here is why. A charge that came first ranks ahead of your agreement. A lender enforcing its security could sell the land free of the obligation, wiping out every unit sold from the site and leaving you facing the buyers. No developer's solicitor will accept units secured behind a prior charge. Entering the agreement without consent is also likely to breach your mortgage conditions outright. Ask the lender <strong>before you exchange on the land</strong>, and budget for their fees and their solicitor's.</p>
+  </div>
+  <div class="card bad">
+    <h4>Any tenant</h4>
+    <p>If the land is let, you cannot secure it for 30 years on your own. A 1986 Act agricultural tenancy carries statutory succession rights on death and on retirement, so it can outlast you by two generations. A farm business tenancy binds you for its term. Many arrangements called "grazing licences" are tenancies in law whatever the paper says.</p>
+    <p>And the tenant, not you, is the person in occupation who would actually have to carry out the management plan. They must be a party, and they will want paying. Find out exactly what is let, on what terms, and when it ends, <strong>before you buy</strong>. A tenancy can make a field completely unusable for this.</p>
+  </div>
+  <div class="card warn">
+    <h4>If you die during the 30 years</h4>
+    <p>The agreement does not die with you. It stays attached to the land and passes to whoever inherits, along with the obligation to keep managing it and pay for it. Your executors cannot distribute or sell the land free of it. They can sell, but the next owner takes the same obligation, and some buyers will discount heavily for it.</p>
+    <p>If leaving the farm clean to your children matters more to you than the income, that is a perfectly good reason not to do this. Whatever you decide, tell whoever will administer your estate that this exists and where the deed is.</p>
+  </div>
+  <div class="card warn">
+    <h4>If you go bankrupt</h4>
+    <p>The obligation attaches to the land, not only to you. Insolvency can end your personal liability, but the <strong>land stays burdened</strong> and whoever takes it takes it subject to the agreement. In a forced sale a burdened site is worth less than clean land, and your unit buyers are left as unsecured creditors.</p>
+  </div>
+  <p class="src">Sources: legal commentary from rural practices including <a href="https://www.footanstey.com/our-insights/articles-news/a-landowners-guide-to-biodiversity-net-gain/" target="_blank" rel="noopener">Foot Anstey</a> and <a href="https://www.shma.co.uk/our-thoughts/biodiversity-net-gain-what-landowners-need-to-know-now/" target="_blank" rel="noopener">Shakespeare Martineau</a>; Environment Act 2021 s.122; Agricultural Holdings Act 1986.</p>
+</section>
+
+<section class="slide" data-ch="The 30 year commitment">
+  <span class="kicker">What it does to the value of the land</span>
+  <h2>The trap that ruins people who do everything else right</h2>
+  <p>A valuer looking at your parcel after the agreement is signed will value it twice and take the higher figure: as restricted bare land that can no longer be farmed commercially, or as an investment, capitalising the <strong>remaining contracted income</strong> with a reversion.</p>
+  <p>That second approach only helps if income is still to come.</p>
+  <div class="card bad">
+    <h4>Sell every unit up front and you can end up owning a liability</h4>
+    <p>If you have sold all your units and spent the proceeds, there is no income left to capitalise. What remains is land that carries 29 more years of management cost with nothing coming in against it. On a valuation that parcel can be worth <strong>nil, or less than nil</strong>. A buyer would need paying to take it.</p>
+    <p>Two ways to avoid it. <strong>Keep a tail of unsold units</strong> so there is future income attached to the land. Or <strong>ring fence a sinking fund out of the first sales</strong>, sized to cover the remaining management, and do not touch it.</p>
+  </div>
+  <p>Expect the encumbered parcel to be worth materially less than unencumbered arable in any case. The buyer pool is small and the buyer inherits the bill. If you have borrowed against the land, check what the post agreement value does to your loan to value covenant, and consider getting a formal valuation before and after.</p>
+</section>
+
+<!-- ================= CHAPTER 9 ================= -->
+<section class="slide" data-key="risk" data-ch="The risks">
+  <span class="kicker">Risks, part one</span>
+  <h2>The four that cost people the most</h2>
+  <div class="card bad">
+    <h4>1. You never find a buyer</h4>
+    <p>The biggest one, and the least discussed. Nearly four in ten registered sites had sold nothing. The median site has sold under one unit, and the median local planning authority has absorbed under four. There is no obligation on anyone to buy.</p>
+    <p>The part people miss is what happens next. <strong>Once you have signed the section 106 or the covenant, you owe 30 years of management and monitoring whether or not a single unit ever sells.</strong> On the figures in the calculator that is well over £100,000 on a ten hectare site, paid out across three decades against no income at all. Not £20,000 of wasted fees. A six figure commitment.</p>
+    <p><strong>The way to avoid it is simple and almost nobody says it out loud: do not sign the legal agreement until you have a buyer in writing.</strong> The official guidance lets you register and secure the land before, during or after finding a buyer. Nothing forces you to commit first. Anyone urging you to get secured and registered now, and worry about buyers later, is describing their timetable and not yours.</p>
+  </div>
+  <div class="card bad">
+    <h4>2. The price moves against you</h4>
+    <p>Prices have already softened for the commonest habitats. Other neutral grassland units fell around 6% in the north and 3% in the south in the four months to February 2026, and traditional orchard units fell 16% and 10%. Meanwhile supply keeps arriving. You are pricing a 30 year commitment against a market with three years of history.</p>
+  </div>
+  <div class="card bad">
+    <h4>3. The habitat does not perform</h4>
+    <p>Wrong soil, wrong weather, wrong seed, deer, drought, a bad first winter. If monitoring says you missed target condition, the remedial work is yours, at your cost, after the units have been sold and the money spent.</p>
+  </div>
+  <div class="card bad">
+    <h4>4. Costs run past the revenue</h4>
+    <p>Thirty years of management, seven or eight monitoring reports, monitoring fees, inflation. Sell your units too cheap in year one and you have signed up to 29 more years of paying for it. This is the trap the government guidance is warning about when it says price from your costs.</p>
+  </div>
+  <p class="src">Price movement source: <a href="https://www.biodiversityunits.com/news-insights/bng-pricing-report-february-2026-two-years-on" target="_blank" rel="noopener">Biodiversity Units UK, February 2026 pricing report</a>, 165 habitat banks surveyed.</p>
+</section>
+
+<section class="slide" data-ch="The risks">
+  <span class="kicker">Risks, part two</span>
+  <h2>The four people do not see coming</h2>
+  <div class="card bad">
+    <h4>5. The rules change under you</h4>
+    <p>They already have. On 6 August 2026 the government exempted developments of 0.2 hectares or less, exempted temporary permissions of five years or less, and removed the self build exemption. Defra's own estimate is that the 0.2 hectare change alone removes BNG from about <strong>half of all residential planning permissions</strong>. Ecologists warned it risked collapsing the market. A brownfield exemption was consulted on in 2026, with professional bodies warning the combined exemptions could take up to 90% of applications out of scope.</p>
+    <p>Read that against the register. <strong>78% of all recorded allocations were for less than one unit</strong>, which is small builders buying fractions. Small sites are roughly half of all demand for off site units. So the August 2026 exemption does not merely thin the pipeline, <strong>it removes the exact customer most registered sites have been living on</strong>. If your plan is fractional sales to local housebuilders, that plan was written for a market that changed on 6 August 2026. And your 30 year commitment has no exit if demand falls.</p>
+  </div>
+  <div class="card bad">
+    <h4>6. The person who owes you money fails</h4>
+    <p>If a developer becomes insolvent after you have created the habitat but before they have paid in full, your obligation to the council or responsible body generally continues anyway. You can end up holding a 30 year liability against a debt you cannot collect.</p>
+  </div>
+  <div class="card bad">
+    <h4>7. Nobody is regulating this</h4>
+    <p>Unit sales are unregulated. Brokers, agents and habitat bank operators are not licensed for this. There is no ombudsman and no compensation scheme. Your protection is the contract you sign and the solicitor who reads it.</p>
+  </div>
+  <div class="card bad">
+    <h4>8. Enforcement is uneven</h4>
+    <p>Which sounds like it favours you, and does not. It means the value of everyone's units depends on a system whose credibility is unproven, and it means a determined responsible body can pursue you for a breach 20 years from now while a stretched council might not pursue the site next door at all.</p>
+  </div>
+  <p class="src">Sources: <a href="https://defraenvironment.blog.gov.uk/2026/07/14/biodiversity-net-gain-amendments-and-transitional-arrangements-published/" target="_blank" rel="noopener">Defra, BNG amendments and transitional arrangements</a>; <a href="https://cieem.net/new-bng-rules-and-exemptions-apply-from-6-august-2026/" target="_blank" rel="noopener">CIEEM</a>.</p>
+</section>
+
+<!-- ================= CHAPTER 10 ================= -->
+<section class="slide" data-ch="Tax">
+  <span class="kicker">Tax, part one</span>
+  <h2>Income or capital, and why it is worse than 45%</h2>
+  <p>This changed recently and it changes the arithmetic. HMRC published a technical note on the taxation of ecosystem service payments on <strong>14 May 2026</strong>.</p>
+  <ul class="checks">
+    <li><strong>Income, not capital, as the starting point.</strong> HMRC's position is that payments for ecosystem services, including biodiversity units, are usually taxed as income, and normally as income <em>of a trade</em>. You are treated as creating and selling units, not as disposing of land.</li>
+    <li><strong>It is worse than the 45% headline.</strong> On trading income an individual also pays <strong>Class 4 National Insurance</strong>, 2% above £50,270, so the top rate is effectively 47%. A large lump sum also drags income through the £100,000 to £125,140 band where the personal allowance is withdrawn and the effective marginal rate is <strong>60%</strong>. Capital gains tax, by contrast, tops out at 24%.</li>
+    <li><strong>Capital treatment is the exception, and 30 years does not buy it.</strong> It applies where the payment genuinely compensates for permanent loss of use or sterilisation of the asset. HMRC is explicit that the length of the agreement is only one factor and does not on its own decide the matter.</li>
+    <li><strong>If it is capital, it is a part disposal.</strong> A capital sum derived from land you keep is taxed under section 22 of the Taxation of Chargeable Gains Act 1992, with only a slice of your original purchase price set against it. On land bought cheaply there is very little base cost, so most of the receipt is taxed.</li>
+    <li><strong>If it is a farming trade, you can average it.</strong> HMRC confirms the farming rules, including <strong>farmers' averaging</strong> over two or five years, apply to farming trades that include ecosystem services income. On a lump sum that can save a great deal, and it is the main practical reason to keep farming the rest of the holding.</li>
+    <li><strong>Commercially occupied woodland sits outside income tax entirely.</strong> Section 11 of ITTOIA 2005 says commercial occupation of woodlands is not a trade for income tax, and HMRC confirms units created on that land fall outside a trade too. The expenditure falls outside as well. There is no equivalent for peatland.</li>
+  </ul>
+  <div class="card bad">
+    <h4>The trap that catches most people: taxed in year one, spending for 30 years</h4>
+    <p>You may receive most of the money at the start and spend it over three decades. Tax does not automatically follow that shape.</p>
+    <p>On the <strong>cash basis</strong>, which has been the default for unincorporated businesses since 2024/25 and so may be you without you ever choosing it, HMRC says the receipt is taxed in full when you receive it. No relief for the 29 years of management still to come until you actually spend it.</p>
+    <p>On the <strong>accruals basis</strong>, HMRC says the income follows accounting standards, which may require it to be recognised up front <em>and or</em> spread over the life of the agreement. Getting it spread and matched against the cost is usually the right answer, but it depends on how the contract is written, not on what you would prefer afterwards.</p>
+    <p>You generally <strong>cannot make a provision now</strong> for future habitat management and deduct it. Get an accountant onto the basis of accounting and the revenue recognition <strong>before you sign the unit sale contract</strong>.</p>
+  </div>
+  <p class="src">Source: <a href="https://www.gov.uk/government/publications/ecosystem-services-technical-note/technical-note-on-ecosystem-services" target="_blank" rel="noopener">HMRC technical note on ecosystem services</a>, 14 May 2026; <a href="https://www.stephens-scown.co.uk/specialist-sectors/rural/biodiversity-net-gain-and-tax-new-hmrc-guidance-brings-clarity-for-rural-landowners/" target="_blank" rel="noopener">Stephens Scown analysis</a>.</p>
+</section>
+
+<section class="slide" data-ch="Tax">
+  <span class="kicker">Tax, part two</span>
+  <h2>VAT, inheritance, and who should own it</h2>
+  <h3>VAT, and registration is not optional</h3>
+  <ul class="checks">
+    <li>Unit sales by a taxable person are standard rated at 20%. You <strong>must</strong> register once taxable turnover passes <strong>£90,000</strong> in any rolling 12 months, and a single unit sale can do it on its own.</li>
+    <li><strong>Always contract "plus VAT".</strong> Agree a bare figure and you have agreed a VAT inclusive price, and you keep a sixth less than you thought.</li>
+    <li>The upside: once registered, VAT on your setup costs, professional fees and 30 years of management is <strong>recoverable</strong>. So the "plus VAT" figures in the cost tables are a cash flow item for you, not a real cost.</li>
+    <li>If you lease the land to an operator rather than selling units yourself, that lease is VAT exempt unless you <strong>opt to tax</strong>, and without the option you may lose recovery on everything you spent getting there. Decide before you grant the lease.</li>
+    <li>The government's statutory credits are outside the scope of VAT, so their published prices are not directly comparable with a VAT inclusive private price.</li>
+  </ul>
+  <h3>Inheritance tax</h3>
+  <ul class="checks">
+    <li>Since <strong>6 April 2025</strong>, land in a qualifying environmental management agreement can keep agricultural property relief.</li>
+    <li>From <strong>6 April 2026</strong>, agricultural and business property relief together are limited to a <strong>£2.5m allowance</strong> per person at 100% relief, with 50% relief above that, an effective inheritance tax rate of 20% rather than 40%, payable in interest free instalments over ten years. The allowance was originally announced at £1m and raised to £2.5m in December 2025. Any unused part is <strong>transferable to a surviving spouse or civil partner</strong>, so a couple can cover up to £5m.</li>
+    <li><strong>Three conditions the headline hides.</strong> The land must have been agricultural property for the <strong>two years before</strong> the agreement started, so you cannot buy a field and covenant it the same month. The agreement must be with government, a public body, a local authority or an approved responsible body, which a section 106 or conservation covenant is and a private contract with an unregulated operator is not. And the usual test still applies: two years if you farm it yourself, <strong>seven if somebody else occupies it</strong>, which is what leasing to an operator does.</li>
+    <li><strong>Business property relief can be lost by leasing.</strong> Relief is denied where a business consists wholly or mainly of holding investments. A site that has sold its units and collects rent looks like an investment business. The operator lease route is the version most at risk. Land inside a wider farming trade is in a much stronger position.</li>
+  </ul>
+  <h3>Who should own it</h3>
+  <p>An <strong>individual</strong> pays up to 45% plus 2% Class 4 National Insurance, with a 60% band on the way through. A <strong>partnership</strong> taxes each partner on their share as it arises, so a lump sum hits every partner's marginal rate in the same year including partners who saw none of the cash. A <strong>company</strong> pays corporation tax at 19% up to £50,000 and 25% above £250,000, which caps the rate well below 47%, but you pay again to get the money out. Decide before you buy the land, because moving it afterwards is a disposal.</p>
+  <div class="card warn">
+    <h4>And the purchase itself</h4>
+    <p>Bare farmland is non residential for stamp duty land tax. Ask whether the <strong>seller has opted to tax</strong>: if they have, VAT is added to the price and SDLT is then charged on the VAT inclusive figure. If you are going to register for VAT, do it <strong>before</strong> you complete, not after.</p>
+  </div>
+  <p class="src">Sources: <a href="https://www.gov.uk/government/news/what-are-the-changes-to-agricultural-property-relief" target="_blank" rel="noopener">GOV.UK on the changes to agricultural property relief</a>; <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/124C" target="_blank" rel="noopener">IHTA 1984 s.124C</a>; <a href="https://www.gov.uk/stamp-duty-land-tax/nonresidential-and-mixed-rates" target="_blank" rel="noopener">SDLT non residential rates</a>; HMRC technical note as above.</p>
+</section>
+
+<!-- ================= CHAPTER 11 ================= -->
+<section class="slide" data-ch="What is changing">
+  <span class="kicker">Just changed</span>
+  <h2>What happened on 6 August 2026</h2>
+  <p>If you read anything about BNG written before August 2026, check it against this.</p>
+  <ul class="checks">
+    <li><strong>A new 0.2 hectare exemption.</strong> Developments with a red line boundary of 0.2 hectares or less are out of mandatory BNG, unless on site priority habitat is harmed. The red line boundary is the outline drawn round the site on the planning application, and it covers the whole thing, access roads and gardens included.</li>
+    <li><strong>Temporary development exempted.</strong> Permissions of five years or less where the land is reinstated afterwards.</li>
+    <li><strong>The hierarchy relaxed for minor development.</strong> Minor schemes still in scope can now go straight to buying registered off site units, without first having to show they explored on site delivery. Good news for sellers of registered units.</li>
+    <li><strong>The self build exemption removed.</strong> Self and custom build now follow the standard rules, though many will qualify for the new small site exemption anyway.</li>
+    <li><strong>Transitional rule.</strong> All of it applies only to applications submitted on or after 6 August 2026. Earlier applications carry on under the old rules whatever their size.</li>
+  </ul>
+  <p class="src">Source: <a href="https://defraenvironment.blog.gov.uk/2026/07/14/biodiversity-net-gain-amendments-and-transitional-arrangements-published/" target="_blank" rel="noopener">Defra environment blog, 14 July 2026</a>.</p>
+</section>
+
+<section class="slide" data-ch="What is changing">
+  <span class="kicker">Coming next</span>
+  <h2>What to watch</h2>
+  <div class="grid2">
+    <div class="card good">
+      <h4>Big infrastructure joins, 2 November 2026</h4>
+      <p>BNG becomes mandatory for nationally significant infrastructure projects: major transport, energy and water schemes. That is genuine new demand and the most significant on the horizon. Be careful what it means for you, though. Schemes that size buy through framework deals with large operators, deliver a great deal on their own extensive landholdings, and can fall back on statutory credits. A single small registered site is unlikely to be their counterparty directly. The realistic route into that demand is through an operator, or a group of neighbouring landowners offering a block with some scale.</p>
+    </div>
+    <div class="card warn">
+      <h4>A metric change to spatial risk</h4>
+      <p>Defra has announced that spatial risk for area habitats will be assessed using Local Nature Recovery Strategy areas only, instead of local planning authority and National Character Area boundaries. That redraws the map of who can buy from you. As of September 2026 the published metric guide still uses the old boundaries, with updated tools expected later in 2026.</p>
+      <p>This is the same multiplier this guide called the single most important idea in it, and the government has already said it is changing. <strong>If you are buying land whose whole case rests on which side of an authority boundary it sits, the boundary that will matter is not the one on today's map.</strong> Check the draft LNRS areas before you exchange. If the parcel only works under the current boundaries, do not buy it.</p>
+    </div>
+    <div class="card warn">
+      <h4>A brownfield residential exemption</h4>
+      <p>Consulted on during 2026. If it lands on top of the existing exemptions, professional bodies estimate up to 90% of planning applications could fall outside BNG.</p>
+    </div>
+    <div class="card good">
+      <h4>Stacking with nutrient credits</h4>
+      <p>Government guidance confirms you can sell both biodiversity units and nutrient neutrality credits from the same land, provided you are not paid twice for the same outcome. In the right catchment that is a second income stream. Note that nutrient agreements typically run far longer than 30 years.</p>
+    </div>
+  </div>
+  <p class="src">Sources: <a href="https://defraenvironment.blog.gov.uk/2026/04/20/biodiversity-net-gain-whats-changing-and-what-it-means-for-you/" target="_blank" rel="noopener">Defra, what is changing</a>; <a href="https://www.gov.uk/guidance/combining-environmental-payments-biodiversity-net-gain-bng-and-nutrient-mitigation" target="_blank" rel="noopener">GOV.UK on combining environmental payments</a>.</p>
+</section>
+
+<!-- ================= CHAPTER 12 ================= -->
+<section class="slide" data-ch="Before you commit">
+  <span class="kicker">The comparison nobody offers you</span>
+  <h2>What else that land could be doing</h2>
+  <p>Every pitch you will hear compares Biodiversity Net Gain against nothing. A decision needs two columns. Here is the other one, per hectare per year, for land of the kind that suits this.</p>
+  <div class="scroller"><table class="tbl">
+    <tr><th>What you could do with it</th><th class="num">Roughly, per hectare per year</th><th>Commitment</th></tr>
+    <tr><td>Let it for grazing</td><td class="num">£200 to £350</td><td>Season by season, or a short tenancy</td></tr>
+    <tr><td>Let it as arable, bare land</td><td class="num">£220 to £865, average around £230</td><td>A farm business tenancy, usually a few years</td></tr>
+    <tr><td>Sustainable Farming Incentive and Countryside Stewardship</td><td class="num">Varies by action, the highest now above £600</td><td>Typically 3 to 5 years, capped per agreement, and application windows</td></tr>
+    <tr><td>Lease to a habitat bank operator</td><td class="num">£240 to £900</td><td><strong>30 years or more</strong>, no setup cost, no market risk to you</td></tr>
+    <tr><td>Run a gain site yourself</td><td class="num">Potentially far more, potentially nothing</td><td><strong>30 years</strong>, all the cost, all the risk</td></tr>
+  </table></div>
+  <p>Two honest observations from that table. The operator route is <strong>in the same range as simply letting good arable land</strong>, for a commitment ten times longer. And the independent route only beats the alternatives if you sell a decent share of your units, which most registered sites have not.</p>
+  <div class="card good">
+    <h4>You can also do more than one</h4>
+    <p>Government guidance confirms you can stack biodiversity units with nutrient neutrality credits, and with agri-environment schemes, provided you are not paid twice for the same outcome on the same ground. Different interventions on different parcels of the same holding is normal good practice. Ask an adviser to map which of your fields does which job.</p>
+  </div>
+  <p class="note">And one thing nobody mentions: <strong>year 31</strong>. The agreement ends and the land does not have to stay in biodiversity use, but that does not mean everything reverts. Stacked agreements can run longer than the BNG one. Designations can accrue over three decades. Protected species that arrive because you made good habitat bring constraints that outlive the covenant. And <strong>woodland you plant is effectively permanent</strong>, because felling licences carry restocking conditions. If you plant trees, you are not making a 30 year decision.</p>
+  <p class="src">Sources: agricultural rent ranges from 2026 market commentary and Defra farm business tenancy data; <a href="https://www.gov.uk/government/publications/sustainable-farming-incentive-2026-sfi26" target="_blank" rel="noopener">SFI 2026 scheme information</a>; <a href="https://www.gov.uk/guidance/combining-environmental-payments-biodiversity-net-gain-bng-and-nutrient-mitigation" target="_blank" rel="noopener">GOV.UK on combining environmental payments</a>.</p>
+</section>
+
+<section class="slide" data-ch="Before you commit">
+  <span class="kicker">Before you buy the land</span>
+  <h2>The checklist</h2>
+  <p>Work through this before you make an offer, not after.</p>
+  <ol>
+    <li>Ask the seller's solicitor for the <strong>title register, title plan and every document referred to in it</strong>, and read them for reserved minerals, reserved sporting rights, restrictive covenants limiting use to agriculture, existing overage, and any option or promotion agreement in a developer's favour.</li>
+    <li>Run the public data checks from the "what to look up" step on the exact parcel.</li>
+    <li>Identify the <strong>local planning authority and National Character Area</strong>, and get a feel for how much development is actually coming there.</li>
+    <li>Search the <strong>biodiversity gain sites register</strong> for competing sites nearby, and note what habitat they sell.</li>
+    <li>Find out whether the <strong>Local Nature Recovery Strategy</strong> is published and what its habitat map asks for on that parcel.</li>
+    <li>Get an ecologist's <strong>opinion on baseline and realistic uplift</strong> before exchange, even a short one. This is the number the whole deal rests on.</li>
+    <li>Confirm nothing disqualifies it: irreplaceable habitat, degradation since 30 January 2020, existing obligations, EIA screening needed.</li>
+    <li>Price the <strong>full 30 year cost</strong>, not just the setup.</li>
+    <li>Speak to your <strong>lender</strong> and check any <strong>tenancy</strong>.</li>
+    <li>Speak to an <strong>accountant before you agree the payment structure</strong>, not after. The agenda: income or capital; whether the receipt falls inside your farming trade so that farmers' averaging is available; cash basis or accruals, and whether the income can be spread over the term rather than taxed in year one; VAT registration and always quoting plus VAT; Class 4 National Insurance; whether an individual, a partnership or a company should own it; and whether agricultural and business property relief survive the structure, particularly if you are leasing to an operator.</li>
+    <li>Instruct a solicitor who has <strong>done a BNG agreement before</strong>. This is not general conveyancing.</li>
+    <li>Decide honestly whether you can <strong>afford to spend the setup money and sell nothing</strong>. If you cannot, use an operator or do not do it.</li>
+    <li><strong>Buy conditionally.</strong> Make completion conditional on a satisfactory baseline survey and metric result, on your lender's written consent, and on the council or responsible body confirming they will enter the agreement. If the seller will not accept conditions, that tells you something. Never complete first and survey afterwards, because the survey window is April to September and you cannot undo a purchase.</li>
+    <li>Make the land purchase <strong>stack up on its own terms</strong>. If the deal only works because of BNG, you are taking a market risk on a market with three years of history.</li>
+  </ol>
+</section>
+
+<section class="slide" data-ch="Before you commit">
+  <span class="kicker">Before you sign with anyone</span>
+  <h2>Questions for a broker, operator or buyer</h2>
+  <p>Ask every one of these in writing. How they answer tells you as much as what they answer.</p>
+  <ul class="checks">
+    <li>What lands in my bank account, <strong>per hectare per year, after all costs I am responsible for</strong>, and is it index linked?</li>
+    <li>Who pays for <strong>remedial work</strong> if the habitat misses target condition, and is that written down?</li>
+    <li>What happens if <strong>you</strong> go out of business? Who takes over the obligations, and how is that secured?</li>
+    <li>Are payments <strong>guaranteed or contingent on units selling</strong>? If contingent, what happens if nothing sells?</li>
+    <li>How many units on your other sites are <strong>still unsold</strong>, and how long have they been on the register?</li>
+    <li>Which <strong>local planning authority</strong> are we selling into, and what evidence do you have of demand there?</li>
+    <li>Who holds the legal agreement, and have you asked <strong>my lender</strong> for consent?</li>
+    <li>What is the <strong>total 30 year cost</strong> in your model, and what inflation assumption is in it?</li>
+    <li>Can I <strong>exit</strong>? Under what terms, and at what cost?</li>
+    <li>Can you show me a <strong>completed deal</strong> on the public register that I can look up myself?</li>
+    <li><strong>What percentage of gross unit revenue do I actually receive</strong>, worked through on my acreage?</li>
+    <li>Are you acting for <strong>me or the buyer</strong>, and are you paid by both?</li>
+    <li>Is there a <strong>bond, escrow or parent company guarantee</strong> behind your payment and management promises, who holds it, and is it index linked?</li>
+    <li>Are you <strong>regulated</strong>, and what professional indemnity cover do you carry?</li>
+    <li>Show me the <strong>draft agreement and the management plan before</strong> I sign heads of terms, not after.</li>
+    <li>Have you obtained <strong>my lender's consent</strong> and dealt with priority against the charge, and who pays for that?</li>
+    <li>Can I still claim <strong>SFI or Countryside Stewardship</strong> on this land, and who keeps those payments?</li>
+    <li>What am I signing in terms of <strong>exclusivity or lock out</strong>, and for how long?</li>
+    <li>Give me <strong>two landowner references</strong> who have completed and been paid.</li>
+  </ul>
+  <div class="card warn">
+    <h4>If you take one thing from this guide</h4>
+    <p>Every credible route through this starts with the same two people: <strong>an ecologist who will give you a real baseline, and a solicitor who has done one of these before</strong>. Neither is expensive next to the cost of getting this wrong for 30 years.</p>
+  </div>
+</section>
+
+<section class="slide" data-ch="Before you commit">
+  <span class="kicker">Where this app fits</span>
+  <h2>What GainScout does, and what it does not</h2>
+  <p>We built <a href="gainscout.html">GainScout</a> for the very first step: standing in a field, or sitting at a laptop looking at one, and finding out quickly whether it is even worth a conversation.</p>
+  <div class="grid2">
+    <div class="card good">
+      <h4>What it does</h4>
+      <ul style="margin:8px 0 0 18px">
+        <li>Reads one point on the map against official government datasets and answers in seconds</li>
+        <li>Shows designations, ancient woodland and priority habitat, agricultural grade, flood zone, Green Belt and National Landscapes</li>
+        <li>Shows which Local Nature Recovery Strategy covers it</li>
+        <li>Shows registered biodiversity gain sites nearby, which is your competition</li>
+        <li>Shows the source and check date for every single finding, with nothing estimated or invented</li>
+        <li>Saves sites, walkover notes and timestamped photos, and produces a dated report for an agent, ecologist or buyer</li>
+      </ul>
+    </div>
+    <div class="card warn">
+      <h4>What it does not do</h4>
+      <ul style="margin:8px 0 0 18px">
+        <li>It does not survey habitat. Only a competent ecologist standing on the ground can do that</li>
+        <li>It does not run the statutory metric or produce units anyone will buy</li>
+        <li>It does not value land or give financial, legal or tax advice</li>
+        <li>It does not find you a buyer</li>
+      </ul>
+    </div>
+  </div>
+  <p>It is free to download and free to check land with. Reports and the Pro tier are optional. England only.</p>
+  <div class="g-nav" style="border:none;margin-top:8px;padding-bottom:0">
+    <a class="g-btn primary" href="https://apps.apple.com/gb/app/id6803895712">Get GainScout on the App Store</a>
+    <a class="g-btn" href="gainscout.html">What it does</a>
+  </div>
+</section>
+
+<section class="slide" data-key="summary" data-ch="Before you commit">
+  <span class="kicker">The honest summary</span>
+  <h2>If you remember five things</h2>
+  <ol>
+    <li><strong>Your buyer is local.</strong> The whole business is decided by how much development is coming to your local planning authority and how many people are already selling into it. Ecology comes second.</li>
+    <li><strong>Boring land is good land.</strong> A low baseline is the asset. Fast, easy habitat beats rare, difficult habitat on the metric almost every time.</li>
+    <li><strong>The median registered site has sold under one unit.</strong> The good outcomes are real and they are not typical. Plan for the median, not the brochure.</li>
+    <li><strong>You are signing a 30 year liability, not making a sale.</strong> It runs with the land, it needs your lender's blessing, and the remedial work is yours.</li>
+    <li><strong>Do not let the land purchase depend on it.</strong> If the field only makes sense because of BNG, you are taking a market risk on a market younger than most mortgages.</li>
+  </ol>
+  <p>Done carefully, on the right land, in the right place, this is a genuine and worthwhile income from land that was not earning much. Done on a brochure and a hunch, it is an expensive way to give away three decades of control over a field.</p>
+</section>
+
+<section class="slide" data-ch="Before you commit">
+  <span class="kicker">Sources</span>
+  <h2>Everything here, and where it came from</h2>
+  <p>Last full review <strong>7 September 2026</strong>. Figures move. Check the dates before you rely on any of it.</p>
+  <h3>Official</h3>
+  <ul>
+    <li><a href="https://www.gov.uk/guidance/understanding-biodiversity-net-gain" target="_blank" rel="noopener">Understanding biodiversity net gain</a>, GOV.UK</li>
+    <li><a href="https://www.gov.uk/guidance/sell-biodiversity-units-as-a-land-manager" target="_blank" rel="noopener">Sell biodiversity units as a land manager</a>, GOV.UK</li>
+    <li><a href="https://www.gov.uk/guidance/register-a-biodiversity-gain-site" target="_blank" rel="noopener">Register a biodiversity gain site</a>, GOV.UK</li>
+    <li><a href="https://www.gov.uk/guidance/statutory-biodiversity-credit-prices" target="_blank" rel="noopener">Statutory biodiversity credit prices</a> and <a href="https://www.gov.uk/guidance/statutory-biodiversity-credits" target="_blank" rel="noopener">Statutory biodiversity credits</a>, GOV.UK</li>
+    <li><a href="https://www.legislation.gov.uk/ukpga/2021/30/part/7" target="_blank" rel="noopener">Environment Act 2021, Part 7 (conservation covenants)</a>, and <a href="https://www.legislation.gov.uk/ukpga/1990/8/section/106" target="_blank" rel="noopener">TCPA 1990 s.106</a> and <a href="https://www.legislation.gov.uk/ukpga/1990/8/section/106A" target="_blank" rel="noopener">s.106A</a>, legislation.gov.uk</li>
+    <li><a href="https://www.gov.uk/government/news/what-are-the-changes-to-agricultural-property-relief" target="_blank" rel="noopener">Changes to agricultural property relief</a>, GOV.UK, and <a href="https://www.legislation.gov.uk/ukpga/1984/51/section/124C" target="_blank" rel="noopener">IHTA 1984 s.124C</a></li>
+    <li><a href="https://www.gov.uk/government/publications/sustainable-farming-incentive-2026-sfi26" target="_blank" rel="noopener">Sustainable Farming Incentive 2026</a>, GOV.UK</li>
+    <li><a href="https://www.gov.uk/government/publications/statutory-biodiversity-metric-tools-and-guides" target="_blank" rel="noopener">Statutory biodiversity metric tools and guides</a>, Defra. User guide June 2026, calculation tool v1.0.4</li>
+    <li><a href="https://environment.data.gov.uk/biodiversity-net-gain/search" target="_blank" rel="noopener">Biodiversity gain sites register</a>, Natural England. Open Government Licence v3.0, © Crown copyright</li>
+    <li><a href="https://www.gov.uk/guidance/eia-agriculture-regulations-apply-to-make-changes-to-rural-land" target="_blank" rel="noopener">EIA (Agriculture) regulations</a>, GOV.UK</li>
+    <li><a href="https://www.gov.uk/guidance/combining-environmental-payments-biodiversity-net-gain-bng-and-nutrient-mitigation" target="_blank" rel="noopener">Combining environmental payments</a>, GOV.UK</li>
+    <li><a href="https://www.gov.uk/government/publications/ecosystem-services-technical-note/technical-note-on-ecosystem-services" target="_blank" rel="noopener">Technical note on ecosystem services</a>, HMRC, 14 May 2026</li>
+    <li><a href="https://defraenvironment.blog.gov.uk/2026/07/14/biodiversity-net-gain-amendments-and-transitional-arrangements-published/" target="_blank" rel="noopener">BNG amendments and transitional arrangements</a>, Defra, July 2026</li>
+    <li><a href="https://defralanduse.blog.gov.uk/wp-content/uploads/sites/276/2023/11/BNG-flowcharts-for-landowners.pdf" target="_blank" rel="noopener">BNG flowcharts for landowners</a>, Defra (PDF)</li>
+  </ul>
+  <h3>Market, cost and professional</h3>
+  <p class="note">A note on these. The official sources above are primary. The cost and price sources below are the best public evidence we could find, but some are commercial or campaigning organisations rather than government or the professional institutions. We have said where each figure comes from so you can weigh it yourself, and we would rather link a source you can judge than quote a number with nothing behind it.</p>
+  <ul>
+    <li><a href="https://ww3.rics.org/uk/en/journals/land-journal/bng-units-prices.html" target="_blank" rel="noopener">Maturing market for mandatory BNG units</a>, RICS Land Journal</li>
+    <li><a href="https://www.biodiversityunits.com/news-insights/bng-pricing-report-february-2026-two-years-on" target="_blank" rel="noopener">BNG pricing report, February 2026</a>, Biodiversity Units UK</li>
+    <li><a href="https://stockfreefarming.org/enterprise-budget/biodiversity-net-gain-opportunities-for-farmers/" target="_blank" rel="noopener">BNG opportunities for farmers, enterprise budget</a></li>
+    <li><a href="https://bngcalculator.co.uk/30-year-management-cost" target="_blank" rel="noopener">30 year habitat management cost</a></li>
+    <li><a href="https://cieem.net/new-bng-rules-and-exemptions-apply-from-6-august-2026/" target="_blank" rel="noopener">New BNG rules from 6 August 2026</a>, CIEEM</li>
+    <li><a href="https://cieem.net/wp-content/uploads/2024/06/BNG-Technical-Guide-2024.pdf" target="_blank" rel="noopener">BNG technical guide</a>, CIEEM (PDF)</li>
+    <li><a href="https://www.footanstey.com/our-insights/articles-news/a-landowners-guide-to-biodiversity-net-gain/" target="_blank" rel="noopener">A landowner's guide to BNG</a>, Foot Anstey</li>
+    <li><a href="https://www.stephens-scown.co.uk/specialist-sectors/rural/biodiversity-net-gain-and-tax-new-hmrc-guidance-brings-clarity-for-rural-landowners/" target="_blank" rel="noopener">BNG and tax, new HMRC guidance</a>, Stephens Scown</li>
+    <li><a href="https://www.plantlife.org.uk/learning-resource/how-much-does-a-meadow-cost/" target="_blank" rel="noopener">How much does a meadow cost</a>, Plantlife</li>
+  </ul>
+  <div class="card">
+    <h4>A necessary note</h4>
+    <p>This guide is general information about how Biodiversity Net Gain works in England, stated on the basis of law and practice as at 7 September 2026. It is not legal, financial, tax, planning or ecological advice, it is not a recommendation to buy land or enter any agreement, and it must not be relied on in place of advice on your own land and your own circumstances. The calculator is an illustration for thinking with. It is not a forecast, a valuation or a metric assessment, and no reliance should be placed on its output. To the fullest extent permitted by law, Puff Labs accepts no liability for any loss arising from reliance on anything here.</p>
+    <p><strong>Our interest, stated plainly.</strong> Puff Labs does not broker biodiversity units, take commission on any transaction, or have any interest in any deal you make. We do publish GainScout, the app mentioned in two of the steps above. It is free to download and free to check land with, and it has a paid Pro tier.</p>
+    <p>Before you commit money, take advice from a qualified ecologist, a solicitor who has done a BNG agreement before, and an accountant.</p>
+  </div>
+  <div class="g-nav" style="border:none;margin-top:8px;padding-bottom:0">
+    <button class="g-btn" id="gPrint2">Print or save the whole guide as a PDF</button>
+  </div>
+  <p class="src">Found something out of date or wrong? <a href="mailto:leonfigueira@gmail.com">Tell us</a> and we will fix it.</p>
+</section>
+
+</div><!-- /gDeck -->
+
+<div class="g-nav" id="gNav" hidden>
+  <button class="g-btn" id="gPrev">← Back</button>
+  <span class="sp"></span>
+  <button class="g-btn primary" id="gNext">Next →</button>
+</div>
+
+<a class="backlink" href="gainscout.html" style="display:inline-block;margin:0 0 40px;color:var(--muted);text-decoration:none">← Back to GainScout</a>
+</main>
+
+<div class="g-menu" id="gMenu" hidden role="dialog" aria-label="Contents">
+  <button class="g-close" id="gCloseMenu">Close</button>
+  <div class="g-menu-in">
+    <h3>Contents</h3>
+    <p style="color:var(--muted);font-size:.9rem">32 steps. Jump to any of them.</p>
+    <ol id="gMenuList"></ol>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap foot-row">
+    <span>© 2026 Puff Labs</span>
+    <a href="mailto:leonfigueira@gmail.com">leonfigueira@gmail.com</a>
+    <span class="spacer"></span>
+    <a href="https://leonfigueira.github.io/runlow-site/privacy.html">Privacy</a>
+    <a href="https://leonfigueira.github.io/runlow-site/support.html">Support</a>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- deck ---------------- */
+  var slides = Array.prototype.slice.call(document.querySelectorAll('#gDeck .slide'));
+  var cover  = document.getElementById('gCover');
+  var deck   = document.getElementById('gDeck');
+  var nav    = document.getElementById('gNav');
+  var top    = document.getElementById('gTop');
+  var bar    = document.getElementById('gBar');
+  var chapEl = document.getElementById('gChapter');
+  var countEl= document.getElementById('gCount');
+  var prevB  = document.getElementById('gPrev');
+  var nextB  = document.getElementById('gNext');
+  var menu   = document.getElementById('gMenu');
+  var list   = document.getElementById('gMenuList');
+  var N = slides.length;
+  var idx = -1; // -1 = cover
+
+  // number the kickers from position, so slides can be added without renumbering
+  slides.forEach(function(sl,i){
+    var k = sl.querySelector('.kicker');
+    if (k) k.textContent = (i+1) + '. ' + k.textContent;
+  });
+  var pill = document.getElementById('gStepPill');
+  if (pill){
+    var words = 0;
+    slides.forEach(function(sl){ words += (sl.textContent || '').trim().split(/\s+/).length; });
+    pill.textContent = N + ' steps, about ' + (Math.round(words / 200 / 5) * 5) + ' minutes to read it all';
+  }
+
+  // short route, built from the tagged slides so the numbers cannot drift
+  (function buildShort(){
+    var box = document.getElementById('gShort');
+    if (!box) return;
+    var order = ['reality','local','calc','cash','risk','summary'];
+    box.innerHTML = order.map(function(key){
+      var i = slides.findIndex(function(sl){ return sl.getAttribute('data-key') === key; });
+      if (i < 0) return '';
+      var h = slides[i].querySelector('h2');
+      return '<li style="margin:7px 0"><a href="#/slide/'+(i+1)+'">'+(h?h.textContent:'')+'</a></li>';
+    }).join('');
+  })();
+
+  // contents
+  (function buildMenu(){
+    var lastCh = null, html = '';
+    slides.forEach(function(s,i){
+      var ch = s.getAttribute('data-ch') || '';
+      var h  = s.querySelector('h2');
+      if (ch !== lastCh){ html += '<li class="ch">' + ch + '</li>'; lastCh = ch; }
+      html += '<li><a href="#/slide/'+(i+1)+'" data-i="'+i+'">'+(i+1)+'. '+(h?h.textContent:'')+'</a></li>';
+    });
+    list.innerHTML = html;
+  })();
+
+  function jump(){
+    var prev = document.documentElement.style.scrollBehavior;
+    document.documentElement.style.scrollBehavior = 'auto';
+    window.scrollTo(0, 0);
+    document.documentElement.style.scrollBehavior = prev;
+  }
+
+  function syncSticky(){
+    var h = document.querySelector('header');
+    if (h) top.style.top = h.offsetHeight + 'px';
+  }
+  window.addEventListener('resize', syncSticky);
+  syncSticky();
+
+  function show(i, push){
+    if (i < 0){
+      slides.forEach(function(s){ s.classList.remove('on'); });
+      cover.hidden = false; deck.hidden = false; nav.hidden = true; top.hidden = true;
+      idx = -1;
+      if (push !== false && location.hash) history.replaceState(null,'',location.pathname);
+      jump();
+      return;
+    }
+    if (i >= N) i = N - 1;
+    cover.hidden = true; nav.hidden = false; top.hidden = false;
+    slides.forEach(function(s,k){ s.classList.toggle('on', k === i); });
+    idx = i;
+    chapEl.textContent = slides[i].getAttribute('data-ch') || '';
+    countEl.textContent = (i+1) + ' / ' + N;
+    bar.style.width = (((i+1)/N)*100) + '%';
+    prevB.disabled = false;
+    nextB.textContent = (i === N-1) ? 'Back to the top ↑' : 'Next →';
+    Array.prototype.forEach.call(list.querySelectorAll('a'), function(a){
+      a.classList.toggle('cur', +a.getAttribute('data-i') === i);
+    });
+    if (push !== false){
+      var h = '#/slide/' + (i+1);
+      if (location.hash !== h) history.pushState(null, '', h);
+    }
+    jump();
+  }
+
+  function go(d){
+    if (idx === N-1 && d > 0){ show(-1); return; }
+    if (idx === 0 && d < 0){ show(-1); return; }
+    show(idx + d);
+  }
+
+  document.getElementById('gStart').addEventListener('click', function(){ show(0); });
+  prevB.addEventListener('click', function(){ go(-1); });
+  nextB.addEventListener('click', function(){ go(1); });
+
+  ['gPrint','gPrint2'].forEach(function(id){
+    var b = document.getElementById(id);
+    if (b) b.addEventListener('click', function(){ menu.hidden = true; window.print(); });
+  });
+  document.getElementById('gMenuBtn').addEventListener('click', function(){ menu.hidden = false; });
+  document.getElementById('gCloseMenu').addEventListener('click', function(){ menu.hidden = true; });
+  menu.addEventListener('click', function(e){ if (e.target === menu) menu.hidden = true; });
+  list.addEventListener('click', function(e){
+    var a = e.target.closest('a'); if (!a) return;
+    e.preventDefault(); menu.hidden = true; show(+a.getAttribute('data-i'));
+  });
+
+  document.addEventListener('keydown', function(e){
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    var t = e.target.tagName;
+    if (t === 'INPUT' || t === 'SELECT' || t === 'TEXTAREA') return;
+    if (e.key === 'ArrowRight' || e.key === 'PageDown'){ e.preventDefault(); go(1); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp'){ e.preventDefault(); go(-1); }
+    else if (e.key === 'Escape'){ menu.hidden = true; }
+  });
+
+  // swipe
+  var sx = 0, sy = 0, tracking = false;
+  document.addEventListener('touchstart', function(e){
+    if (e.touches.length !== 1 || idx < 0) return;
+    // never hijack a sideways drag inside a wide table, a form control or a link
+    if (e.target.closest && e.target.closest('.scroller, table, input, select, textarea, a, details')) return;
+    sx = e.touches[0].clientX; sy = e.touches[0].clientY; tracking = true;
+  }, {passive:true});
+  document.addEventListener('touchend', function(e){
+    if (!tracking) return; tracking = false;
+    var dx = e.changedTouches[0].clientX - sx, dy = e.changedTouches[0].clientY - sy;
+    if (Math.abs(dx) > 60 && Math.abs(dx) > Math.abs(dy) * 1.8) go(dx < 0 ? 1 : -1);
+  }, {passive:true});
+
+  function fromHash(push){
+    var m = /^#\/slide\/(\d+)$/.exec(location.hash);
+    if (m){ show(Math.max(0, Math.min(N-1, parseInt(m[1],10) - 1)), push); }
+    else { show(-1, false); }
+  }
+  window.addEventListener('popstate', function(){ fromHash(false); });
+  window.addEventListener('hashchange', function(){ fromHash(false); });
+  fromHash(false);
+
+  /* ---------------- calculator ---------------- */
+  /* Distinctiveness, difficulty and years to target condition are the published
+     values from the Defra statutory biodiversity metric calculation tool v1.0.4
+     (sheets G-1 All Habitats, G-3 Multipliers, G-4 Temporal multipliers). */
+
+  /* Condition scores. Defra's published condition assessment sheets return
+     Good / Moderate / Poor for the habitats used here, so those are the choices.
+     Fairly good and fairly poor exist only as an ecologist's one step adjustment. */
+  var COND = { 'Poor':1, 'Moderate':2, 'Good':3 };
+
+  // temporal multiplier. G-4 caps the discount at "30+", worth 0.3198, not 0.965^30.
+  function temporalOf(y){ return (y === '30+') ? 0.31979674 : Math.pow(0.965, y); }
+  function yearsLabel(y){ return (y === '30+') ? '30 or more' : y; }
+
+  var BASE = [
+    { id:'arable', label:'Arable crops (cereal, non cereal, leys)', dist:2, broad:'Cropland',
+      conds:['Not assessed'] },
+    { id:'modg',   label:'Modified grassland (improved pasture)',   dist:2, broad:'Grassland',
+      conds:['Poor','Moderate','Good'] },
+    { id:'ong',    label:'Other neutral grassland',                 dist:4, broad:'Grassland',
+      conds:['Poor','Moderate','Good'] },
+    { id:'scrubb', label:'Mixed scrub',                             dist:4, broad:'Heathland and shrub',
+      conds:['Poor','Moderate','Good'] },
+    { id:'bare',   label:'Bare ground or sealed surface',           dist:0, broad:'Urban',
+      conds:['Not assessed'] }
+  ];
+
+  /* Distinctiveness, both difficulty multipliers and both time to target condition
+     tables are the published values from the Defra statutory biodiversity metric
+     calculation tool v1.0.4, sheets G-1, G-3, G-4 (creation) and G-5 (enhancement). */
+  var NEW = [
+    { id:'ong',   label:'Other neutral grassland',          dist:4, broad:'Grassland',
+      diffC:1.00, diffE:1.00, price:25000, create:1800, mgmt:400,
+      ttcC:{'Poor':2,'Moderate':5,'Good':10}, ttcE:{'Poor':1,'Moderate':10,'Good':15},
+      hint:'Other neutral grassland has traded around £20,000 to £35,000. It is the commonest habitat on the register.' },
+    { id:'scrub', label:'Mixed scrub',                      dist:4, broad:'Heathland and shrub',
+      diffC:1.00, diffE:1.00, price:24000, create:1800, mgmt:400,
+      ttcC:{'Poor':1,'Moderate':5,'Good':10}, ttcE:{'Poor':1,'Moderate':5,'Good':10},
+      hint:'Scrub is cheap and fast, which is why the register is full of it. Around £20,000 to £30,000.' },
+    { id:'owb',   label:'Other woodland, broadleaved',      dist:4, broad:'Woodland and forest',
+      diffC:1.00, diffE:1.00, price:30000, create:7000, mgmt:800,
+      ttcC:{'Poor':5,'Moderate':15,'Good':'30+'}, ttcE:{'Poor':5,'Moderate':15,'Good':25},
+      hint:'Woodland units carry a premium because the trading rules force like for like. Around £25,000 to £45,000.' },
+    { id:'pond',  label:'Pond, non priority habitat',       dist:4, broad:'Lakes',
+      diffC:1.00, diffE:0.67, price:60000, create:30000, mgmt:600,
+      ttcC:{'Poor':1,'Moderate':3,'Good':5}, ttcE:{'Poor':1,'Moderate':3,'Good':5},
+      hint:'Ponds are measured in hectares like any area habitat, and a farm pond is often 0.02 to 0.1 ha, so put in a realistic size. Ten hectares of pond is a lake. Non priority ponds have traded around £59,000 to £81,000 because supply is thin, but demand is thin too.' },
+    { id:'orch',  label:'Traditional orchard',              dist:6, broad:'Grassland',
+      diffC:1.00, diffE:0.67, price:45000, create:7000, mgmt:600,
+      ttcC:{'Poor':5,'Moderate':20,'Good':30}, ttcE:{'Poor':5,'Moderate':20,'Good':30},
+      hint:'Traditional orchard units have traded around £40,000 to £90,000, though prices softened through 2025 and 2026. Note they sit in the cheapest statutory credit tier despite being high distinctiveness.' },
+    { id:'fwm',   label:'Floodplain wetland mosaic',        dist:6, broad:'Grassland',
+      diffC:0.33, diffE:0.67, price:60000, create:12000, mgmt:1200,
+      ttcC:{'Poor':5,'Moderate':10,'Good':20}, ttcE:{'Poor':5,'Moderate':10,'Good':15},
+      hint:'Floodplain wetland mosaic has traded around £59,000 to £61,000. Creating it is earthworks and hydrology, not seed.' },
+    { id:'heath', label:'Lowland heathland',                dist:6, broad:'Heathland and shrub',
+      diffC:0.33, diffE:0.67, price:50000, create:7000, mgmt:800,
+      ttcC:{'Poor':10,'Moderate':20,'Good':'30+'}, ttcE:{'Poor':10,'Moderate':20,'Good':'30+'},
+      hint:'High distinctiveness units have traded around £40,000 to £90,000. Heathland is high difficulty and slow.' },
+    { id:'lmdw',  label:'Lowland mixed deciduous woodland', dist:6, broad:'Woodland and forest',
+      diffC:0.33, diffE:0.33, price:48000, create:7000, mgmt:800,
+      ttcC:{'Poor':10,'Moderate':'30+','Good':'30+'}, ttcE:{'Poor':10,'Moderate':'30+','Good':'30+'},
+      hint:'Around £47,000 to £50,000. Note the metric penalty: high difficulty and 30 or more years to target condition.' },
+    { id:'meadow',label:'Lowland meadow',                   dist:8, broad:'Grassland',
+      diffC:0.33, diffE:0.67, price:55000, create:3000, mgmt:600,
+      ttcC:{'Poor':5,'Moderate':10,'Good':15}, ttcE:{'Poor':5,'Moderate':10,'Good':15},
+      hint:'Very high distinctiveness, so trading rules require like for like and prices are high, but creation is high difficulty. Enhancing existing grassland up to it scores far better than creating it from scratch.' }
+  ];
+
+  var SETUP = {
+    s106: { survey:6000, ownLegal:5000, theirLegal:4000, review:1500, reg:639, monFee:6000,
+            label:'section 106' },
+    cov:  { survey:6000, ownLegal:10500, theirLegal:8500, review:1500, reg:639, monFee:50000,
+            label:'conservation covenant' }
+  };
+
+  var $ = function(id){ return document.getElementById(id); };
+  var elArea=$('cArea'), elBase=$('cBase'), elBaseCond=$('cBaseCond'), elNew=$('cNew'),
+      elNewCond=$('cNewCond'), elSS=$('cSS'), elPrice=$('cPrice'), elSold=$('cSold'),
+      elRoute=$('cRoute'), elCreate=$('cCreate'), elMgmt=$('cMgmt'), elMon=$('cMon'),
+      elVisits=$('cVisits'), elComm=$('cComm');
+  if (!elArea) return;
+
+  function opts(sel, arr, valFn, txtFn){
+    sel.innerHTML = arr.map(function(x){
+      return '<option value="'+valFn(x)+'">'+txtFn(x)+'</option>';
+    }).join('');
+  }
+  opts(elBase, BASE, function(b){return b.id;}, function(b){return b.label;});
+  opts(elNew,  NEW,  function(h){return h.id;}, function(h){return h.label;});
+
+  function baseObj(){ return BASE.filter(function(b){return b.id===elBase.value;})[0] || BASE[0]; }
+  function newObj(){  return NEW.filter(function(h){return h.id===elNew.value;})[0]  || NEW[0]; }
+
+  // Enhancement, not creation, where the habitat stays in the same broad group and moves up.
+  function isEnhancement(){
+    var b = baseObj(), h = newObj();
+    return b.broad === h.broad && h.dist > b.dist;
+  }
+
+  // Trading rules (metric tool sheet G-1). Medium and above must be replaced by the
+  // same broad habitat type or something of higher distinctiveness.
+  function tradingFails(){
+    var b = baseObj(), h = newObj();
+    if (b.dist < 4) return false;
+    return !(b.broad === h.broad || h.dist > b.dist);
+  }
+
+  function fillBaseCond(){
+    var b = baseObj(), cur = elBaseCond.value;
+    elBaseCond.innerHTML = b.conds.map(function(c){ return '<option value="'+c+'">'+c+'</option>'; }).join('');
+    if (b.conds.indexOf(cur) > -1) elBaseCond.value = cur;
+    elBaseCond.disabled = (b.conds.length === 1);
+  }
+  function fillNewCond(){
+    var cur = elNewCond.value, keys = ['Poor','Moderate','Good'];
+    elNewCond.innerHTML = keys.map(function(c){ return '<option value="'+c+'">'+c+'</option>'; }).join('');
+    elNewCond.value = (keys.indexOf(cur) > -1) ? cur : 'Moderate';
+  }
+
+  function money(n){
+    var neg = n < 0; n = Math.abs(Math.round(n));
+    return (neg?'-£':'£') + n.toLocaleString('en-GB');
+  }
+  function u(n){ return (Math.round(n*100)/100).toLocaleString('en-GB',{minimumFractionDigits:2, maximumFractionDigits:2}); }
+
+  function calc(){
+    var area = Math.max(0, parseFloat(elArea.value) || 0);
+    var b = baseObj(), h = newObj();
+    var bc = (elBaseCond.value === 'Not assessed') ? 1 : (COND[elBaseCond.value] || 1);
+    var nc = COND[elNewCond.value] || 2;
+    var ss = parseFloat(elSS.value) || 1;
+    var enh = isEnhancement();
+    var years = (enh ? h.ttcE : h.ttcC)[elNewCond.value];
+    if (years === undefined) years = 10;
+    var temporal = temporalOf(years);
+    var diff = enh ? h.diffE : h.diffC;
+
+    // Baseline strategic significance is scored low once an LNRS is published.
+    var baseUnits  = area * b.dist * bc * 1.0;
+    var afterUnits = area * h.dist * nc * ss * diff * temporal;
+    var net = afterUnits - baseUnits;
+    var blocked = tradingFails();
+
+    var price = Math.max(0, parseFloat(elPrice.value) || 0);
+    var sold  = parseFloat(elSold.value) || 1;
+    var comm  = Math.min(100, Math.max(0, parseFloat(elComm.value) || 0)) / 100;
+    var sellable = blocked ? 0 : Math.max(0, net);
+    var grossAll = sellable * price;
+    var gross    = grossAll * sold * (1 - comm);
+
+    var s = SETUP[elRoute.value] || SETUP.s106;
+    var setup = s.survey + s.ownLegal + s.theirLegal + s.review + s.reg;
+    var create = area * Math.max(0, parseFloat(elCreate.value) || 0);
+    var mgmt   = area * Math.max(0, parseFloat(elMgmt.value) || 0) * 30;
+    var visits = Math.max(0, parseFloat(elVisits.value) || 0);
+    var mon    = (Math.max(0, parseFloat(elMon.value) || 0) * visits) + s.monFee;
+    var cost = setup + create + mgmt + mon;
+    var left = gross - cost;
+
+    $('oBase').textContent   = u(baseUnits);
+    $('oAfter').textContent  = u(afterUnits);
+    $('oNet').textContent    = blocked ? 'blocked' : u(net);
+    $('oGrossAll').textContent = money(grossAll);
+    $('oGross').textContent  = money(gross);
+    $('oSetup').textContent  = money(setup);
+    $('oCreate').textContent = money(create);
+    $('oMgmt').textContent   = money(mgmt);
+    $('oMonVisits').textContent = money(mon - s.monFee);
+    $('oMonFee').textContent = money(s.monFee);
+    $('oMonFeeLabel').textContent = (elRoute.value === 'cov')
+      ? 'Responsible body monitoring, 30 years' : 'Council monitoring fee';
+    $('oCost').textContent   = money(cost);
+    var t = $('oNetCash');
+    t.textContent = money(left);
+    t.classList.toggle('neg', left < 0);
+    $('oNetLabel').textContent = (left < 0)
+      ? 'Out of pocket, before tax, over 30 years'
+      : 'Left over, before tax, over 30 years';
+
+    $('cYears').textContent = 'The metric treats this as ' + (enh ? 'enhancement' : 'creation') +
+      '. Defra assumes ' + yearsLabel(years) + ' years to get there, so it keeps ' +
+      Math.round(temporal*100) + '% of the value, and applies a difficulty multiplier of ' + diff + '.';
+    $('cPriceHint').textContent = h.hint;
+
+    var v;
+    if (blocked){
+      v = '<strong>The metric would refuse this.</strong> Losing medium distinctiveness habitat means replacing it ' +
+          'with the same broad habitat type, or with something of higher distinctiveness. ' +
+          '<strong>' + b.label + '</strong> to <strong>' + h.label + '</strong> is neither, so the official tool would show ' +
+          '"Trading Rules Satisfied: No" and no gain could be claimed. Pick a habitat in the same broad group, or a more distinctive one.';
+    } else if (net <= 0){
+      v = 'This combination produces <strong>no saleable units at all</strong>. The discounts for difficulty and time have wiped out the gain over your baseline. ' +
+          'You would still owe every cost above. Producing nothing saleable does not release you from an agreement you have already signed. ' +
+          'Try a habitat that is quicker and easier to create, or start from a lower baseline.';
+    } else if (left < 0){
+      v = 'On these numbers you would be <strong>' + money(-left) + ' down over 30 years</strong>. You would need at least ' +
+          money(cost / (Math.max(0.01,net) * sold * (1-comm))) + ' per unit to break even at that level of sales. ' +
+          'Note that ' + money(mgmt + mon) + ' of the cost is management and monitoring you owe whether or not anything sells.';
+    } else {
+      var perHaYear = area > 0 ? left / area / 30 : 0;
+      v = 'That is about <strong>' + money(perHaYear) + ' per hectare per year</strong> left over across the 30 years, before tax, and before VAT on your fees. ' +
+          'You would need ' + money(cost / (Math.max(0.01,net) * sold * (1-comm))) + ' a unit to break even at that level of sales. ' +
+          '<br><br>Two things to hold against it. ' + money(mgmt + mon) + ' of that cost is management and monitoring you owe <strong>whether or not anything sells</strong>. ' +
+          'And published habitat bank operator terms pay roughly £240 to £900 per hectare per year for land like this, with no setup cost and no market risk at all. ' +
+          'If the figure above is not comfortably better than that, the operator route is the better deal.';
+    }
+    $('oVerdict').innerHTML = v;
+    $('oAnchor').innerHTML = 'For scale: the median registered gain site in England has sold <strong>0.83 units in total</strong>, ' +
+      'and 39% have sold none. This calculator has you selling <strong>' + u(sellable * sold) + ' units</strong>.';
+
+    $('oWork').innerHTML =
+      'Pathway = <em>' + (enh ? 'enhancement' : 'creation') + '</em>' +
+        (enh ? ' (same broad habitat group, moving up in distinctiveness)' : ' (change of broad habitat group)') + '<br>' +
+      'Baseline &nbsp;= ' + area + ' ha × <em>' + b.dist + '</em> distinctiveness × <em>' + bc + '</em> condition × <em>1.0</em> strategic significance = <em>' + u(baseUnits) + '</em> units<br>' +
+      'After &nbsp;&nbsp;&nbsp;&nbsp;= ' + area + ' ha × <em>' + h.dist + '</em> × <em>' + nc + '</em> × <em>' + ss + '</em> × <em>' + diff + '</em> difficulty × <em>' + (Math.round(temporal*10000)/10000) + '</em> time (' + yearsLabel(years) + ' yrs) = <em>' + u(afterUnits) + '</em> units<br>' +
+      'Net &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;= ' + u(afterUnits) + ' − ' + u(baseUnits) + ' = <em>' + u(net) + '</em>' + (blocked ? ' but blocked by the trading rules' : ' saleable units') + '<br>' +
+      'Costs &nbsp;&nbsp;&nbsp;= ' + money(setup) + ' setup (' + s.label + ') + ' + money(create) + ' creation + ' + money(mgmt) + ' management + ' + money(mon) + ' monitoring';
+  }
+
+  elBase.addEventListener('change', function(){ fillBaseCond(); calc(); });
+  var touched = {};
+  ['cPrice','cCreate','cMgmt'].forEach(function(id){
+    $(id).addEventListener('input', function(){ touched[id] = true; });
+  });
+  elNew.addEventListener('change', function(){
+    fillNewCond();
+    var h = newObj();
+    if (!touched.cPrice)  elPrice.value  = h.price;
+    if (!touched.cCreate) elCreate.value = h.create;
+    if (!touched.cMgmt)   elMgmt.value   = h.mgmt;
+    calc();
+  });
+  ['cArea','cBaseCond','cNewCond','cSS','cPrice','cSold','cRoute','cCreate','cMgmt','cMon','cVisits','cComm']
+    .forEach(function(id){
+      var el = $(id);
+      el.addEventListener('input', calc);
+      el.addEventListener('change', calc);
+    });
+
+  fillBaseCond(); fillNewCond(); calc();
+})();
+</script>
+</body>
+</html>

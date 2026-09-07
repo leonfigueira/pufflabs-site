@@ -154,3 +154,16 @@ footer a:hover{color:var(--ink)}
   border-top:1px solid var(--line-soft);padding-top:14px}
 @media(max-width:760px){.post-layout{grid-template-columns:1fr;gap:24px}
   .app-chip{position:static;max-width:360px;margin:0 auto}}
+
+/* ---------- free guide: hero link + landing panel (GainScout BNG guide) ---------- */
+.guide-cta{display:inline-flex;align-items:center;gap:8px;margin-top:14px;margin-left:14px;
+  text-decoration:none;color:var(--lime);font-size:.94rem;border-bottom:1px solid rgba(201,242,78,.3);
+  padding-bottom:2px;transition:border-color .15s}
+.guide-cta:hover{border-bottom-color:var(--lime)}
+@media(max-width:640px){.guide-cta{margin-left:0;display:block;margin-top:18px}}
+.guide-panel{border-top:1px solid var(--line);
+  background:linear-gradient(180deg,rgba(201,242,78,.05),transparent 70%)}
+.guide-eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:.74rem;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--lime);margin-bottom:14px}
+.guide-eyebrow::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--lime)}
+.guide-foot{font-size:.86rem;opacity:.75;margin-top:16px}
