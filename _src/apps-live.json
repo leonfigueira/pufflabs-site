@@ -1,130 +1,228 @@
 {
-"runlow": {
-  "name":"Runlow: AI Usage Meter","short":"Runlow","price":"£0.99","store":"6790868681",
-  "tagline":"Every AI limit you are paying for, on one screen.",
-  "devices":"iPhone · iPad · Mac · Apple Watch · Apple Vision Pro",
-  "keywords":"AI usage tracker, Claude usage monitor, ChatGPT Codex limits, Gemini CLI quota, Cursor plan usage, GitHub Copilot requests, OpenRouter credits, token tracker, rate limit monitor, menu bar app",
-  "intro":"Every AI subscription has a limit, and not one of them makes it easy to see. Runlow puts Claude, Codex, Gemini, Cursor, GitHub Copilot and OpenRouter side by side as clean colour coded meters that shade from green to red as they fill, so you know where you stand before you hit a wall in the middle of something.",
-  "sections":[
-   {"h":"Six services, one glance","p":"Connect any of them, or all of them. Nothing is Claude first and nothing is hidden behind a tier.","ul":[
-     "Claude: your 5 hour session, weekly caps, per model lanes and credit spend, across multiple accounts",
-     "Codex (ChatGPT): 5 hour session and weekly limits, read from the Codex CLI",
-     "Gemini CLI: remaining quota per model, picked up automatically as Google adds or retires models",
-     "Cursor: plan usage and on demand spend",
-     "GitHub Copilot: premium request allowance remaining",
-     "OpenRouter: credit balance plus what you have spent today, this week and this month"]},
-   {"h":"On your Lock Screen, your wrist and your menu bar","p":"Pin the meter you care about to the Lock Screen or the Dynamic Island as a Live Activity and see what is left without opening anything. On the Mac the number lives in the menu bar next to the clock. On Apple Watch it is on your wrist. Home Screen and Lock Screen widgets keep it in view everywhere else.","ul":[]},
-   {"h":"Warned before you hit the wall","p":"Optional notifications at 80 and 95 per cent, and again the moment a limit resets, so a long session does not end in a surprise. A history graph shows every limit over time and exports as CSV if you want to dig further.","ul":[]},
-   {"h":"Make it yours","p":"Choose which meter leads. Pick an icon or use your own image. Show a percentage, a countdown, a bar or just the number. Set your own colours or let each bar shade by usage. Hide the meters you do not care about. Light, dark or match the system.","ul":[]},
-   {"h":"Nothing leaves your device","p":"No account to create, no server of ours, no analytics, no tracking. Runlow reads your usage on your own machine and keeps it there. Your credentials live in the Keychain and sync only through your own iCloud if you choose.","ul":[]}
-  ]},
-"reprompt": {
-  "name":"Reprompt: Teleprompter","short":"Reprompt","price":"£6.99","store":"6800161736",
-  "tagline":"A teleprompter that does not lose your take.",
-  "devices":"iPhone · iPad · Mac · Apple TV · Apple Watch",
-  "keywords":"teleprompter app, Mac teleprompter, script scrolling, video recording, YouTube creator tools, presentation prompter, webcam teleprompter, remote control prompter",
-  "intro":"Reprompt is a teleprompter for people who film themselves. On the Mac it is a real Mac app with a real menu bar, not an iPad app dropped into a window. It scrolls your script at your reading pace, records while it scrolls, and it does not lose your take.",
-  "sections":[
-   {"h":"A real Mac app","p":"Space bar rolls and pauses. Arrow keys change speed. Command N starts a new script, Command I imports one, Escape closes the prompter. Resize the window and the text reflows. It is a desk prompter built for a webcam shoot, not a phone app in a bigger box.","ul":[]},
-   {"h":"It never loses your take","p":"Your video is committed to disk in short fragments while you record, rather than written in one go at the end. If the app is interrupted or the machine goes to sleep, the take is still there when you come back, and Reprompt tells you it survived.","ul":[]},
-   {"h":"Nothing is a paid extra","p":"One purchase covers iPhone, iPad, Mac, Apple TV and Apple Watch. No account, no sign up, no trial that quietly becomes a monthly bill, and no feature you already paid for moving behind a new tier later.","ul":[
-     "No watermark on your video, not on the first take and not ever",
-     "Mirroring for glass and beam splitter rigs",
-     "Every future update included"]}
-  ]},
-"recast": {
-  "name":"Recast: File Converter","short":"Recast","price":"Free","store":"6795738751",
-  "tagline":"Convert almost anything, without uploading a single byte.",
-  "devices":"iPhone · iPad",
-  "keywords":"file converter iPhone, video converter, photo converter, HEIC to JPEG, PDF to image, GIF to MP4, offline converter, compress video to size, no upload converter",
-  "intro":"Pick a photo, video, PDF, audio file, GIF or Live Photo, choose what you want out of it, and Recast does the rest. Every conversion happens on your device. There is no account, no upload, and no waiting on someone else's server.",
-  "sections":[
-   {"h":"Name your file size","p":"Most converters give you a quality slider and leave you guessing. Recast lets you say what the file needs to weigh, then works backwards to get there. Under 10 MB for email, under 25 MB, or a number you pick yourself.","ul":[]},
-   {"h":"Honest when it cannot get there","p":"Sometimes a target simply cannot be reached at full resolution. Recast tells you plainly instead of quietly missing, and offers to shrink the video itself to get closer.","ul":[]},
-   {"h":"What it handles","p":"","ul":[
-     "Photos: JPEG, PNG, HEIC, TIFF, BMP, and into PDF",
-     "PDFs: to JPEG or PNG page by page, or compressed as PDF",
-     "Video: MP4, MOV and more, with a size target",
-     "Audio and GIFs, including Live Photos"]},
-   {"h":"Private because it never leaves","p":"Everything runs on the device, so it works on a plane and it works with files you would rather not hand to a website. No account, no tracking, no subscription.","ul":[]},
-   {"h":"Free, with an optional Pro unlock","p":"Recast itself is free. Recast Pro removes the adverts and adds unlimited files, batch conversion and PDF merge, as a one time purchase, not a subscription.","ul":[]}
-  ]},
-"refast": {"name": "Refast: 16:8 Fasting Timer", "short": "Refast", "price": "Free", "store": "6800549217", "tagline": "How long is left. That is the whole idea.", "devices": "iPhone · Mac", "keywords": "intermittent fasting timer, 16:8 fasting, fasting tracker, eating window, fasting streak, no subscription fasting app", "intro": "A fasting timer that shows you the one thing you actually want to know, and does not try to be a food diary, a coach or a subscription while it is at it.", "sections": [{"h": "A ring and a number", "p": "Start your fast and Refast counts down your eating window on a single clear ring. Glance at it and you know. That is the app.", "ul": []}, {"h": "Your history, honestly kept", "p": "Every fast is recorded so you can see your streak and your trend over weeks rather than guessing. Trends are laid out to be read at a glance on the Mac as well as the phone.", "ul": []}, {"h": "Pay once, if at all", "p": "The core timer is free. Refast Plus adds your full history, trends, custom plans and iCloud sync, as a one time unlock, not a subscription. No account, no daily nudge to buy something, and your data stays on your device either way.", "ul": []}]},
-"gainscout": {
-  "name": "GainScout: BNG Land Finder",
-  "short": "GainScout",
-  "price": "Free",
-  "store": "6803895712",
-  "tagline": "Check any field in England for Biodiversity Net Gain potential, in one tap.",
-  "closer": "Free to download and free to check land. No account, no tracking. Reports and GainScout Pro are optional.",
-  "devices": "iPhone · iPad · Mac",
-  "keywords": "biodiversity net gain, BNG, land check England, habitat bank, off site units, land agent, planning consultant, farmland, SSSI, agricultural land classification, flood risk, green belt",
-  "intro": "GainScout is the fastest way to take a first look at whether a piece of land in England could be a candidate for Biodiversity Net Gain, the planning rule that has developers paying landowners to make land better for nature.",
-  "sections": [
-    {
-      "h": "One button, official data",
-      "p": "Point the map at a field and press one button. GainScout reads that exact spot against official public government datasets and gives you a plain English answer in seconds, with every finding's source and the date it was checked. Nothing is estimated and nothing is invented.",
-      "ul": []
-    },
-    {
-      "h": "What every check reads",
-      "p": "",
-      "ul": [
-        "Statutory designations: SSSI, SAC, SPA, Ramsar, national and local nature reserves",
-        "Ancient woodland and priority habitats",
-        "Agricultural land grade, with the best and most versatile farmland flagged",
-        "Flood risk zones",
-        "Green Belt, National Landscapes and conservation areas",
-        "The Local Nature Recovery Strategy for the area",
-        "Registered biodiversity gain sites nearby, the off site market you would price against"
-      ]
-    },
-    {
-      "h": "Built for the job",
-      "p": "",
-      "ul": [
-        "Save sites and track them from watching to in talks",
-        "Add a walkover checklist, notes and timestamped evidence photos",
-        "Create a dated report with findings, sources, your photos and an OS grid reference, ready to hand to an agent, ecologist or buyer, and export it as a PDF",
-        "Area Scan to rank the most promising spots across an area",
-        "Draw your parcel to trace a boundary for instant acreage and a spot by spot check",
-        "Sites, reports and photos synced through your own iCloud"
-      ]
-    },
-    {
-      "h": "Free to check, pay for what you need",
-      "p": "Every check and every walkover feature is free to use. Buy a report when you need one, one credit or a pack of ten, or subscribe to GainScout Pro for unlimited land checks and reports plus every other Pro tool, billed monthly, quarterly or yearly, cancel any time.",
-      "ul": []
-    }
-  ]
-},
-"gridsong": {
-  "name": "Gridsong: Music Maker",
-  "short": "Gridsong",
-  "price": "£1.99",
-  "store": "6803742432",
-  "tagline": "Tap a grid. Nothing you play can sound wrong.",
-  "devices": "iPhone · Mac",
-  "keywords": "music maker app, beat maker, loop sequencer, make music no skill, pentatonic grid, lofi, ambient, drum machine, songwriting app",
-  "intro": "Gridsong turns a glowing grid into an instrument anyone can play. Tap a square and it plays a note. Tap a few more and you have a melody, because the whole grid is locked to a musical scale, so nothing you tap can sound wrong.",
-  "sections": [
-    {
-      "h": "No lessons, no theory, no wrong notes",
-      "p": "Drag across the grid to paint a run of notes, press play, and it loops. Start from a template or a blank grid.",
-      "ul": []
-    },
-    {
-      "h": "What you get to play with",
-      "p": "",
-      "ul": [
-        "Ten built in instruments including Bell, Pluck, Glass, Voice and Bass",
-        "Drums, with tempo you control",
-        "Record your own sounds and play them across the grid",
-        "Loop, duplicate and layer patterns into a full song",
-        "Record a video of your loop and share it anywhere",
-        "Patterns synced across iPhone and Mac with iCloud"
-      ]
-    }
-  ]
-}
+  "runlow": {
+    "name": "Runlow: AI Usage Meter",
+    "short": "Runlow",
+    "price": "£1.99",
+    "store": "6790868681",
+    "tagline": "Every AI limit you are paying for, on one screen.",
+    "devices": "iPhone · iPad · Mac · Apple Watch · Apple Vision Pro",
+    "keywords": "AI usage tracker, Claude usage monitor, ChatGPT Codex limits, Gemini CLI quota, Cursor plan usage, GitHub Copilot requests, OpenRouter credits, token tracker, rate limit monitor, menu bar app, Lock Screen Live Activity, Dynamic Island",
+    "intro": "Every AI subscription has a limit, and not one of them makes it easy to see. Runlow puts Claude, Codex, Gemini, Cursor, GitHub Copilot and OpenRouter side by side as clean colour coded meters that fill from green to red as you use them, so you know where you stand before you hit a wall in the middle of something.",
+    "sections": [
+      {
+        "h": "Six services, one glance",
+        "p": "Connect any of them, or all of them. Nothing is Claude first and nothing is hidden behind a tier.",
+        "ul": [
+          "Claude: your 5 hour session, weekly caps, per model lanes and extra usage credits, across as many accounts as you have",
+          "Codex (ChatGPT): 5 hour session and weekly limits",
+          "Gemini CLI: remaining quota per model, picked up automatically as Google adds or retires models",
+          "Cursor: plan usage",
+          "GitHub Copilot: premium request allowance remaining",
+          "OpenRouter: credit balance, key spend, and what you have spent today, this week and this month"
+        ]
+      },
+      {
+        "h": "Your Lock Screen card, your way",
+        "p": "Pin up to eight meters to the Lock Screen as a Live Activity. Choose the headline meter, how big the top row is, whether every meter gets a bar, and where the refresh button sits. Reset times count down live. The Dynamic Island shows the two numbers you pick, in their own colours, and expands to as many as six meters.",
+        "ul": []
+      },
+      {
+        "h": "Seven themes and a setup wizard",
+        "p": "A theme sets the bar colours, the bar shape, the typeface and the background in one tap, and follows light and dark on its own. Nine typefaces. Bars in one piece or in blocks like a fuel gauge. Colour bars by the theme, by usage, by usage as a gradient along the bar, or give any meter its own colour. The setup wizard walks you through the card one question at a time with your own meters in front of you, and cancelling puts everything back.",
+        "ul": []
+      },
+      {
+        "h": "Widgets, your wrist and the menu bar",
+        "p": "Small, medium and large Home Screen widgets, the large one holding up to twelve meters with their bars and every one with a refresh button, plus Lock Screen widgets. Your focus meter on Apple Watch, in your theme. On the Mac the meters live in the menu bar next to the clock, as many as you like, side by side or stacked, with a right-click to add or remove any of them, and the same themes and wizard. On Apple Vision Pro, a dashboard window and a compact panel you can park beside your work.",
+        "ul": []
+      },
+      {
+        "h": "Warned before you hit the wall",
+        "p": "Optional notifications before you hit a wall, and again the moment a limit resets, so a long session does not end in a surprise. History charts every meter over time, with an optional forecast worked out from your own readings, a payments log for what you pay each service, and CSV export.",
+        "ul": []
+      },
+      {
+        "h": "Nothing leaves your device",
+        "p": "No account to create, no server of ours, no analytics, no tracking. Runlow reads your usage on your own device and keeps it there. Your keys live in the Keychain, and your settings can follow you between devices through your own iCloud if you choose. A Privacy page in the app lists every address it contacts and why.",
+        "ul": []
+      }
+    ]
+  },
+  "reprompt": {
+    "name": "Reprompt: Teleprompter",
+    "short": "Reprompt",
+    "price": "£6.99",
+    "store": "6800161736",
+    "tagline": "A teleprompter that does not lose your take.",
+    "devices": "iPhone · iPad · Mac · Apple TV · Apple Watch",
+    "keywords": "teleprompter app, Mac teleprompter, script scrolling, video recording, YouTube creator tools, presentation prompter, webcam teleprompter, remote control prompter",
+    "intro": "Reprompt is a teleprompter for people who film themselves. On the Mac it is a real Mac app with a real menu bar, not an iPad app dropped into a window. It scrolls your script at your reading pace, records while it scrolls, and it does not lose your take.",
+    "sections": [
+      {
+        "h": "A real Mac app",
+        "p": "Space bar rolls and pauses. Arrow keys change speed. Command N starts a new script, Command I imports one, Escape closes the prompter. Resize the window and the text reflows. It is a desk prompter built for a webcam shoot, not a phone app in a bigger box.",
+        "ul": []
+      },
+      {
+        "h": "It never loses your take",
+        "p": "Your video is committed to disk in short fragments while you record, rather than written in one go at the end. If the app is interrupted or the machine goes to sleep, the take is still there when you come back, and Reprompt tells you it survived.",
+        "ul": []
+      },
+      {
+        "h": "Nothing is a paid extra",
+        "p": "One purchase covers iPhone, iPad, Mac, Apple TV and Apple Watch. No account, no sign up, no trial that quietly becomes a monthly bill, and no feature you already paid for moving behind a new tier later.",
+        "ul": [
+          "No watermark on your video, not on the first take and not ever",
+          "Mirroring for glass and beam splitter rigs",
+          "Every future update included"
+        ]
+      }
+    ]
+  },
+  "recast": {
+    "name": "Recast: File Converter",
+    "short": "Recast",
+    "price": "Free",
+    "store": "6795738751",
+    "tagline": "Convert almost anything, without uploading a single byte.",
+    "devices": "iPhone · iPad",
+    "keywords": "file converter iPhone, video converter, photo converter, HEIC to JPEG, PDF to image, GIF to MP4, offline converter, compress video to size, no upload converter",
+    "intro": "Pick a photo, video, PDF, audio file, GIF or Live Photo, choose what you want out of it, and Recast does the rest. Every conversion happens on your device. There is no account, no upload, and no waiting on someone else's server.",
+    "sections": [
+      {
+        "h": "Name your file size",
+        "p": "Most converters give you a quality slider and leave you guessing. Recast lets you say what the file needs to weigh, then works backwards to get there. Under 10 MB for email, under 25 MB, or a number you pick yourself.",
+        "ul": []
+      },
+      {
+        "h": "Honest when it cannot get there",
+        "p": "Sometimes a target simply cannot be reached at full resolution. Recast tells you plainly instead of quietly missing, and offers to shrink the video itself to get closer.",
+        "ul": []
+      },
+      {
+        "h": "What it handles",
+        "p": "",
+        "ul": [
+          "Photos: JPEG, PNG, HEIC, TIFF, BMP, and into PDF",
+          "PDFs: to JPEG or PNG page by page, or compressed as PDF",
+          "Video: MP4, MOV and more, with a size target",
+          "Audio and GIFs, including Live Photos"
+        ]
+      },
+      {
+        "h": "Private because it never leaves",
+        "p": "Everything runs on the device, so it works on a plane and it works with files you would rather not hand to a website. No account, no tracking, no subscription.",
+        "ul": []
+      },
+      {
+        "h": "Free, with an optional Pro unlock",
+        "p": "Recast itself is free. Recast Pro removes the adverts and adds unlimited files, batch conversion and PDF merge, as a one time purchase, not a subscription.",
+        "ul": []
+      }
+    ]
+  },
+  "refast": {
+    "name": "Refast: 16:8 Fasting Timer",
+    "short": "Refast",
+    "price": "Free",
+    "store": "6800549217",
+    "tagline": "How long is left. That is the whole idea.",
+    "devices": "iPhone · Mac",
+    "keywords": "intermittent fasting timer, 16:8 fasting, fasting tracker, eating window, fasting streak, no subscription fasting app",
+    "intro": "A fasting timer that shows you the one thing you actually want to know, and does not try to be a food diary, a coach or a subscription while it is at it.",
+    "sections": [
+      {
+        "h": "A ring and a number",
+        "p": "Start your fast and Refast counts down your eating window on a single clear ring. Glance at it and you know. That is the app.",
+        "ul": []
+      },
+      {
+        "h": "Your history, honestly kept",
+        "p": "Every fast is recorded so you can see your streak and your trend over weeks rather than guessing. Trends are laid out to be read at a glance on the Mac as well as the phone.",
+        "ul": []
+      },
+      {
+        "h": "Pay once, if at all",
+        "p": "The core timer is free. Refast Plus adds your full history, trends, custom plans and iCloud sync, as a one time unlock, not a subscription. No account, no daily nudge to buy something, and your data stays on your device either way.",
+        "ul": []
+      }
+    ]
+  },
+  "gainscout": {
+    "name": "GainScout: BNG Land Finder",
+    "short": "GainScout",
+    "price": "Free",
+    "store": "6803895712",
+    "tagline": "Check any field in England for Biodiversity Net Gain potential, in one tap.",
+    "closer": "Free to download and free to check land. No account, no tracking. Reports and GainScout Pro are optional.",
+    "devices": "iPhone · iPad · Mac",
+    "keywords": "biodiversity net gain, BNG, land check England, habitat bank, off site units, land agent, planning consultant, farmland, SSSI, agricultural land classification, flood risk, green belt",
+    "intro": "GainScout is the fastest way to take a first look at whether a piece of land in England could be a candidate for Biodiversity Net Gain, the planning rule that has developers paying landowners to make land better for nature.",
+    "sections": [
+      {
+        "h": "One button, official data",
+        "p": "Point the map at a field and press one button. GainScout reads that exact spot against official public government datasets and gives you a plain English answer in seconds, with every finding's source and the date it was checked. Nothing is estimated and nothing is invented.",
+        "ul": []
+      },
+      {
+        "h": "What every check reads",
+        "p": "",
+        "ul": [
+          "Statutory designations: SSSI, SAC, SPA, Ramsar, national and local nature reserves",
+          "Ancient woodland and priority habitats",
+          "Agricultural land grade, with the best and most versatile farmland flagged",
+          "Flood risk zones",
+          "Green Belt, National Landscapes and conservation areas",
+          "The Local Nature Recovery Strategy for the area",
+          "Registered biodiversity gain sites nearby, the off site market you would price against"
+        ]
+      },
+      {
+        "h": "Built for the job",
+        "p": "",
+        "ul": [
+          "Save sites and track them from watching to in talks",
+          "Add a walkover checklist, notes and timestamped evidence photos",
+          "Create a dated report with findings, sources, your photos and an OS grid reference, ready to hand to an agent, ecologist or buyer, and export it as a PDF",
+          "Area Scan to rank the most promising spots across an area",
+          "Draw your parcel to trace a boundary for instant acreage and a spot by spot check",
+          "Sites, reports and photos synced through your own iCloud"
+        ]
+      },
+      {
+        "h": "Free to check, pay for what you need",
+        "p": "Every check and every walkover feature is free to use. Buy a report when you need one, one credit or a pack of ten, or subscribe to GainScout Pro for unlimited land checks and reports plus every other Pro tool, billed monthly, quarterly or yearly, cancel any time.",
+        "ul": []
+      }
+    ]
+  },
+  "gridsong": {
+    "name": "Gridsong: Music Maker",
+    "short": "Gridsong",
+    "price": "£1.99",
+    "store": "6803742432",
+    "tagline": "Tap a grid. Nothing you play can sound wrong.",
+    "devices": "iPhone · Mac",
+    "keywords": "music maker app, beat maker, loop sequencer, make music no skill, pentatonic grid, lofi, ambient, drum machine, songwriting app",
+    "intro": "Gridsong turns a glowing grid into an instrument anyone can play. Tap a square and it plays a note. Tap a few more and you have a melody, because the whole grid is locked to a musical scale, so nothing you tap can sound wrong.",
+    "sections": [
+      {
+        "h": "No lessons, no theory, no wrong notes",
+        "p": "Drag across the grid to paint a run of notes, press play, and it loops. Start from a template or a blank grid.",
+        "ul": []
+      },
+      {
+        "h": "What you get to play with",
+        "p": "",
+        "ul": [
+          "Ten built in instruments including Bell, Pluck, Glass, Voice and Bass",
+          "Drums, with tempo you control",
+          "Record your own sounds and play them across the grid",
+          "Loop, duplicate and layer patterns into a full song",
+          "Record a video of your loop and share it anywhere",
+          "Patterns synced across iPhone and Mac with iCloud"
+        ]
+      }
+    ]
+  }
 }

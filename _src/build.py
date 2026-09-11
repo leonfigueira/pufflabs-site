@@ -71,13 +71,24 @@ FOOT = """  <section class="closer">
 </html>
 """
 
+
+def operating_system(devices: str) -> str:
+    """schema.org operatingSystem from the devices strip, so a Watch or Vision app says so."""
+    names = {"iPhone": "iOS", "iPad": "iPadOS", "Mac": "macOS", "Apple Watch": "watchOS",
+             "Apple Vision Pro": "visionOS", "Apple TV": "tvOS"}
+    out = []
+    for d in devices.split("·"):
+        os_name = names.get(d.strip())
+        if os_name and os_name not in out: out.append(os_name)
+    return ", ".join(out) or "iOS"
+
 for slug, a in apps.items():
     live = bool(a["store"])
     cta = (f'<a class="buy" href="https://apps.apple.com/gb/app/id{a["store"]}">Get it on the App Store · {a["price"]}</a>'
            if live else '<span class="pending">Built, and with Apple for review</span>')
     schema = json.dumps({
         "@context":"https://schema.org","@type":"SoftwareApplication","name":a["name"],
-        "operatingSystem":"iOS, macOS","applicationCategory":"MobileApplication",
+        "operatingSystem":operating_system(a["devices"]),"applicationCategory":"MobileApplication",
         "description":a["tagline"],
         "author":{"@type":"Organization","name":"Puff Labs"},
         **({"offers":{"@type":"Offer","price":("0.00" if a["price"]=="Free" else a["price"].replace("£","")),"priceCurrency":"GBP"}} if live else {})
