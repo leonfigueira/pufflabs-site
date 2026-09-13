@@ -42,8 +42,8 @@
         "ul": []
       },
       {
-        "h": "Nothing leaves your device",
-        "p": "No account to create, no server of ours, no analytics, no tracking. Runlow reads your usage on your own device and keeps it there. Your keys live in the Keychain, and your settings can follow you between devices through your own iCloud if you choose. A Privacy page in the app lists every address it contacts and why.",
+        "h": "Private by design",
+        "p": "No account to create, no server of ours, no analytics, no tracking. Runlow reads your usage straight from each service with your own sign-in, and nothing is sent to us. Your keys are kept in the Keychain and, unless you switch it off, in your own iCloud Keychain, so pasting a key once signs in your other devices. Your settings can follow you through your own iCloud too, if you choose. A Privacy page in the app lists every address it contacts and why.",
         "ul": []
       }
     ]
@@ -51,7 +51,7 @@
   "reprompt": {
     "name": "Reprompt: Teleprompter",
     "short": "Reprompt",
-    "price": "£6.99",
+    "price": "Free",
     "store": "6800161736",
     "tagline": "A teleprompter that does not lose your take.",
     "devices": "iPhone · iPad · Mac · Apple TV · Apple Watch",
@@ -65,38 +65,39 @@
       },
       {
         "h": "It never loses your take",
-        "p": "Your video is committed to disk in short fragments while you record, rather than written in one go at the end. If the app is interrupted or the machine goes to sleep, the take is still there when you come back, and Reprompt tells you it survived.",
+        "p": "Your video is committed to disk in short fragments while you record, rather than written in one go at the end. If the app is interrupted or the machine goes to sleep, the take is still there when you come back, and Reprompt tells you it survived. Recording is part of Reprompt Pro.",
         "ul": []
       },
       {
-        "h": "Nothing is a paid extra",
-        "p": "One purchase covers iPhone, iPad, Mac, Apple TV and Apple Watch. No account, no sign up, no trial that quietly becomes a monthly bill, and no feature you already paid for moving behind a new tier later.",
+        "h": "Free to use, Pro once",
+        "p": "The teleprompter is free: mirroring, Voice Pause, the Apple Watch remote and iCloud sync, for up to three scripts. Reprompt Pro is a single £9.99 purchase that adds video recording with the takes library, unlimited scripts and file import, on iPhone, iPad, Mac and Apple TV. No account, no sign up, no subscription. Bought Reprompt when it was a paid app? Pro is already yours.",
         "ul": [
           "No watermark on your video, not on the first take and not ever",
           "Mirroring for glass and beam splitter rigs",
           "Every future update included"
         ]
       }
-    ]
+    ],
+    "closer": "Free to download, with Reprompt Pro as a one-time unlock. No subscription, no account, no tracking."
   },
   "recast": {
-    "name": "Recast: File Converter",
+    "name": "Recast: Convert & Compress",
     "short": "Recast",
     "price": "Free",
     "store": "6795738751",
-    "tagline": "Convert almost anything, without uploading a single byte.",
+    "tagline": "Convert almost anything, without uploading a single file.",
     "devices": "iPhone · iPad",
     "keywords": "file converter iPhone, video converter, photo converter, HEIC to JPEG, PDF to image, GIF to MP4, offline converter, compress video to size, no upload converter",
     "intro": "Pick a photo, video, PDF, audio file, GIF or Live Photo, choose what you want out of it, and Recast does the rest. Every conversion happens on your device. There is no account, no upload, and no waiting on someone else's server.",
     "sections": [
       {
         "h": "Name your file size",
-        "p": "Most converters give you a quality slider and leave you guessing. Recast lets you say what the file needs to weigh, then works backwards to get there. Under 10 MB for email, under 25 MB, or a number you pick yourself.",
+        "p": "Most converters give you a quality slider and leave you guessing. Recast lets you say what the file needs to weigh, then works backwards to get there. 25 MB for most email, 20 MB for Discord, 16 MB for a WhatsApp video, or a number you pick yourself.",
         "ul": []
       },
       {
-        "h": "Honest when it cannot get there",
-        "p": "Sometimes a target simply cannot be reached at full resolution. Recast tells you plainly instead of quietly missing, and offers to shrink the video itself to get closer.",
+        "h": "Honest about results",
+        "p": "If full resolution cannot reach your target, Recast lowers the resolution to get there and tells you it did. If a file is already small enough, it leaves it alone and says so.",
         "ul": []
       },
       {
@@ -111,15 +112,16 @@
       },
       {
         "h": "Private because it never leaves",
-        "p": "Everything runs on the device, so it works on a plane and it works with files you would rather not hand to a website. No account, no tracking, no subscription.",
+        "p": "Everything runs on the device, so it works on a plane and it works with files you would rather not hand to a website. No account and no subscription, and Recast never asks to track you. The only time it goes online is for an advert you choose to watch, and Pro removes that.",
         "ul": []
       },
       {
         "h": "Free, with an optional Pro unlock",
-        "p": "Recast itself is free. Recast Pro removes the adverts and adds unlimited files, batch conversion and PDF merge, as a one time purchase, not a subscription.",
+        "p": "Recast itself is free: five files on each tool to start, then one a day, and an advert whenever you want one more. Recast Pro removes the adverts and adds unlimited files, whole batches at once, images combined into one PDF, and Shortcuts, as a one time purchase, not a subscription.",
         "ul": []
       }
-    ]
+    ],
+    "closer": "Free to download, with Recast Pro as a one-time unlock. No account, no subscription, and your files never leave your device."
   },
   "refast": {
     "name": "Refast: 16:8 Fasting Timer",
@@ -127,26 +129,27 @@
     "price": "Free",
     "store": "6800549217",
     "tagline": "How long is left. That is the whole idea.",
-    "devices": "iPhone · Mac",
+    "devices": "iPhone · iPad · Mac · Apple Watch",
     "keywords": "intermittent fasting timer, 16:8 fasting, fasting tracker, eating window, fasting streak, no subscription fasting app",
     "intro": "A fasting timer that shows you the one thing you actually want to know, and does not try to be a food diary, a coach or a subscription while it is at it.",
     "sections": [
       {
         "h": "A ring and a number",
-        "p": "Start your fast and Refast counts down your eating window on a single clear ring. Glance at it and you know. That is the app.",
+        "p": "Start your fast and the ring fills towards your goal, then keeps counting past it so you can see how far over you went. When you break the fast, it shows when your eating window closes.",
         "ul": []
       },
       {
         "h": "Your history, honestly kept",
-        "p": "Every fast is recorded so you can see your streak and your trend over weeks rather than guessing. Trends are laid out to be read at a glance on the Mac as well as the phone.",
+        "p": "Forgot to start it, or to stop it? Fix the times in a few taps, or add a fast by hand. Your streak, goal rate and this week's count are free, and Refast Plus opens your full history and long range trends, laid out to read at a glance on the Mac as well as the phone.",
         "ul": []
       },
       {
         "h": "Pay once, if at all",
-        "p": "The core timer is free. Refast Plus adds your full history, trends, custom plans and iCloud sync, as a one time unlock, not a subscription. No account, no daily nudge to buy something, and your data stays on your device either way.",
+        "p": "The timer is free. Refast Plus is a one time unlock that adds your full history, detailed trends, saved custom plans, four more themes and icons, a full backup file, and iCloud sync across iPhone, iPad and Mac. No subscription, no account, no ads, and your fasts stay on your own devices and your own iCloud.",
         "ul": []
       }
-    ]
+    ],
+    "closer": "Free to download and free to use as a timer, with Refast Plus as a one-time unlock. No subscription, no account, no tracking."
   },
   "gainscout": {
     "name": "GainScout: BNG Land Finder",
@@ -154,14 +157,14 @@
     "price": "Free",
     "store": "6803895712",
     "tagline": "Check any field in England for Biodiversity Net Gain potential, in one tap.",
-    "closer": "Free to download and free to check land. No account, no tracking. Reports and GainScout Pro are optional.",
+    "closer": "Free to download, with free land checks every week. No account, no tracking. Reports and GainScout Pro are optional.",
     "devices": "iPhone · iPad · Mac",
     "keywords": "biodiversity net gain, BNG, land check England, habitat bank, off site units, land agent, planning consultant, farmland, SSSI, agricultural land classification, flood risk, green belt",
     "intro": "GainScout is the fastest way to take a first look at whether a piece of land in England could be a candidate for Biodiversity Net Gain, the planning rule that has developers paying landowners to make land better for nature.",
     "sections": [
       {
         "h": "One button, official data",
-        "p": "Point the map at a field and press one button. GainScout reads that exact spot against official public government datasets and gives you a plain English answer in seconds, with every finding's source and the date it was checked. Nothing is estimated and nothing is invented.",
+        "p": "Point the map at a field and press one button. GainScout reads that exact spot against official public government datasets and gives you a clear answer in seconds, with every finding's source and the date it was checked. Nothing is estimated and nothing is invented.",
         "ul": []
       },
       {
@@ -174,7 +177,11 @@
           "Flood risk zones",
           "Green Belt, National Landscapes and conservation areas",
           "The Local Nature Recovery Strategy for the area",
-          "Registered biodiversity gain sites nearby, the off site market you would price against"
+          "Your buyer catchment: the planning authority and National Character Area the land sits in",
+          "What developments in that authority have actually taken from the public register of gain sites",
+          "Whether the habitat and the farmland grade together leave much room to improve, or little",
+          "A warning when ground looks uncultivated or semi-natural, which can need a decision from Natural England before any work starts",
+          "The registered gain sites near the land, the supply already competing nearby, and how many have had nothing allocated yet"
         ]
       },
       {
@@ -182,16 +189,15 @@
         "p": "",
         "ul": [
           "Save sites and track them from watching to in talks",
-          "Add a walkover checklist, notes and timestamped evidence photos",
+          "Add a walkover checklist that says what can be surveyed this month, plus notes and timestamped evidence photos",
           "Create a dated report with findings, sources, your photos and an OS grid reference, ready to hand to an agent, ecologist or buyer, and export it as a PDF",
-          "Area Scan to rank the most promising spots across an area",
-          "Draw your parcel to trace a boundary for instant acreage and a spot by spot check",
-          "Sites, reports and photos synced through your own iCloud"
+          "Works on iPhone, iPad and Mac, with sites, reports and photos synced through your own iCloud",
+          "With Pro: Area Scan to rank the most promising spots across an area, draw your parcel for instant acreage and a spot by spot check, browse every registered gain site near any land, and compare saved sites side by side"
         ]
       },
       {
-        "h": "Free to check, pay for what you need",
-        "p": "Every check and every walkover feature is free to use. Buy a report when you need one, one credit or a pack of ten, or subscribe to GainScout Pro for unlimited land checks and reports plus every other Pro tool, billed monthly, quarterly or yearly, cancel any time.",
+        "h": "Free to try, pay for what you need",
+        "p": "Free accounts get 3 land checks a week, 3 saved sites and their first report free. While GainScout is in beta, until 31 December 2026, that is 5 checks a week, 5 saved sites, 2 extra free reports and one Area Scan a week. Buy reports one at a time or ten at once, or subscribe to GainScout Pro for unlimited checks, reports and saved sites plus every Pro tool, billed monthly, quarterly or yearly, cancel any time.",
         "ul": []
       }
     ]
@@ -199,10 +205,10 @@
   "gridsong": {
     "name": "Gridsong: Music Maker",
     "short": "Gridsong",
-    "price": "£1.99",
+    "price": "Free",
     "store": "6803742432",
     "tagline": "Tap a grid. Nothing you play can sound wrong.",
-    "devices": "iPhone · Mac",
+    "devices": "iPhone · iPad · Mac",
     "keywords": "music maker app, beat maker, loop sequencer, make music no skill, pentatonic grid, lofi, ambient, drum machine, songwriting app",
     "intro": "Gridsong turns a glowing grid into an instrument anyone can play. Tap a square and it plays a note. Tap a few more and you have a melody, because the whole grid is locked to a musical scale, so nothing you tap can sound wrong.",
     "sections": [
@@ -216,12 +222,73 @@
         "p": "",
         "ul": [
           "Ten built in instruments including Bell, Pluck, Glass, Voice and Bass",
-          "Drums, with tempo you control",
-          "Record your own sounds and play them across the grid",
+          "Drums, with tempo, swing and key you control",
           "Loop, duplicate and layer patterns into a full song",
-          "Record a video of your loop and share it anywhere",
-          "Patterns synced across iPhone and Mac with iCloud"
+          "Record your loop as audio and share it",
+          "Patterns synced across iPhone, iPad and Mac with iCloud"
         ]
+      },
+      {
+        "h": "Gridsong Pro, once",
+        "p": "Gridsong is free to play. Gridsong Pro is a single purchase, not a subscription, that adds a deeper library of instruments, your own sounds recorded or imported and played across the grid, every template, your pattern as a vertical video, and MIDI out to Logic, GarageBand and AUM. Bought Gridsong when it was a paid app? Pro is already yours.",
+        "ul": []
+      }
+    ],
+    "closer": "Free to play, with Gridsong Pro as a one-time unlock. No subscription, no account, no ads."
+  },
+  "merestone": {
+    "name": "Merestone: SSSI & Habitat Map",
+    "short": "Merestone",
+    "price": "Free",
+    "store": "6801830675",
+    "tagline": "Every statutory designation on one map, in the field, with no signal.",
+    "closer": "Free to download, with every country's statutory core and a 250 m search free. Unlock a country once, or subscribe to Merestone Worldwide for all of them. No account, no tracking.",
+    "devices": "iPhone · iPad · Mac · Apple Watch",
+    "keywords": "SSSI map, protected sites UK, ancient woodland, priority habitat inventory, SAC SPA Ramsar, ecology desk study, preliminary ecological appraisal, PEA, biodiversity net gain, planning constraints, AONB, Natura 2000, offline GIS",
+    "intro": "Merestone puts statutory environmental designations on one map, on your phone, in the field, with or without a signal. The United Kingdom first, then Ireland, France, Spain, Portugal, the Netherlands and Belgium, with every layer drawn straight from the agency that publishes it.",
+    "sections": [
+      {
+        "h": "A desk study in seconds",
+        "p": "Drop a pin, choose a radius, and every designation inside it comes back sorted by distance, with anything on site flagged. Distances and bearings are measured, not eyeballed off a screen.",
+        "ul": []
+      },
+      {
+        "h": "The report, already written",
+        "p": "Export a dated PDF or text extract with a site plan, every record with its distance, direction and source, and just as importantly the layers that were checked and found nothing in. Choose which sections to include before you export.",
+        "ul": []
+      },
+      {
+        "h": "What is on the map",
+        "p": "",
+        "ul": [
+          "SSSI and SSSI Units, SAC, SPA and Ramsar sites, with ASSI in Northern Ireland",
+          "National and Local Nature Reserves, National Parks and AONB",
+          "Ancient woodland, the Priority Habitat Inventory, wood pasture and traditional orchards",
+          "Open access land, listed buildings and scheduled monuments",
+          "SAC, SPA, NHA and pNHA in Ireland, and Natura 2000 with each country's own designations in France, Spain, Portugal, the Netherlands and Belgium",
+          "Live species records from GBIF, as a first look rather than an inventory",
+          "England, Scotland, Wales, Northern Ireland, Ireland, France, Spain, Portugal, the Netherlands and Belgium, with the same map, searches and report throughout"
+        ]
+      },
+      {
+        "h": "Works with no signal",
+        "p": "Unlock a country and download any of its layers, or all of them, and it keeps working out of signal. Merestone uses live data when you have a connection and falls back to your download when you do not, and it says which it used, on screen and in the report.",
+        "ul": []
+      },
+      {
+        "h": "Built for the way the work happens",
+        "p": "",
+        "ul": [
+          "Grid references in the system each country actually uses, and a search that accepts them",
+          "Presets for desk study, woodland, wetland, coastal and species work, or save your own",
+          "Favourites with notes, synced through your own iCloud with no account and no server",
+          "An Apple Watch app for what is around you right now"
+        ]
+      },
+      {
+        "h": "Free to start, pay for the countries you use",
+        "p": "Every country's statutory core and a 250 m search are free. Unlocking a country is a one-off purchase that covers iPhone, iPad, Mac and Apple Watch and never renews, and adds that country's full set of layers, wider searches, the PDF and offline downloads. A Merestone Worldwide subscription unlocks every country instead.",
+        "ul": []
       }
     ]
   }
