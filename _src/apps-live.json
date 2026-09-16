@@ -241,11 +241,11 @@
     "short": "Merestone",
     "price": "Free",
     "store": "6801830675",
-    "tagline": "Every statutory designation on one map, in the field, with no signal.",
-    "closer": "Free to download, with every country's statutory core and a 250 m search free. Unlock a country once, or subscribe to Merestone Worldwide for all of them. No account, no tracking.",
+    "tagline": "Statutory designations on one map, in the field, with no signal.",
+    "closer": "Free to download, with every country's statutory core and a 250 m search free. Unlock a country once, or subscribe to Merestone Worldwide for all of them. No account needed, no analytics, no tracking.",
     "devices": "iPhone · iPad · Mac · Apple Watch",
     "keywords": "SSSI map, protected sites UK, ancient woodland, priority habitat inventory, SAC SPA Ramsar, ecology desk study, preliminary ecological appraisal, PEA, biodiversity net gain, planning constraints, AONB, Natura 2000, offline GIS",
-    "intro": "Merestone puts statutory environmental designations on one map, on your phone, in the field, with or without a signal. The United Kingdom first, then Ireland, France, Spain, Portugal, the Netherlands and Belgium, with every layer drawn straight from the agency that publishes it.",
+    "intro": "Merestone puts statutory environmental designations on one map, on your phone, in the field, with or without a signal. The United Kingdom first, then Ireland, France, Spain, Portugal, the Netherlands, Belgium, Germany and Switzerland, with each layer drawn from the agency that publishes it.",
     "sections": [
       {
         "h": "A desk study in seconds",
@@ -265,9 +265,9 @@
           "National and Local Nature Reserves, National Parks and AONB",
           "Ancient woodland, the Priority Habitat Inventory, wood pasture and traditional orchards",
           "Open access land, listed buildings and scheduled monuments",
-          "SAC, SPA, NHA and pNHA in Ireland, and Natura 2000 with each country's own designations in France, Spain, Portugal, the Netherlands and Belgium",
+          "SAC, SPA, NHA and pNHA in Ireland, and Natura 2000 with each country's own designations in France, Spain, Portugal, the Netherlands, Belgium, Germany and Switzerland",
           "Live species records from GBIF, as a first look rather than an inventory",
-          "England, Scotland, Wales, Northern Ireland, Ireland, France, Spain, Portugal, the Netherlands and Belgium, with the same map, searches and report throughout"
+          "England, Scotland, Wales, Northern Ireland, Ireland, France, Spain, Portugal, the Netherlands, Belgium, Germany and Switzerland, with the same map, searches and report throughout"
         ]
       },
       {
@@ -281,7 +281,7 @@
         "ul": [
           "Grid references in the system each country actually uses, and a search that accepts them",
           "Presets for desk study, woodland, wetland, coastal and species work, or save your own",
-          "Favourites with notes, synced through your own iCloud with no account and no server",
+          "Favourites with notes, synced through your own iCloud, not through us",
           "An Apple Watch app for what is around you right now"
         ]
       },
