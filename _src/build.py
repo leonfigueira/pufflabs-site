@@ -63,13 +63,17 @@ FOOT = """  <section class="closer">
     <span>© 2026 Puff Labs</span>
     <a href="mailto:leonfigueira@gmail.com">leonfigueira@gmail.com</a>
     <span class="spacer"></span>
-    <a href="https://leonfigueira.github.io/runlow-site/privacy.html">Privacy</a>
-    <a href="https://leonfigueira.github.io/runlow-site/support.html">Support</a>
+    <a href="{privacy_url}">Privacy</a>
+    <a href="{support_url}">Support</a>
   </div>
 </footer>
 </body>
 </html>
 """
+
+
+DEFAULT_PRIVACY = "https://leonfigueira.github.io/runlow-site/privacy.html"
+DEFAULT_SUPPORT = "https://leonfigueira.github.io/runlow-site/support.html"
 
 
 def operating_system(devices: str) -> str:
@@ -117,6 +121,10 @@ for slug, a in apps.items():
     closer_p = a.get("closer") or (
         f"One purchase covers {a['devices']}. No subscription, no account, no tracking."
         if live else "It is built and with Apple for review. It will appear here the day it lands.")
-    html_out += FOOT.format(cta=cta, closer_h=closer_h, closer_p=closer_p)
+    # Footer legal links are per app: an app with its own privacy policy and support page
+    # (Merestone) names them in its JSON; the rest fall back to the Runlow pages.
+    html_out += FOOT.format(cta=cta, closer_h=closer_h, closer_p=closer_p,
+                            privacy_url=a.get("privacy", DEFAULT_PRIVACY),
+                            support_url=a.get("support", DEFAULT_SUPPORT))
     open(os.path.join(ROOT, f"{slug}.html"), "w").write(html_out)
     print(f"  {slug}.html  {len(shots)} shots, {len(a['sections'])} sections")
